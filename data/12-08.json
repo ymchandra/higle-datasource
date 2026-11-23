@@ -1,11 +1,37 @@
 {
   "date": "12-08",
   "display_date": "December 8",
-  "last_updated": "2026-11-23T10:51:10Z",
+  "last_updated": "2026-11-23T15:25:01Z",
   "sources_used": [
     "wikimedia",
     "muffinlabs"
   ],
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0. Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US. Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
+  "sources": [
+    {
+      "id": "wikimedia",
+      "name": "Wikimedia On This Day API",
+      "url": "https://en.wikipedia.org/",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0."
+    },
+    {
+      "id": "muffinlabs",
+      "name": "Muffin Labs History API",
+      "url": "https://history.muffinlabs.com/",
+      "license": "CC BY-SA 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
+      "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
+    }
+  ],
+  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+  "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
   "items": [
     {
       "id": "12-08-2025-d88c79d2",
@@ -15,6 +41,12 @@
       "title": "Singapore, under the government's approval, published its now-declassified Albatross file…",
       "summary": "Singapore, under the government's approval, published its now-declassified Albatross file, comprising information relating to the Proclamation of Singapore dating back six decades ago.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/330px-Flag_of_Singapore.svg.png",
+      "image_credit": {
+        "author": "Original: Government of Singapore Vector: Zscout370",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Singapore.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Singapore",
       "is_featured": false,
       "providers": [
@@ -30,6 +62,12 @@
       "title": "Damascus falls to rebels after Syrian troops withdraw and president Bashar al-Assad leaves the…",
       "summary": "Damascus falls to rebels after Syrian troops withdraw and president Bashar al-Assad leaves the country as his government collapses. Israel as a result invaded into the buffer zone between Syria and the Israeli-occupied Golan Heights.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Syrian_citizens_celebrating_fall_of_the_Assad_regime_in_Damascus_at_December_11_of_2024.jpg/330px-Syrian_citizens_celebrating_fall_of_the_Assad_regime_in_Damascus_at_December_11_of_2024.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Syrian_citizens_celebrating_fall_of_the_Assad_regime_in_Damascus_at_December_11_of_2024.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Fall_of_Damascus_(2024)",
       "is_featured": false,
       "providers": [
@@ -45,6 +83,12 @@
       "title": "Robbie Shakespeare",
       "summary": "Robbie Shakespeare, Jamaican bass guitarist and record producer (born 1953)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Robbie_Shakespeare_TFF_03.JPG/330px-Robbie_Shakespeare_TFF_03.JPG",
+      "image_credit": {
+        "author": "Schorle",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Robbie_Shakespeare_TFF_03.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Robbie_Shakespeare",
       "is_featured": false,
       "providers": [
@@ -60,6 +104,12 @@
       "title": "First confirmed case of COVID-19 in China",
       "summary": "First confirmed case of COVID-19 in China.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Fphar-11-00937-g001.jpg/330px-Fphar-11-00937-g001.jpg",
+      "image_credit": {
+        "author": "Colin D. Funk, Craig Laferrière, and Ali Ardakani. Graphic by Ian Dennis - https://www.iandennisgraphics.com",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fphar-11-00937-g001.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/COVID-19",
       "is_featured": false,
       "providers": [
@@ -75,6 +125,12 @@
       "title": "David Weatherall",
       "summary": "David Weatherall, English physician, geneticist, and academic (born 1933)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Jeremy_Farrar_and_David_Weatherall_at_RILD_launch_%2814425802043%29.jpg/330px-Jeremy_Farrar_and_David_Weatherall_at_RILD_launch_%2814425802043%29.jpg",
+      "image_credit": {
+        "author": "University of Exeter from United Kingdom",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jeremy_Farrar_and_David_Weatherall_at_RILD_launch_(14425802043).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/David_Weatherall",
       "is_featured": false,
       "providers": [
@@ -90,6 +146,12 @@
       "title": "John Glenn",
       "summary": "John Glenn, American astronaut and senator, first American to go into orbit (born 1921)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/John_Glenn_Low_Res.jpg/330px-John_Glenn_Low_Res.jpg",
+      "image_credit": {
+        "author": "U.S. Senate Historical Office",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Glenn_Low_Res.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Glenn",
       "is_featured": false,
       "providers": [
@@ -105,6 +167,12 @@
       "title": "Douglas Tompkins",
       "summary": "Douglas Tompkins, American businessman, co-founded The North Face and Esprit Holdings (born 1943)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Doug_Tompkins.jpg/330px-Doug_Tompkins.jpg",
+      "image_credit": {
+        "author": "Sam Beebe",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Doug_Tompkins.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Douglas_Tompkins",
       "is_featured": false,
       "providers": [
@@ -120,6 +188,12 @@
       "title": "After a fatal bus accident in the Little India subzone of Singapore, angry mobs of workers…",
       "summary": "After a fatal bus accident in the Little India subzone of Singapore, angry mobs of workers attacked the bus involved and emergency vehicles, the first riot in the country in over 40 years.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Little_India_%284048444495%29.jpg/330px-Little_India_%284048444495%29.jpg",
+      "image_credit": {
+        "author": "KimonBerlin",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Little_India_(4048444495).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Little_India%2C_Singapore",
       "is_featured": true,
       "providers": [
@@ -135,6 +209,12 @@
       "title": "Metallica performs a show in Antarctica, making them the first musical act to perform on all seven…",
       "summary": "Metallica performs a show in Antarctica, making them the first musical act to perform on all seven continents.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Metallica_March_2024.jpg/330px-Metallica_March_2024.jpg",
+      "image_credit": {
+        "author": "Library of Congress Life",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Metallica_March_2024.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Metallica",
       "is_featured": false,
       "providers": [
@@ -150,6 +230,12 @@
       "title": "John Cornforth",
       "summary": "John Cornforth, Australian-English chemist and academic, Nobel Prize laureate (born 1917)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/John_Cornforth_1975.jpg/330px-John_Cornforth_1975.jpg",
+      "image_credit": {
+        "author": "Unknown (Associated Press)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Cornforth_1975.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Cornforth",
       "is_featured": false,
       "providers": [
@@ -165,6 +251,12 @@
       "title": "John Gowans",
       "summary": "John Gowans, Scottish-English 16th General of The Salvation Army (born 1934)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Gowans_Congress.jpg/330px-Gowans_Congress.jpg",
+      "image_credit": {
+        "author": "Salvationistdan",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gowans_Congress.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Gowans",
       "is_featured": false,
       "providers": [
@@ -180,6 +272,12 @@
       "title": "The Japanese experimental spacecraft IKAROS flew by Venus at a distance of 80,800 km (50,200 mi)…",
       "summary": "The Japanese experimental spacecraft IKAROS flew by Venus at a distance of 80,800 km (50,200 mi), completing its planned mission to demonstrate solar-sail technology.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/IKAROS_IAC_2010.jpg/330px-IKAROS_IAC_2010.jpg",
+      "image_credit": {
+        "author": "Pavel Hrdlička (Czech Wikipedia user Packa)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:IKAROS_IAC_2010.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/IKAROS",
       "is_featured": true,
       "providers": [
@@ -195,6 +293,12 @@
       "title": "With the second launch of the Falcon 9, and the first launch of the Dragon, SpaceX becomes the…",
       "summary": "With the second launch of the Falcon 9, and the first launch of the Dragon, SpaceX becomes the first private company to successfully launch, orbit and recover a spacecraft.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/COTS-1_Dragon_After_Return_from_Orbit_%28crop%29.jpg/330px-COTS-1_Dragon_After_Return_from_Orbit_%28crop%29.jpg",
+      "image_credit": {
+        "author": "SpaceX",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:COTS-1_Dragon_After_Return_from_Orbit_(crop).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/SpaceX_COTS_Demo_Flight_1",
       "is_featured": false,
       "providers": [
@@ -210,6 +314,7 @@
       "title": "Bombings in Baghdad carried out by the Islamic State of Iraq killed at least 127 people and…",
       "summary": "Bombings in Baghdad carried out by the Islamic State of Iraq killed at least 127 people and injured at least 448 others.",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/December_2009_Baghdad_bombings",
       "is_featured": false,
       "providers": [
@@ -225,6 +330,12 @@
       "title": "Oliver Postgate",
       "summary": "Oliver Postgate, English voice actor, director, producer, and screenwriter (born 1925)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Stella_Bowen%2C_Oliver_Postgate.jpg/330px-Stella_Bowen%2C_Oliver_Postgate.jpg",
+      "image_credit": {
+        "author": "Stella Bowen",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Stella_Bowen,_Oliver_Postgate.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Oliver_Postgate",
       "is_featured": false,
       "providers": [
@@ -240,6 +351,12 @@
       "title": "Columbus nightclub shooting: Nathan Gale opens fire at the Alrosa Villa nightclub in Columbus…",
       "summary": "Columbus nightclub shooting: Nathan Gale opens fire at the Alrosa Villa nightclub in Columbus, Ohio, killing former Pantera guitarist Dimebag Darrell and three others before being shot dead by a police officer.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Dimebag_001.jpg/330px-Dimebag_001.jpg",
+      "image_credit": {
+        "author": "Paul Soth",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Dimebag_001.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Columbus_nightclub_shooting",
       "is_featured": false,
       "providers": [
@@ -255,6 +372,7 @@
       "title": "The Cusco Declaration is signed in Cusco, Peru, establishing the South American Community of Nations",
       "summary": "The Cusco Declaration is signed in Cusco, Peru, establishing the South American Community of Nations.",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Cusco_Declaration",
       "is_featured": false,
       "providers": [
@@ -269,7 +387,8 @@
       "category": "events",
       "title": "A raid conducted by the Internal Security Department (ISD) of Singapore foils a Jemaah Islamiyah…",
       "summary": "A raid conducted by the Internal Security Department (ISD) of Singapore foils a Jemaah Islamiyah (JI) plot to bomb foreign embassies in Singapore.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/1/12/Internal_Security_Department_%28Singapore%29_logo.png",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Internal_Security_Department_(Singapore)",
       "is_featured": false,
       "providers": [
@@ -285,6 +404,7 @@
       "title": "Eighty-one people are killed by armed groups in Algeria",
       "summary": "Eighty-one people are killed by armed groups in Algeria.",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Tadjena_massacre",
       "is_featured": false,
       "providers": [
@@ -300,6 +420,12 @@
       "title": "Belarusian, Russian and Ukrainian leaders signed the Belovezha Accords (signing ceremony at…",
       "summary": "Belarusian, Russian and Ukrainian leaders signed the Belovezha Accords (signing ceremony at Viskuli Government House pictured), agreeing to dissolve the Soviet Union and establish the Commonwealth of Independent States.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/RIAN_archive_848095_Signing_the_Agreement_to_eliminate_the_USSR_and_establish_the_Commonwealth_of_Independent_States.jpg/330px-RIAN_archive_848095_Signing_the_Agreement_to_eliminate_the_USSR_and_establish_the_Commonwealth_of_Independent_States.jpg",
+      "image_credit": {
+        "author": "U. Ivanov / Ю. Иванов",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:RIAN_archive_848095_Signing_the_Agreement_to_eliminate_the_USSR_and_establish_the_Commonwealth_of_Independent_States.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Belovezha_Accords",
       "is_featured": false,
       "providers": [
@@ -314,6 +440,12 @@
       "title": "The leaders of Russia, Belarus and Ukraine sign an agreement dissolving the Soviet Union and…",
       "summary": "The leaders of Russia, Belarus and Ukraine sign an agreement dissolving the Soviet Union and establishing the Commonwealth of Independent States.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/330px-Flag_of_Belarus.svg.png",
+      "image_credit": {
+        "author": "Nikolai Gusev",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Belarus.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Belarus",
       "is_featured": false,
       "providers": [
@@ -329,6 +461,12 @@
       "title": "A United States Air Force A-10 Thunderbolt II crashes into an apartment complex in Remscheid…",
       "summary": "A United States Air Force A-10 Thunderbolt II crashes into an apartment complex in Remscheid, Germany, killing five people and injuring 50 others.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/U.S._Air_Force_service_mark.svg/330px-U.S._Air_Force_service_mark.svg.png",
+      "image_credit": {
+        "author": "Arthur E. Dubois",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:U.S._Air_Force_service_mark.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/United_States_Air_Force",
       "is_featured": false,
       "providers": [
@@ -344,6 +482,12 @@
       "title": "Arab–Israeli conflict: An Israeli army tank transporter killed four Palestinian refugees and…",
       "summary": "An Israeli army tank transporter kills four Palestinian refugees and injures seven others during a traffic accident at the Erez Crossing on the Israel–Gaza Strip border, which has been cited as one of the events which sparked the First Intifada.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Arab-Israeli_Conflict_Key_Players.svg/330px-Arab-Israeli_Conflict_Key_Players.svg.png",
+      "image_credit": {
+        "author": "Oncenawhile",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Arab-Israeli_Conflict_Key_Players.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Arab%E2%80%93Israeli_conflict",
       "is_featured": true,
       "providers": [
@@ -359,6 +503,12 @@
       "title": "Cold War: The Intermediate-Range Nuclear Forces Treaty is signed by U.S. President Ronald Reagan…",
       "summary": "Cold War: The Intermediate-Range Nuclear Forces Treaty is signed by U.S. President Ronald Reagan and Soviet leader Mikhail Gorbachev in the White House.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/NATO_vs._Warsaw_Pact_%281949-1990%29.svg/330px-NATO_vs._Warsaw_Pact_%281949-1990%29.svg.png",
+      "image_credit": {
+        "author": "Discombobulates",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:NATO_vs._Warsaw_Pact_(1949-1990).svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Cold_War",
       "is_featured": false,
       "providers": [
@@ -374,6 +524,12 @@
       "title": "The South Asian Association for Regional Cooperation, the regional intergovernmental organization…",
       "summary": "The South Asian Association for Regional Cooperation, the regional intergovernmental organization and geopolitical union in South Asia, is established.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/South_Asia_%28orthographic_projection%29_without_national_boundaries.svg/330px-South_Asia_%28orthographic_projection%29_without_national_boundaries.svg.png",
+      "image_credit": {
+        "author": "user:Serg!o",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:South_Asia_(orthographic_projection)_without_national_boundaries.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/South_Asian_Association_for_Regional_Cooperation",
       "is_featured": false,
       "providers": [
@@ -389,6 +545,12 @@
       "title": "Robert Jay Mathews",
       "summary": "Robert Jay Mathews, American militant leader, founded The Order (born 1953)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Robert_Mathews_headshot.jpg/330px-Robert_Mathews_headshot.jpg",
+      "image_credit": {
+        "author": "Unknown, distributed by UPI",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Robert_Mathews_headshot.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Robert_Jay_Mathews",
       "is_featured": false,
       "providers": [
@@ -404,6 +566,12 @@
       "title": "Keith Holyoake",
       "summary": "Keith Holyoake, New Zealand farmer and politician, 26th Prime Minister of New Zealand (born 1904)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Keith_Holyoake_%28crop%29.jpg/330px-Keith_Holyoake_%28crop%29.jpg",
+      "image_credit": {
+        "author": "S P Andrew Ltd",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Keith_Holyoake_(crop).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Keith_Holyoake",
       "is_featured": false,
       "providers": [
@@ -419,6 +587,12 @@
       "title": "English musician John Lennon was murdered at the entrance of the Dakota, where he resided in New…",
       "summary": "English musician John Lennon was murdered at the entrance of the Dakota, where he resided in New York City.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/John_Lennon_%22Walls_and_Bridges%22_1974_press_photo_2_%28color%29_%28cropped%29.jpg/330px-John_Lennon_%22Walls_and_Bridges%22_1974_press_photo_2_%28color%29_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Bob Gruen; Distributed by Capitol Records",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Lennon_%22Walls_and_Bridges%22_1974_press_photo_2_(color)_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Lennon",
       "is_featured": false,
       "providers": [
@@ -434,6 +608,12 @@
       "title": "Golda Meir",
       "summary": "Golda Meir, Ukrainian-Israeli educator and politician, 4th Prime Minister of Israel (born 1898)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Golda_Meir_%281964%29_cropped.jpg/330px-Golda_Meir_%281964%29_cropped.jpg",
+      "image_credit": {
+        "author": "Willem van de Poll",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Golda_Meir_(1964)_cropped.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Golda_Meir",
       "is_featured": false,
       "providers": [
@@ -449,6 +629,12 @@
       "title": "A plebiscite results in the abolition of monarchy in Greece",
       "summary": "A plebiscite results in the abolition of monarchy in Greece.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Greek_referendum_1974_map.svg/330px-Greek_referendum_1974_map.svg.png",
+      "image_credit": {
+        "author": "MrPenguin20",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Greek_referendum_1974_map.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/1974_Greek_republic_referendum",
       "is_featured": false,
       "providers": [
@@ -464,6 +650,12 @@
       "title": "United Airlines Flight 553, a Boeing 737, crashes after aborting its landing attempt at Chicago…",
       "summary": "United Airlines Flight 553, a Boeing 737, crashes after aborting its landing attempt at Chicago Midway International Airport, killing 45. This is the first-ever loss of a Boeing 737.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/United_Air_Lines_Flight_553_%283%29.jpg/330px-United_Air_Lines_Flight_553_%283%29.jpg",
+      "image_credit": {
+        "author": "U.S. Federal Government, National Transportation Safety Board.",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:United_Air_Lines_Flight_553_(3).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/United_Air_Lines_Flight_553",
       "is_featured": false,
       "providers": [
@@ -478,7 +670,8 @@
       "category": "events",
       "title": "Indo-Pakistani War: The Indian Navy launches an attack on West Pakistan's port city of Karachi",
       "summary": "Indo-Pakistani War: The Indian Navy launches an attack on West Pakistan's port city of Karachi.",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/1971_Instrument_of_Surrender.jpg/330px-1971_Instrument_of_Surrender.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/India%E2%80%93Pakistan_war_of_1971",
       "is_featured": false,
       "providers": [
@@ -494,6 +687,12 @@
       "title": "Olympic Airways Flight 954 strikes a mountain outside of Keratea, Greece, killing 90 people in the…",
       "summary": "Olympic Airways Flight 954 strikes a mountain outside of Keratea, Greece, killing 90 people in the worst crash of a Douglas DC-6 in history.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Douglas_DC-6B_SX-DAI_Olympic_LHR_17.08.63_edited-2.jpg/330px-Douglas_DC-6B_SX-DAI_Olympic_LHR_17.08.63_edited-2.jpg",
+      "image_credit": {
+        "author": "RuthAS",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Douglas_DC-6B_SX-DAI_Olympic_LHR_17.08.63_edited-2.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Olympic_Airways_Flight_954",
       "is_featured": false,
       "providers": [
@@ -508,7 +707,8 @@
       "category": "events",
       "title": "The Greek ship SS Heraklion sinks in a storm in the Aegean Sea, killing over 200",
       "summary": "The Greek ship SS Heraklion sinks in a storm in the Aegean Sea, killing over 200.",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/10/SS_Heraklion.jpg/330px-SS_Heraklion.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/SS_Heraklion",
       "is_featured": false,
       "providers": [
@@ -524,6 +724,12 @@
       "title": "After being struck by lightning while in a holding pattern, Pan Am Flight 214 crashed near Elkton…",
       "summary": "After being struck by lightning while in a holding pattern, Pan Am Flight 214 crashed near Elkton, Maryland, U.S., killing all 81 people on board.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/HoldDirectEntry.svg/330px-HoldDirectEntry.svg.png",
+      "image_credit": {
+        "author": "Feòrag NicBhrìde",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:HoldDirectEntry.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Holding_(aeronautics)",
       "is_featured": true,
       "providers": [
@@ -539,6 +745,12 @@
       "title": "Sarit Thanarat",
       "summary": "Sarit Thanarat, Thai field marshal and politician, 11th Prime Minister of Thailand (born 1908)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Sarit_Thanarat.jpg/330px-Sarit_Thanarat.jpg",
+      "image_credit": {
+        "author": "Office of the Prime Minister",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Sarit_Thanarat.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Sarit_Thanarat",
       "is_featured": false,
       "providers": [
@@ -554,6 +766,7 @@
       "title": "Workers at four New York City newspapers (this later increases to nine) go on strike for 114 days",
       "summary": "Workers at four New York City newspapers (this later increases to nine) go on strike for 114 days.",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/1962%E2%80%931963_New_York_City_newspaper_strike",
       "is_featured": false,
       "providers": [
@@ -569,6 +782,12 @@
       "title": "Marty Friedman",
       "summary": "Marty Friedman, American-Japanese guitarist, songwriter, and television host",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Marty_Friedman_in_Montevideo_Music_Box%2C_Nov_15%2C_2026.png/330px-Marty_Friedman_in_Montevideo_Music_Box%2C_Nov_15%2C_2026.png",
+      "image_credit": {
+        "author": "Stgrunu",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Marty_Friedman_in_Montevideo_Music_Box,_Nov_15,_2026.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Marty_Friedman",
       "is_featured": false,
       "providers": [
@@ -584,6 +803,12 @@
       "title": "Andrius Kubilius",
       "summary": "Andrius Kubilius, Lithuanian academic and politician, 9th Prime Minister of Lithuania",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Kubilius_EC_Portrait_2024.jpg/330px-Kubilius_EC_Portrait_2024.jpg",
+      "image_credit": {
+        "author": "European Commission Audiovisual Service",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Kubilius_EC_Portrait_2024.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Andrius_Kubilius",
       "is_featured": false,
       "providers": [
@@ -599,6 +824,12 @@
       "title": "The Flag of Europe is adopted by Council of Europe",
       "summary": "The Flag of Europe is adopted by Council of Europe.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/330px-Flag_of_Europe.svg.png",
+      "image_credit": {
+        "author": "User:Verdy p, User:-xfi-, User:Paddu, User:Nightstallion, User:Funakoshi, User:Jeltz, User:Dbenbenn, User:Zscout370",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Europe.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Flag_of_Europe",
       "is_featured": false,
       "providers": [
@@ -614,6 +845,12 @@
       "title": "U.S. President Dwight D. Eisenhower delivers his \"Atoms for Peace\" speech, which leads to an…",
       "summary": "U.S. President Dwight D. Eisenhower delivers his \"Atoms for Peace\" speech, which leads to an American program to supply equipment and information on nuclear power to schools, hospitals, and research institutions around the world.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg/330px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg",
+      "image_credit": {
+        "author": "White House",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Dwight_D._Eisenhower,_official_photo_portrait,_May_29,_1959.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
       "is_featured": false,
       "providers": [
@@ -629,6 +866,12 @@
       "title": "Khaw Boon Wan",
       "summary": "Khaw Boon Wan, Malayan-Singaporean politician, Singaporean Minister of Health",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Minister_Khaw_Boon_Wan.JPG/330px-Minister_Khaw_Boon_Wan.JPG",
+      "image_credit": {
+        "author": "Desmond1984.",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Minister_Khaw_Boon_Wan.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Khaw_Boon_Wan",
       "is_featured": false,
       "providers": [
@@ -644,6 +887,12 @@
       "title": "Richard Desmond",
       "summary": "Richard Desmond, English publisher and businessman, founded Northern & Shell",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Chancellor_George_Osborne_and_Richard_Desmond_%28cropped%29.jpg/330px-Chancellor_George_Osborne_and_Richard_Desmond_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Financial Times",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Chancellor_George_Osborne_and_Richard_Desmond_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Richard_Desmond",
       "is_featured": false,
       "providers": [
@@ -659,6 +908,12 @@
       "title": "John Waters",
       "summary": "John Waters, English-Australian actor, singer-songwriter, and guitarist",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/John_Waters_%287176133964%29.jpg/330px-John_Waters_%287176133964%29.jpg",
+      "image_credit": {
+        "author": "Eva Rinaldi",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Waters_(7176133964).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Waters_(actor)",
       "is_featured": false,
       "providers": [
@@ -674,6 +929,12 @@
       "title": "World War II: The German 117th Jäger Division destroys the monastery of Mega Spilaio in Greece and…",
       "summary": "World War II: The German 117th Jäger Division destroys the monastery of Mega Spilaio in Greece and executes 22 monks and visitors as part of reprisals that culminated a few days later with the Massacre of Kalavryta.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/117_Jager_Division_Emblem.png/330px-117_Jager_Division_Emblem.png",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:117_Jager_Division_Emblem.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/117th_J%C3%A4ger_Division",
       "is_featured": false,
       "providers": [
@@ -688,7 +949,8 @@
       "category": "deaths",
       "title": "Albert Kahn",
       "summary": "Albert Kahn, American architect, Fisher Building, Packard Automotive Plant, Ford River Rouge Complex (born 1869)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a8/Albert_Kahn_%28architect%29.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Albert_Kahn_(architect)",
       "is_featured": false,
       "providers": [
@@ -704,6 +966,12 @@
       "title": "World War II: Japanese forces simultaneously invade Shanghai International Settlement, Malaya…",
       "summary": "World War II: Japanese forces simultaneously invade Shanghai International Settlement, Malaya, Thailand, Hong Kong, the Philippines, and the Dutch East Indies. (See December 7 for the concurrent attack on Pearl Harbor in the Western Hemisphere.)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_the_Shanghai_International_Settlement_pre-WWI.svg/330px-Flag_of_the_Shanghai_International_Settlement_pre-WWI.svg.png",
+      "image_credit": {
+        "author": "Ericmetro and others",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Shanghai_International_Settlement_pre-WWI.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Shanghai_International_Settlement",
       "is_featured": false,
       "providers": [
@@ -719,6 +987,12 @@
       "title": "World War II: U.S. President Franklin D. Roosevelt declares December 7 to be \"a date which will…",
       "summary": "World War II: U.S. President Franklin D. Roosevelt declares December 7 to be \"a date which will live in infamy\", after which the U.S. declares war on Japan.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg/330px-Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
+      "image_credit": {
+        "author": "Richard Opitz",
+        "license": "CC BY-SA 3.0 de",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/World_War_II",
       "is_featured": false,
       "providers": [
@@ -734,6 +1008,12 @@
       "title": "Dariush Mehrjui",
       "summary": "Dariush Mehrjui, Iranian director, producer, and screenwriter (died 2023)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Dariush_Mehrjui_13970603000056636707603751724475_86306_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Armin Karami",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Dariush_Mehrjui_13970603000056636707603751724475_86306_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Dariush_Mehrjui",
       "is_featured": false,
       "providers": [
@@ -749,6 +1029,7 @@
       "title": "Anarchist insurrection breaks out in Zaragoza, Spain",
       "summary": "Anarchist insurrection breaks out in Zaragoza, Spain.",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Anarchist_insurrection_of_December_1933",
       "is_featured": false,
       "providers": [
@@ -764,6 +1045,12 @@
       "title": "Maximilian Schell",
       "summary": "Maximilian Schell, Austrian-Swiss actor, director, producer, and screenwriter (died 2014)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Maximilian_Schell_-_1970-1.jpg/330px-Maximilian_Schell_-_1970-1.jpg",
+      "image_credit": {
+        "author": "Unknown photographer",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Maximilian_Schell_-_1970-1.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Maximilian_Schell",
       "is_featured": false,
       "providers": [
@@ -779,6 +1066,12 @@
       "title": "Victor Nosach",
       "summary": "Victor Nosach, chronicler of the history of workers and trade union of Russia (died 2011)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Nosach%2C_Viktor_Ivanovich.jpg/330px-Nosach%2C_Viktor_Ivanovich.jpg",
+      "image_credit": {
+        "author": "Invisible majority",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Nosach,_Viktor_Ivanovich.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Victor_Nosach",
       "is_featured": false,
       "providers": [
@@ -794,6 +1087,12 @@
       "title": "José Vicente Concha",
       "summary": "José Vicente Concha, Colombian politician and 8th President of Colombia (born 1867)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Jose_Vicente_Concha_LCCN20146960911.jpg/330px-Jose_Vicente_Concha_LCCN20146960911.jpg",
+      "image_credit": {
+        "author": "Bain News Service, publisher",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jose_Vicente_Concha_LCCN20146960911.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Vicente_Concha",
       "is_featured": false,
       "providers": [
@@ -809,6 +1108,12 @@
       "title": "Vladimir Shatalov",
       "summary": "Vladimir Shatalov, Kazakhstani general, pilot, and astronaut (died 2021)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Vladimir_Shatalov.jpg",
+      "image_credit": {
+        "author": "Presidential Press and Information Office",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Shatalov.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Vladimir_Shatalov",
       "is_featured": false,
       "providers": [
@@ -824,6 +1129,12 @@
       "title": "Two days after coming into existence, the Irish Free State executes four leaders of the Irish…",
       "summary": "Two days after coming into existence, the Irish Free State executes four leaders of the Irish Republican Army: Dick Barrett, Joe McKelvey, Liam Mellows and Rory O'Connor.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/330px-Flag_of_Ireland.svg.png",
+      "image_credit": {
+        "author": "Éire",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ireland.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Irish_Free_State",
       "is_featured": false,
       "providers": [
@@ -838,7 +1149,8 @@
       "category": "births",
       "title": "McDonald Bailey",
       "summary": "McDonald Bailey, Trinidadian-English sprinter and rugby player (died 2013)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/McDonald_Bailey.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/McDonald_Bailey",
       "is_featured": false,
       "providers": [
@@ -854,6 +1166,12 @@
       "title": "Kateryna Yushchenko",
       "summary": "Kateryna Yushchenko, Ukrainian computer scientist and academic (died 2001)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Kateryna_Lohvynivna_Yushchenko.jpg",
+      "image_credit": {
+        "author": "Samoylen",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Kateryna_Lohvynivna_Yushchenko.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Kateryna_Yushchenko_(scientist)",
       "is_featured": false,
       "providers": [
@@ -869,6 +1187,12 @@
       "title": "Peter Tali Coleman",
       "summary": "Peter Tali Coleman, Samoan-American lawyer and politician, 43rd Governor of American Samoa (died 1997)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Peter_Tali_Coleman.jpg",
+      "image_credit": {
+        "author": "TTPI(Trust Territory of the Pacific Islands) Headquarters",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Peter_Tali_Coleman.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Peter_Tali_Coleman",
       "is_featured": false,
       "providers": [
@@ -884,6 +1208,12 @@
       "title": "Richard Fleischer",
       "summary": "Richard Fleischer, American director, producer, and screenwriter (died 2006)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Richard_Fleischer_1946.jpg/330px-Richard_Fleischer_1946.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Richard_Fleischer_1946.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Richard_Fleischer",
       "is_featured": false,
       "providers": [
@@ -898,7 +1228,8 @@
       "category": "births",
       "title": "Ernest Lehman",
       "summary": "Ernest Lehman, American director, producer, and screenwriter (died 2005)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/d/d3/Ernest_Lehman.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Ernest_Lehman",
       "is_featured": false,
       "providers": [
@@ -914,6 +1245,12 @@
       "title": "World War I: A squadron of Britain's Royal Navy defeats the Imperial German East Asia Squadron in…",
       "summary": "World War I: A squadron of Britain's Royal Navy defeats the Imperial German East Asia Squadron in the Battle of the Falkland Islands in the South Atlantic.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Bataille_de_Verdun_1916.jpg/330px-Bataille_de_Verdun_1916.jpg",
+      "image_credit": {
+        "author": "Collection DocAnciens/docpix.fr",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bataille_de_Verdun_1916.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/World_War_I",
       "is_featured": false,
       "providers": [
@@ -929,6 +1266,12 @@
       "title": "Floyd Tillman",
       "summary": "Floyd Tillman, American country music singer-songwriter and guitarist (died 2003)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Floyd_Tillman.jpg/330px-Floyd_Tillman.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Floyd_Tillman.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Floyd_Tillman",
       "is_featured": false,
       "providers": [
@@ -944,6 +1287,12 @@
       "title": "Leaders of the German Empire hold an Imperial War Council to discuss the possibility that war…",
       "summary": "Leaders of the German Empire hold an Imperial War Council to discuss the possibility that war might break out.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Germany_%281867%E2%80%931918%29.svg/330px-Flag_of_Germany_%281867%E2%80%931918%29.svg.png",
+      "image_credit": {
+        "author": "Original: Adolf Soetbeer, Otto von Bismarck Vector: B1mbo, Madden",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Germany_(1867%E2%80%931918).svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/German_Empire",
       "is_featured": false,
       "providers": [
@@ -959,6 +1308,12 @@
       "title": "John A. Volpe",
       "summary": "John A. Volpe, American soldier and politician, 61st Governor of Massachusetts (died 1994)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/John_Volpe_%281970%29.jpg/330px-John_Volpe_%281970%29.jpg",
+      "image_credit": {
+        "author": "Bert Verhoeff for Anefo ;",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Volpe_(1970).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_A._Volpe",
       "is_featured": false,
       "providers": [
@@ -974,6 +1329,12 @@
       "title": "King Gustaf V of Sweden accedes to the Swedish throne",
       "summary": "King Gustaf V of Sweden accedes to the Swedish throne.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Gustaf_V_av_Sverige.jpg/330px-Gustaf_V_av_Sverige.jpg",
+      "image_credit": {
+        "author": "Herrman Sylwander",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gustaf_V_av_Sverige.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Gustaf_V",
       "is_featured": false,
       "providers": [
@@ -988,7 +1349,8 @@
       "category": "deaths",
       "title": "Herbert Spencer",
       "summary": "Herbert Spencer, English biologist, anthropologist, sociologist, and philosopher (born 1820)",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Portrait_of_Herbert_Spencer_%281820-1903%29%2C_Physicist_and_Biologist_%282552868551%29_%28cropped%29.jpg/330px-Portrait_of_Herbert_Spencer_%281820-1903%29%2C_Physicist_and_Biologist_%282552868551%29_%28cropped%29.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Herbert_Spencer",
       "is_featured": false,
       "providers": [
@@ -1004,6 +1366,12 @@
       "title": "William Henry Vanderbilt",
       "summary": "William Henry Vanderbilt, American businessman and philanthropist (born 1821)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/William_Henry_Vanderbilt_-_Egyptian_Obelisks_%28cropped%29.jpg/330px-William_Henry_Vanderbilt_-_Egyptian_Obelisks_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Edward Bierstadt (credit reads \"Artotype, E. Bierstadt NY\")",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:William_Henry_Vanderbilt_-_Egyptian_Obelisks_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/William_Henry_Vanderbilt",
       "is_featured": false,
       "providers": [
@@ -1019,6 +1387,12 @@
       "title": "Pope Pius IX promulgates the encyclical Quanta cura and its appendix, the Syllabus of Errors…",
       "summary": "Pope Pius IX promulgates the encyclical Quanta cura and its appendix, the Syllabus of Errors, outlining the authority of the Catholic Church and condemning various liberal ideas.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Pius_IX%2C_by_Adolphe_Braun%2C_1875.jpg/330px-Pius_IX%2C_by_Adolphe_Braun%2C_1875.jpg",
+      "image_credit": {
+        "author": "Neue Zürcher Zeitung ([1])",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Pius_IX,_by_Adolphe_Braun,_1875.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Pope_Pius_IX",
       "is_featured": false,
       "providers": [
@@ -1034,6 +1408,12 @@
       "title": "Between two and three thousand churchgoers die in the Church of the Company Fire, possibly the…",
       "summary": "Between two and three thousand churchgoers die in the Church of the Company Fire, possibly the largest single building fire by number of victims in modern history.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Incendio_de_la_Compa%C3%B1%C3%ADa.jpg",
+      "image_credit": {
+        "author": "Unknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Incendio_de_la_Compa%C3%B1%C3%ADa.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Iglesia_de_la_Compa%C3%B1%C3%ADa_Fire",
       "is_featured": false,
       "providers": [
@@ -1049,6 +1429,12 @@
       "title": "Georges Méliès",
       "summary": "Georges Méliès, French actor, director, producer, and screenwriter (died 1938)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/M%C3%A9li%C3%A8s_portrait_%28cropped%29.png/330px-M%C3%A9li%C3%A8s_portrait_%28cropped%29.png",
+      "image_credit": {
+        "author": "Georges Méliès",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:M%C3%A9li%C3%A8s_portrait_(cropped).png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Georges_M%C3%A9li%C3%A8s",
       "is_featured": false,
       "providers": [
@@ -1064,6 +1450,12 @@
       "title": "William C. Durant",
       "summary": "William C. Durant, American businessman, founded General Motors and Chevrolet (died 1947)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/WilliamCDurant.jpg/330px-WilliamCDurant.jpg",
+      "image_credit": {
+        "author": "Unknown photographerUnknown photographer",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:WilliamCDurant.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/William_C._Durant",
       "is_featured": false,
       "providers": [
@@ -1079,6 +1471,12 @@
       "title": "Theobald Mathew",
       "summary": "Theobald Mathew, Irish social reformer and temperance movement leader (born 1790)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Theobald_MathewTheobald_Mathew_by_Edward_Daniel_Leahy.jpg/330px-Theobald_MathewTheobald_Mathew_by_Edward_Daniel_Leahy.jpg",
+      "image_credit": {
+        "author": "Edward Leahy",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Theobald_MathewTheobald_Mathew_by_Edward_Daniel_Leahy.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Father_Mathew",
       "is_featured": false,
       "providers": [
@@ -1094,6 +1492,12 @@
       "title": "Pope Pius IX promulgated the apostolic constitution Ineffabilis Deus, proclaiming the dogmatic…",
       "summary": "Pope Pius IX promulgated the apostolic constitution Ineffabilis Deus, proclaiming the dogmatic definition of the Immaculate Conception, which holds that the Virgin Mary was conceived free of original sin.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Pius_IX%2C_by_Adolphe_Braun%2C_1875.jpg/330px-Pius_IX%2C_by_Adolphe_Braun%2C_1875.jpg",
+      "image_credit": {
+        "author": "Neue Zürcher Zeitung ([1])",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Pius_IX,_by_Adolphe_Braun,_1875.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Pope_Pius_IX",
       "is_featured": true,
       "providers": [
@@ -1109,6 +1513,12 @@
       "title": "Conservative Santiago-based government troops defeat rebels at the Battle of Loncomilla, signaling…",
       "summary": "Conservative Santiago-based government troops defeat rebels at the Battle of Loncomilla, signaling the end of the 1851 Chilean Revolution.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/MEga%C3%B1a.jpg",
+      "image_credit": {
+        "author": "Raymond Monvoisin",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:MEga%C3%B1a.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Pelucones",
       "is_featured": false,
       "providers": [
@@ -1124,6 +1534,12 @@
       "title": "Bjørnstjerne Bjørnson",
       "summary": "Bjørnstjerne Bjørnson, Norwegian-French author and playwright, Nobel Prize laureate (died 1910)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Portrett_av_Bj%C3%B8rnstjerne_Bj%C3%B8rnson%2C_1909_-_no-nb_digifoto_20150129_00043_bldsa_BB0791_-_Restoration.jpg/330px-Portrett_av_Bj%C3%B8rnstjerne_Bj%C3%B8rnson%2C_1909_-_no-nb_digifoto_20150129_00043_bldsa_BB0791_-_Restoration.jpg",
+      "image_credit": {
+        "author": "Erwin Raupp / Adam Cuerden",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Portrett_av_Bj%C3%B8rnstjerne_Bj%C3%B8rnson,_1909_-_no-nb_digifoto_20150129_00043_bldsa_BB0791_-_Restoration.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Bj%C3%B8rnstjerne_Bj%C3%B8rnson",
       "is_featured": false,
       "providers": [
@@ -1139,6 +1555,12 @@
       "title": "Christian Emil Krag-Juel-Vind-Frijs",
       "summary": "Christian Emil Krag-Juel-Vind-Frijs, Danish lawyer and politician, 10th Prime Minister of Denmark (died 1896)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/K_V_Frijs.jpg/330px-K_V_Frijs.jpg",
+      "image_credit": {
+        "author": "F. Zachariae",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:K_V_Frijs.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Christian_Emil_Krag-Juel-Vind-Frijs",
       "is_featured": false,
       "providers": [
@@ -1154,6 +1576,12 @@
       "title": "Mary Bosanquet Fletcher",
       "summary": "Mary Bosanquet Fletcher, Methodist preacher and philanthropist (born 1739)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Mary_Bosanquet_Fletcher.jpg/330px-Mary_Bosanquet_Fletcher.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Mary_Bosanquet_Fletcher.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Mary_Fletcher_(preacher)",
       "is_featured": false,
       "providers": [
@@ -1169,6 +1597,12 @@
       "title": "August Belmont",
       "summary": "August Belmont, Prussian-American financier and diplomat, 16th United States Ambassador to the Netherlands (died 1890)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/August_Belmont.png/330px-August_Belmont.png",
+      "image_credit": {
+        "author": "Unknown c. 1862",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:August_Belmont.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/August_Belmont",
       "is_featured": false,
       "providers": [
@@ -1184,6 +1618,12 @@
       "title": "Friedrich Traugott Kützing",
       "summary": "Friedrich Traugott Kützing, German pharmacist, botanist and phycologist (died 1893)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Kytzing-medal.jpg/330px-Kytzing-medal.jpg",
+      "image_credit": {
+        "author": "Dmanouvr Edit this at Structured Data on Commons",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Kytzing-medal.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Friedrich_Traugott_K%C3%BCtzing",
       "is_featured": false,
       "providers": [
@@ -1199,6 +1639,12 @@
       "title": "William Stanhope",
       "summary": "William Stanhope, 1st Earl of Harrington, English politician and diplomat, Lord Lieutenant of Ireland (born 1690)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/William_Stanhope%2C_1st_Earl_of_Harrington_%281683-1756%29%2C_Attributed_to_Godfrey_Kneller.jpg/330px-William_Stanhope%2C_1st_Earl_of_Harrington_%281683-1756%29%2C_Attributed_to_Godfrey_Kneller.jpg",
+      "image_credit": {
+        "author": "Attributed to Godfrey Kneller",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:William_Stanhope,_1st_Earl_of_Harrington_(1683-1756),_Attributed_to_Godfrey_Kneller.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/William_Stanhope%2C_1st_Earl_of_Harrington",
       "is_featured": false,
       "providers": [
@@ -1214,6 +1660,12 @@
       "title": "Jan Ingenhousz",
       "summary": "Jan Ingenhousz, Dutch physician, physiologist, and botanist (died 1799)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Jan_Ingenhousz.jpg/330px-Jan_Ingenhousz.jpg",
+      "image_credit": {
+        "author": "Unknnown",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jan_Ingenhousz.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jan_Ingenhousz",
       "is_featured": false,
       "providers": [
@@ -1229,6 +1681,12 @@
       "title": "Henry Pierrepont",
       "summary": "Henry Pierrepont, 1st Marquess of Dorchester, English lawyer and politician (born 1606)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/1stMarquessOfDorchester.jpg/330px-1stMarquessOfDorchester.jpg",
+      "image_credit": {
+        "author": "anonymous / Unidentified painter",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:1stMarquessOfDorchester.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Henry_Pierrepont%2C_1st_Marquess_of_Dorchester",
       "is_featured": false,
       "providers": [
@@ -1244,6 +1702,12 @@
       "title": "Horatio Walpole",
       "summary": "Horatio Walpole, 1st Baron Walpole, English politician and diplomat, British Ambassador to France (died 1757)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Van_Loo_Horace_Walpole.jpg/330px-Van_Loo_Horace_Walpole.jpg",
+      "image_credit": {
+        "author": "Jean-Baptiste van Loo",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Van_Loo_Horace_Walpole.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Horatio_Walpole%2C_1st_Baron_Walpole",
       "is_featured": false,
       "providers": [
@@ -1259,6 +1723,12 @@
       "title": "A woman (either Margaret Hughes or Anne Marshall) appears on an English public stage for the first…",
       "summary": "A woman (either Margaret Hughes or Anne Marshall) appears on an English public stage for the first time, in the role of Desdemona in a production of Shakespeare's play Othello.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Portrait_of_Margaret_Hughes_by_Peter_Lely%2C_1672.jpg/330px-Portrait_of_Margaret_Hughes_by_Peter_Lely%2C_1672.jpg",
+      "image_credit": {
+        "author": "Peter Lely",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Margaret_Hughes_by_Peter_Lely,_1672.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Margaret_Hughes",
       "is_featured": false,
       "providers": [
@@ -1274,6 +1744,12 @@
       "title": "Gian Giorgio Trissino",
       "summary": "Gian Giorgio Trissino, Italian humanist, poet, dramatist and diplomat (born 1478)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Vincenzo_Catena_Portrait_of_Gian_Giorgio_Trissino.jpg/330px-Vincenzo_Catena_Portrait_of_Gian_Giorgio_Trissino.jpg",
+      "image_credit": {
+        "author": "Vincenzo Catena",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Vincenzo_Catena_Portrait_of_Gian_Giorgio_Trissino.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Gian_Giorgio_Trissino",
       "is_featured": false,
       "providers": [
@@ -1289,6 +1765,12 @@
       "title": "Mary",
       "summary": "Mary, Queen of Scots, daughter of James V of Scotland and Mary of Guise (died 1587)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Fran%C3%A7ois_Clouet_-_Mary%2C_Queen_of_Scots_%281542-87%29_-_Google_Art_Project.jpg/330px-Fran%C3%A7ois_Clouet_-_Mary%2C_Queen_of_Scots_%281542-87%29_-_Google_Art_Project.jpg",
+      "image_credit": {
+        "author": "François Clouet",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Clouet_-_Mary,_Queen_of_Scots_(1542-87)_-_Google_Art_Project.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Mary%2C_Queen_of_Scots",
       "is_featured": false,
       "providers": [
@@ -1304,6 +1786,7 @@
       "title": "Ahmad ibn Abi Jum'ah wrote his Oran fatwa, arguing for the relaxation of Islamic law for forcibly…",
       "summary": "Ahmad ibn Abi Jum'ah writes his Oran fatwa, arguing for the relaxation of Islamic law requirements for the forcibly converted Muslims in Spain.",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Ahmad_ibn_Abi_Jum'ah",
       "is_featured": false,
       "providers": [
@@ -1319,6 +1802,12 @@
       "title": "Louis the Stammerer (son of Charles the Bald) is crowned king of the West Frankish Kingdom at…",
       "summary": "Louis the Stammerer (son of Charles the Bald) is crowned king of the West Frankish Kingdom at Compiègne.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Denier_sous_Louis_II_dit_le_B%C3%A8gue.jpg/330px-Denier_sous_Louis_II_dit_le_B%C3%A8gue.jpg",
+      "image_credit": {
+        "author": "cgb.fr",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Denier_sous_Louis_II_dit_le_B%C3%A8gue.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Louis_the_Stammerer",
       "is_featured": false,
       "providers": [
@@ -1334,6 +1823,12 @@
       "title": "The poet Du Fu returns to Chang'an as a member of Emperor Xuanzong's court, after having escaped…",
       "summary": "The poet Du Fu returns to Chang'an as a member of Emperor Xuanzong's court, after having escaped the city during the An Lushan Rebellion.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Pope_Paul_I.jpg/330px-Pope_Paul_I.jpg",
+      "image_credit": {
+        "author": "Artaud de Montor (1772–1849)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Pope_Paul_I.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/AD_757",
       "is_featured": false,
       "providers": [
@@ -1349,6 +1844,12 @@
       "title": "Later Yan is defeated by its former vassal Northern Wei at the Battle of Canhe Slope",
       "summary": "Later Yan is defeated by its former vassal Northern Wei at the Battle of Canhe Slope.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Sixteen_Kingdoms_391_AD_%282%29.jpg/330px-Sixteen_Kingdoms_391_AD_%282%29.jpg",
+      "image_credit": {
+        "author": "SY",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Sixteen_Kingdoms_391_AD_(2).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Later_Yan",
       "is_featured": false,
       "providers": [
@@ -1364,6 +1865,12 @@
       "title": "Battle Day (Falkland Islands)",
       "summary": "Battle Day (Falkland Islands)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Battle_of_the_Falkland_Islands%2C_1914_%28retouched%29.jpg/330px-Battle_of_the_Falkland_Islands%2C_1914_%28retouched%29.jpg",
+      "image_credit": {
+        "author": "William Lionel Wyllie",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_the_Falkland_Islands,_1914_(retouched).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Battle_of_the_Falkland_Islands",
       "is_featured": false,
       "providers": [
@@ -1377,7 +1884,8 @@
       "category": "holidays",
       "title": "Bodhi Day (Japan)",
       "summary": "Bodhi Day (Japan)",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Dharma_Wheel.svg/330px-Dharma_Wheel.svg.png",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Bodhi_Day",
       "is_featured": false,
       "providers": [
@@ -1392,6 +1900,12 @@
       "title": "CARICOM–Cuba Day (Caribbean Community (CARICOM) and Cuba)",
       "summary": "CARICOM–Cuba Day (Caribbean Community (CARICOM) and Cuba)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Coat_of_arms_of_Cuba.svg/330px-Coat_of_arms_of_Cuba.svg.png",
+      "image_credit": {
+        "author": "Miguel Teurbe Tolón",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Cuba.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Foreign_relations_of_Cuba",
       "is_featured": false,
       "providers": [
@@ -1406,6 +1920,12 @@
       "title": "Christian feast day: Budoc (Beuzec) of Dol",
       "summary": "Christian feast day: Feast of the Immaculate Conception (public holiday in several countries, a holy day of obligation in others), and its related observances: Festa da Conceição da Praia, celebrating Yemanjá, Queen of the Ocean in Umbanda (Salvador, Bahia)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Saint-Budoc_%C3%A0_Tr%C3%A9garvan.JPG/330px-Saint-Budoc_%C3%A0_Tr%C3%A9garvan.JPG",
+      "image_credit": {
+        "author": "Sardon",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Saint-Budoc_%C3%A0_Tr%C3%A9garvan.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Budoc",
       "is_featured": false,
       "providers": [
@@ -1420,6 +1940,7 @@
       "title": "Christian feast day: Clement of Ohrid (Julian Calendar), and its related observances: Student's…",
       "summary": "Christian feast day: Clement of Ohrid (Julian Calendar), and its related observances: Student's Day (Bulgaria)",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Public_holidays_in_Bulgaria",
       "is_featured": false,
       "providers": [
@@ -1434,6 +1955,12 @@
       "title": "Constitution Day (Romania)",
       "summary": "Constitution Day (Uzbekistan)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Soldiers_on_parade.jpg/330px-Soldiers_on_parade.jpg",
+      "image_credit": {
+        "author": "nicubunu",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Soldiers_on_parade.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Public_holidays_in_Romania",
       "is_featured": false,
       "providers": [
@@ -1448,6 +1975,12 @@
       "title": "Day of Finnish Music (Finland)",
       "summary": "Day of Finnish Music (Finland)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Jean_Sibelius_circa_1898-1900_%283x4_cropped%29.jpg/330px-Jean_Sibelius_circa_1898-1900_%283x4_cropped%29.jpg",
+      "image_credit": {
+        "author": "Photographerː Daniel Nyblin",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jean_Sibelius_circa_1898-1900_(3x4_cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jean_Sibelius",
       "is_featured": false,
       "providers": [
@@ -1462,6 +1995,12 @@
       "title": "Earliest day on which National Tree Planting Day can fall, while December 14 is the latest…",
       "summary": "Earliest day on which National Tree Planting Day can fall, while December 14 is the latest; celebrated on the second Monday in December. (Malawi)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/ArborDay2009treeplanters.JPG/330px-ArborDay2009treeplanters.JPG",
+      "image_credit": {
+        "author": "Jonathunder",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:ArborDay2009treeplanters.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Arbor_Day",
       "is_featured": false,
       "providers": [
@@ -1476,6 +2015,12 @@
       "title": "Liberation Day (Syria)",
       "summary": "Liberation Day (Syria)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Syrians_celebrate_the_fall_of_Assad_at_the_Umayyad_mosque%2C_14_December_2024.jpg/330px-Syrians_celebrate_the_fall_of_Assad_at_the_Umayyad_mosque%2C_14_December_2024.jpg",
+      "image_credit": {
+        "author": "Voice of America",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Syrians_celebrate_the_fall_of_Assad_at_the_Umayyad_mosque,_14_December_2024.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Liberation_Day_(Syria)",
       "is_featured": false,
       "providers": [
@@ -1490,6 +2035,12 @@
       "title": "Nations, Nationalities and Peoples' Day (Ethiopia)",
       "summary": "Nations, Nationalities and Peoples' Day (Ethiopia)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Emblem_of_Ethiopia.svg/330px-Emblem_of_Ethiopia.svg.png",
+      "image_credit": {
+        "author": "IvY88",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Emblem_of_Ethiopia.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Nations%2C_Nationalities_and_Peoples'_Day",
       "is_featured": false,
       "providers": [
