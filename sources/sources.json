@@ -13,24 +13,32 @@
       "rate_limit_delay_sec": 0.5,
       "provides_images": true,
       "provides_featured": true,
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "homepage_url": "https://en.wikipedia.org/",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+      "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0."
     },
     {
       "id": "dayinhistory",
       "name": "Day in History Open API",
-      "enabled": true,
+      "enabled": false,
       "priority": 2,
       "adapter": "dayinhistory_adapter",
       "base_url": "https://api.dayinhistory.dev/v1/events/{month_name}/{D}/",
-      "extra_endpoints": {},
       "page_size": 100,
       "max_pages": 1,
       "schema_path": "schema/dayinhistory/response.schema.json",
       "rate_limit_delay_sec": 0.5,
       "provides_images": false,
       "provides_featured": false,
-      "license": "Open Source / Wikipedia Derived",
-      "notes": "Anonymous tier allows only 10 requests/hour per IP, so only the events endpoint is fetched by default. Add \"births\": \".../v1/births/{month_name}/{D}/\" and \"deaths\": \".../v1/deaths/{month_name}/{D}/\" to extra_endpoints if you have a higher-limit plan. When the source is rate limited the pipeline skips it for the rest of the run."
+      "license": "All rights reserved (no redistribution licence granted)",
+      "notes": "DISABLED for legal reasons: dayinhistory.dev publishes no licence for its data ('All rights reserved'; content is AI-refined), its free tier is for 'personal projects and learning' and it is limited to 10 requests/hour per IP. Do not enable it for a public dataset without written permission or a suitable plan. Opt in explicitly with `--sources dayinhistory`. If enabled, only the events endpoint is fetched; add \"births\"/\"deaths\" URLs to extra_endpoints for more.",
+      "homepage_url": "https://dayinhistory.dev/",
+      "license_url": null,
+      "terms_url": "https://dayinhistory.dev/pricing",
+      "attribution": "",
+      "extra_endpoints": {}
     },
     {
       "id": "muffinlabs",
@@ -43,7 +51,11 @@
       "rate_limit_delay_sec": 0.5,
       "provides_images": false,
       "provides_featured": false,
-      "license": "CC BY-SA 3.0"
+      "license": "CC BY-SA 3.0 US",
+      "homepage_url": "https://history.muffinlabs.com/",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
+      "terms_url": "https://history.muffinlabs.com/#license",
+      "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
     }
   ],
   "output": {
@@ -59,5 +71,17 @@
     "max_featured": 5,
     "max_title_length": 140,
     "similarity_threshold": 75
+  },
+  "legal": {
+    "disclaimer": "Best-effort compliance information, not legal advice.",
+    "dataset_license": {
+      "name": "CC BY-SA 4.0",
+      "spdx": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
+    "attribution_suffix": "Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
+    "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+    "image_policy": "Only images hosted on upload.wikimedia.org or thumb.wikimedia.org under /wikipedia/commons/ whose Wikimedia Commons licence is Public domain, CC0, CC BY or CC BY-SA are kept; everything else is dropped. Author, licence and the Commons file page are recorded in image_credit."
   }
 }

@@ -116,19 +116,62 @@ python -m pytest
 The data-writing workflows need **Settings → Actions → General → Workflow permissions** to allow pushing to `main`
 (they request `contents: write`). If `main` is protected, allow the Actions bot to bypass the rule.
 
-## Attribution & licence
+## Legal / Attribution
 
-Event text, titles and images originate from **Wikipedia** and its sister projects and are made available by the
-Wikimedia Foundation, Day in History and Muffin Labs. Wikipedia text is licensed under the
-[Creative Commons Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
-(the Muffin Labs data derives from the CC BY-SA 3.0 Wikipedia "Events on this day" pages). Images keep the licences
-of their individual Wikimedia Commons files; follow each `source_url` to see the page and its history/authors.
+> **Best-effort compliance information, not legal advice.** If something here matters to you legally, check the
+> linked terms or consult a lawyer.
 
-If you redistribute this dataset, or show it in the Higle app, you must:
+| What | Licence | Where |
+| --- | --- | --- |
+| Code (`scripts/`, `tests/`, workflows, schemas) | MIT | [LICENSE](LICENSE) |
+| Dataset (`data/*.json`) | **CC BY-SA 4.0** | [LICENSE-DATA.md](LICENSE-DATA.md) |
+| Every upstream source, terms, required credit, modifications | - | [ATTRIBUTION.md](ATTRIBUTION.md) |
+| Images (hotlinked from Wikimedia Commons) | per file (see `image_credit`) | each item's `image_credit.file_page_url` |
 
-* credit the sources (e.g. "Historical data from Wikipedia, Day in History and Muffin Labs") with a link to
-  <https://en.wikipedia.org/> and to the licence,
-* indicate that the content was adapted (summaries are shortened/merged; HTML removed),
-* share derivative datasets under CC BY-SA 4.0 (or a compatible licence).
+**Licensing decision.** Wikipedia text is CC BY-SA 4.0 (+GFDL); Muffin Labs states CC BY-SA 3.0, and CC BY-SA 4.0 is
+a compatible licence for adaptations of BY-SA 3.0, so the whole derived dataset is offered under CC BY-SA 4.0.
+`dayinhistory.dev` publishes no redistribution licence ("All rights reserved"; free tier for personal use), so that
+source is **disabled** (`enabled: false`) and no data in `data/` comes from it.
 
-The pipeline code is provided without a separate licence file yet; add a `LICENSE` of your choice for the code.
+**Images.** No image is stored here. `image_url` is kept only for Wikimedia Commons files (`/wikipedia/commons/`)
+whose licence is Public domain, CC0, CC BY or CC BY-SA; local English-Wikipedia uploads (often non-free), other hosts
+and files with unknown or other licences are dropped (`image_url: null`). Author, licence and Commons page are in
+`image_credit`. Some files carry non-copyright restrictions (trademark, personality rights); see the file page.
+`python scripts/pipeline.py --mode annotate` re-applies the image policy and legal blocks to existing files without
+refetching the upstream APIs.
+
+**Day files and manifest.** Each file also carries optional top-level `license`, `attribution`, `sources[]`,
+`modifications` and `notice_url`, and items may have `image_credit`. The Flutter app's contract (`date`,
+`display_date`, `last_updated`, `items[]`) is unchanged; the extra fields are optional.
+
+**No endorsement / trademarks.** Wikipedia, Wikimedia and Wikimedia Commons are trademarks of the Wikimedia
+Foundation. This project is not affiliated with or endorsed by the Wikimedia Foundation, Muffin Labs or Day in History.
+
+**Wikimedia User-Agent.** Wikimedia requires an identifying User-Agent with contact details
+([policy](https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy)); the pipeline sends the
+one from `sources/sources.json`. It includes the repository URL, but **`contact@example.com` is a placeholder the
+owner must replace** with a monitored address.
+
+**Takedown / contact.** Rights holders or Wikimedia/Commons contributors who want content removed can contact
+**`TAKEDOWN-CONTACT-PLACEHOLDER` (owner: replace with a monitored email before making the repo public)**. Include the
+affected file/item `id` and the reason; matching items or images will be removed promptly, and upstream
+corrections should be made at the source (Wikipedia/Commons).
+
+**This repository does not accept external contributions** - see [CONTRIBUTING.md](CONTRIBUTING.md) and
+`.github/CODEOWNERS`.
+
+### What apps consuming the data must display
+
+In the Higle app's About / Credits screen (and wherever the data is redistributed):
+
+> Historical "On This Day" data from Wikipedia and Muffin Labs, licensed under CC BY-SA 4.0
+> (https://creativecommons.org/licenses/by-sa/4.0/). Adapted and compiled by the Higle datasource project; changes
+> were made. Not endorsed by the Wikimedia Foundation. Images are from Wikimedia Commons and keep their own licences.
+
+* Make the credit text link to the licence and to Wikipedia; offer a "Read full source" link from `source_url`.
+* For every shown image, display `image_credit` (author if present, licence name linked to `license_url`, and a link
+  to `file_page_url`) near the image or in an image-credits screen; do not show images without `image_credit`.
+* Hotlinking from `upload.wikimedia.org` / `thumb.wikimedia.org`: send an identifying User-Agent and cache locally;
+  do not scrape at high rates.
+* If you bundle an offline copy of `data/*.json`, ship the `LICENSE-DATA.md` / `ATTRIBUTION.md` text with it.
+* Apps may keep their own code under any licence; only adaptations of the *dataset* must stay CC BY-SA 4.0.

@@ -14,6 +14,8 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator
 
+from image_licenses import commons_title
+
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = ROOT / "schema" / "higle" / "higle-day.schema.json"
 LEAP_YEAR = 2024
@@ -40,6 +42,16 @@ def validate_file(path: Path, validator: Draft202012Validator) -> list[str]:
         return errors
     if doc["date"] != path.stem:
         errors.append(f"date {doc['date']!r} does not match file name {path.name}")
+    for key in ("license", "attribution", "sources", "modifications"):
+        if not doc.get(key):
+            errors.append(f"missing legal block {key!r} (run: python scripts/pipeline.py --mode annotate)")
+    for item in doc["items"]:
+        if item["image_url"] and (commons_title(item["image_url"]) is None or not item.get("image_credit")):
+            errors.append(f"{item['id']}: image_url must be a Commons file with image_credit")
+        if not item["image_url"] and item.get("image_credit"):
+            errors.append(f"{item['id']}: image_credit without image_url")
+        if not item["source_url"]:
+            errors.append(f"{item['id']}: missing source_url")
     ids = [item["id"] for item in doc["items"]]
     if len(ids) != len(set(ids)):
         errors.append("duplicate item ids")
@@ -59,7 +71,7 @@ def validate_manifest(data_dir: Path, day_files: list[Path]) -> list[str]:
     except ValueError as exc:
         return [f"manifest.json: not valid JSON: {exc}"]
     errors = []
-    for key in ("generated_at", "total_days", "schema_version", "days"):
+    for key in ("generated_at", "total_days", "schema_version", "days", "license", "attribution", "sources"):
         if key not in manifest:
             errors.append(f"manifest.json: missing {key!r}")
     if errors:
