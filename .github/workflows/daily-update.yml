@@ -1,0 +1,68 @@
+name: Daily update
+
+on:
+  schedule:
+    # Twice daily so Asia/India, Europe/Sweden and the Americas are covered ahead of local midnight.
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Optional centre date (MM-DD); yesterday/today/tomorrow around it are refreshed. Default: today (UTC).'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Calculate yesterday, today and tomorrow (UTC)
+        id: dates
+        env:
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          if [ -n "$INPUT_DATE" ]; then
+            if ! [[ "$INPUT_DATE" =~ ^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$ ]]; then
+              echo "::error::date input must be MM-DD, got '$INPUT_DATE'"; exit 1
+            fi
+            echo "center=$INPUT_DATE" >> "$GITHUB_OUTPUT"
+          else
+            echo "center=$(date -u +%m-%d)" >> "$GITHUB_OUTPUT"
+          fi
+          echo "Yesterday: $(date -u -d 'yesterday' +%m-%d)  Today: $(date -u +%m-%d)  Tomorrow: $(date -u -d 'tomorrow' +%m-%d)"
+
+      - name: Fetch, merge, deduplicate and validate the 3 days
+        run: python scripts/pipeline.py --mode rolling --date "${{ steps.dates.outputs.center }}"
+
+      - name: Validate data against schema/higle/higle-day.schema.json
+        run: python scripts/validate_data.py
+
+      - name: Commit and push changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data
+            git commit -m "chore(data): update daily history events [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No data changes."
+          fi

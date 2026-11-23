@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ymchandra/higle-datasource/schema/higle/higle-day.schema.json",
+  "title": "Higle Day",
+  "description": "One calendar day of 'On This Day' history events, as consumed by the Higle Flutter app.",
+  "type": "object",
+  "required": ["date", "display_date", "last_updated", "sources_used", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "date": {
+      "type": "string",
+      "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    },
+    "display_date": { "type": "string", "minLength": 3 },
+    "last_updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"
+    },
+    "sources_used": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/event" }
+    }
+  },
+  "$defs": {
+    "event": {
+      "type": "object",
+      "required": [
+        "id",
+        "year",
+        "year_display",
+        "category",
+        "title",
+        "summary",
+        "image_url",
+        "source_url",
+        "is_featured",
+        "providers"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])-(-?\\d+)-[0-9a-f]{8}(-\\d+)?$"
+        },
+        "year": { "type": "integer" },
+        "year_display": { "type": "string" },
+        "category": { "enum": ["events", "births", "deaths", "holidays"] },
+        "title": { "type": "string", "minLength": 1, "maxLength": 140 },
+        "summary": { "type": "string" },
+        "image_url": {
+          "type": ["string", "null"],
+          "pattern": "^https://"
+        },
+        "source_url": {
+          "type": ["string", "null"],
+          "pattern": "^https?://"
+        },
+        "is_featured": { "type": "boolean" },
+        "providers": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

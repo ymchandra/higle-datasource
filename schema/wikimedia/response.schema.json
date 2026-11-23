@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ymchandra/higle-datasource/schema/wikimedia/response.schema.json",
+  "title": "Wikimedia On This Day response",
+  "type": "object",
+  "anyOf": [
+    { "required": ["events"] },
+    { "required": ["selected"] },
+    { "required": ["births"] },
+    { "required": ["deaths"] },
+    { "required": ["holidays"] }
+  ],
+  "properties": {
+    "selected": { "$ref": "#/$defs/entries" },
+    "events": { "$ref": "#/$defs/entries" },
+    "births": { "$ref": "#/$defs/entries" },
+    "deaths": { "$ref": "#/$defs/entries" },
+    "holidays": { "$ref": "#/$defs/entries" }
+  },
+  "$defs": {
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "properties": {
+          "text": { "type": "string" },
+          "year": { "type": "integer" },
+          "pages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "normalizedtitle": { "type": "string" },
+                "extract": { "type": "string" },
+                "description": { "type": "string" },
+                "thumbnail": {
+                  "type": "object",
+                  "properties": { "source": { "type": "string" } }
+                },
+                "originalimage": {
+                  "type": "object",
+                  "properties": { "source": { "type": "string" } }
+                },
+                "content_urls": {
+                  "type": "object",
+                  "properties": {
+                    "desktop": {
+                      "type": "object",
+                      "properties": { "page": { "type": "string" } }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

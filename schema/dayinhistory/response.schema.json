@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ymchandra/higle-datasource/schema/dayinhistory/response.schema.json",
+  "title": "dayinhistory.dev combined response",
+  "description": "The adapter merges every page of each configured endpoint (events, births, deaths) into one payload: {\"events\": [...], \"births\": [...], \"deaths\": [...]}.",
+  "type": "object",
+  "anyOf": [
+    { "required": ["events"] },
+    { "required": ["births"] },
+    { "required": ["deaths"] }
+  ],
+  "properties": {
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["year", "title"],
+        "properties": {
+          "year": { "type": ["string", "integer"] },
+          "title": { "type": "string" },
+          "description": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "births": { "$ref": "#/$defs/people" },
+    "deaths": { "$ref": "#/$defs/people" }
+  },
+  "$defs": {
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": ["string", "null"] },
+          "bio": { "type": ["string", "null"] },
+          "birth_year": { "type": ["string", "integer", "null"] },
+          "death_year": { "type": ["string", "integer", "null"] },
+          "image": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

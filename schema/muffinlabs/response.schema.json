@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ymchandra/higle-datasource/schema/muffinlabs/response.schema.json",
+  "title": "Muffin Labs History response",
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "date": { "type": "string" },
+    "url": { "type": "string" },
+    "data": {
+      "type": "object",
+      "properties": {
+        "Events": { "$ref": "#/$defs/entries" },
+        "Births": { "$ref": "#/$defs/entries" },
+        "Deaths": { "$ref": "#/$defs/entries" },
+        "Holidays and observances": { "$ref": "#/$defs/entries" }
+      },
+      "anyOf": [
+        { "required": ["Events"] },
+        { "required": ["Births"] },
+        { "required": ["Deaths"] }
+      ]
+    }
+  },
+  "$defs": {
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "properties": {
+          "year": { "type": ["string", "integer"] },
+          "text": { "type": ["string", "null"] },
+          "html": { "type": "string" },
+          "no_year_html": { "type": "string" },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["link"],
+              "properties": {
+                "title": { "type": "string" },
+                "link": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

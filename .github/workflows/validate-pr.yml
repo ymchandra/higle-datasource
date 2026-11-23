@@ -1,0 +1,48 @@
+name: Validate schemas and data
+
+on:
+  pull_request:
+    paths:
+      - 'schema/**'
+      - 'sources/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'data/**'
+      - 'requirements*.txt'
+      - '.github/workflows/validate-pr.yml'
+  push:
+    paths:
+      - 'schema/**'
+      - 'sources/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'requirements*.txt'
+      - '.github/workflows/validate-pr.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements*.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Check sources.json and JSON Schema syntax
+        run: python scripts/check_config.py
+
+      - name: Unit tests (adapters, deduplicator, pipeline) with mock fixtures
+        run: python -m pytest -q
+
+      - name: Validate committed data files
+        run: python scripts/validate_data.py

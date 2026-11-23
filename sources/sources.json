@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "user_agent": "HigleDatasourceBot/1.0 (https://github.com/ymchandra/higle-datasource; contact@example.com)",
+  "sources": [
+    {
+      "id": "wikimedia",
+      "name": "Wikimedia On This Day API",
+      "enabled": true,
+      "priority": 1,
+      "adapter": "wikimedia_adapter",
+      "base_url": "https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/{MM}/{DD}",
+      "schema_path": "schema/wikimedia/response.schema.json",
+      "rate_limit_delay_sec": 0.5,
+      "provides_images": true,
+      "provides_featured": true,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "id": "dayinhistory",
+      "name": "Day in History Open API",
+      "enabled": true,
+      "priority": 2,
+      "adapter": "dayinhistory_adapter",
+      "base_url": "https://api.dayinhistory.dev/v1/events/{month_name}/{D}/",
+      "extra_endpoints": {},
+      "page_size": 100,
+      "max_pages": 1,
+      "schema_path": "schema/dayinhistory/response.schema.json",
+      "rate_limit_delay_sec": 0.5,
+      "provides_images": false,
+      "provides_featured": false,
+      "license": "Open Source / Wikipedia Derived",
+      "notes": "Anonymous tier allows only 10 requests/hour per IP, so only the events endpoint is fetched by default. Add \"births\": \".../v1/births/{month_name}/{D}/\" and \"deaths\": \".../v1/deaths/{month_name}/{D}/\" to extra_endpoints if you have a higher-limit plan. When the source is rate limited the pipeline skips it for the rest of the run."
+    },
+    {
+      "id": "muffinlabs",
+      "name": "Muffin Labs History API",
+      "enabled": true,
+      "priority": 3,
+      "adapter": "muffinlabs_adapter",
+      "base_url": "https://history.muffinlabs.com/date/{M}/{D}",
+      "schema_path": "schema/muffinlabs/response.schema.json",
+      "rate_limit_delay_sec": 0.5,
+      "provides_images": false,
+      "provides_featured": false,
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "output": {
+    "max_items_per_day": 100,
+    "category_quotas": {
+      "events": 45,
+      "births": 25,
+      "deaths": 20,
+      "holidays": 10
+    },
+    "sort_order": "desc",
+    "min_featured": 3,
+    "max_featured": 5,
+    "max_title_length": 140,
+    "similarity_threshold": 75
+  }
+}
