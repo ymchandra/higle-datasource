@@ -1,11 +1,37 @@
 {
   "date": "05-13",
   "display_date": "May 13",
-  "last_updated": "2026-11-23T10:04:16Z",
+  "last_updated": "2026-11-23T14:43:25Z",
   "sources_used": [
     "wikimedia",
     "muffinlabs"
   ],
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0. Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US. Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
+  "sources": [
+    {
+      "id": "wikimedia",
+      "name": "Wikimedia On This Day API",
+      "url": "https://en.wikipedia.org/",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0."
+    },
+    {
+      "id": "muffinlabs",
+      "name": "Muffin Labs History API",
+      "url": "https://history.muffinlabs.com/",
+      "license": "CC BY-SA 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
+      "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
+    }
+  ],
+  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+  "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
   "items": [
     {
       "id": "05-13-2025-d5ced00b",
@@ -15,6 +41,12 @@
       "title": "José Mujica",
       "summary": "José Mujica, Uruguayan politician, 40th President of Uruguay (born 1935)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Mujica.jpg/330px-Mujica.jpg",
+      "image_credit": {
+        "author": "Senado Federal",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Mujica.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Mujica",
       "is_featured": false,
       "providers": [
@@ -30,6 +62,12 @@
       "title": "Kit Bond",
       "summary": "Kit Bond, American lawyer and politician, 47th Governor of Missouri (born 1939)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Kit_Bond_official_portrait.jpg/330px-Kit_Bond_official_portrait.jpg",
+      "image_credit": {
+        "author": null,
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Kit_Bond_official_portrait.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Kit_Bond",
       "is_featured": false,
       "providers": [
@@ -45,6 +83,12 @@
       "title": "Khalifa bin Zayed Al Nahyan",
       "summary": "Khalifa bin Zayed Al Nahyan, 2nd President of the United Arab Emirates (born 1948)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Khalifa_Bin_Zayed_Al_Nahyan-CROPPED.jpg/330px-Khalifa_Bin_Zayed_Al_Nahyan-CROPPED.jpg",
+      "image_credit": {
+        "author": "Helene C. Stikkel",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Khalifa_Bin_Zayed_Al_Nahyan-CROPPED.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Khalifa_bin_Zayed_Al_Nahyan",
       "is_featured": false,
       "providers": [
@@ -60,6 +104,12 @@
       "title": "Unita Blackwell",
       "summary": "Unita Blackwell, American civil rights activist and politician (born 1933)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Unita_Blackwell.jpg/330px-Unita_Blackwell.jpg",
+      "image_credit": {
+        "author": "William Patrick Butler",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Unita_Blackwell.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Unita_Blackwell",
       "is_featured": false,
       "providers": [
@@ -75,6 +125,12 @@
       "title": "An explosion at an underground coal mine in southwest Turkey kills 301 miners",
       "summary": "An explosion at an underground coal mine in southwest Turkey kills 301 miners.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Soma_mine_disaster12.JPG/330px-Soma_mine_disaster12.JPG",
+      "image_credit": {
+        "author": "Mustafa Karaman",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Soma_mine_disaster12.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Soma_mine_disaster",
       "is_featured": false,
       "providers": [
@@ -89,7 +145,8 @@
       "category": "deaths",
       "title": "Morning Glory Zell-Ravenheart",
       "summary": "Morning Glory Zell-Ravenheart, American occultist and author (born 1948)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5d/Morning_Glory_Zell_at_altar_by_Mark_Berry_-_cropped.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Morning_Glory_Zell-Ravenheart",
       "is_featured": false,
       "providers": [
@@ -104,7 +161,8 @@
       "category": "events",
       "title": "American physician Kermit Gosnell is found guilty in Pennsylvania of murdering three infants born…",
       "summary": "American physician Kermit Gosnell is found guilty in Pennsylvania of murdering three infants born alive during attempted abortions, involuntary manslaughter of a woman during an abortion procedure, and other charges.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/6/62/Kermit_Gosnell.webp",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Kermit_Gosnell",
       "is_featured": false,
       "providers": [
@@ -120,6 +178,12 @@
       "title": "Joyce Brothers",
       "summary": "Joyce Brothers, American psychologist, author, and actress (born 1927)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Joyce_Brothers_NYWTS.jpg/330px-Joyce_Brothers_NYWTS.jpg",
+      "image_credit": {
+        "author": "New York World-Telegram and the Sun staff photographer: Twachtman, Phyllis, photographer.",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Joyce_Brothers_NYWTS.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Joyce_Brothers",
       "is_featured": false,
       "providers": [
@@ -134,7 +198,8 @@
       "category": "events",
       "title": "Mexican authorities discovered 49 dismembered bodies in Cadereyta Jiménez",
       "summary": "Forty-nine dismembered bodies are discovered by Mexican authorities on Mexican Federal Highway 40.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/2/2b/Cadereyta-massacre.png",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Cadereyta_Jim%C3%A9nez_massacre",
       "is_featured": false,
       "providers": [
@@ -149,7 +214,8 @@
       "category": "deaths",
       "title": "Ada Maria Isasi-Diaz",
       "summary": "Ada Maria Isasi-Diaz, Cuban-American theologian, author, and academic (born 1943)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/5/56/Photo_of_Ada_Maria_Isasi-Diaz.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Ada_Maria_Isasi-Diaz",
       "is_featured": false,
       "providers": [
@@ -165,6 +231,12 @@
       "title": "Donald \"Duck\" Dunn",
       "summary": "Donald \"Duck\" Dunn, American bass player, songwriter, and producer (born 1941)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Donald_%22Duck%22_Dunn_%281967%29.jpg",
+      "image_credit": {
+        "author": "Stax Records",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Donald_%22Duck%22_Dunn_(1967).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Donald_%22Duck%22_Dunn",
       "is_featured": false,
       "providers": [
@@ -180,6 +252,12 @@
       "title": "Two bomb explosions in Charsadda District, Pakistan, killed 98 people and wounded 140 others",
       "summary": "Two bombs explode in the Charsadda District of Pakistan killing 98 people and wounding 140 others.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/PakistanNorthWestFrontier.png",
+      "image_credit": {
+        "author": "Morwen",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:PakistanNorthWestFrontier.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/2011_Charsadda_bombing",
       "is_featured": false,
       "providers": [
@@ -195,6 +273,12 @@
       "title": "Eddie Barclay",
       "summary": "Eddie Barclay, French record producer, founded Barclay Records (born 1921)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/EddieBarclay-1975-FaussesDonnes.png/330px-EddieBarclay-1975-FaussesDonnes.png",
+      "image_credit": {
+        "author": "PJPH",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:EddieBarclay-1975-FaussesDonnes.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Eddie_Barclay",
       "is_featured": false,
       "providers": [
@@ -210,6 +294,12 @@
       "title": "A fireworks storage depot explodes in a residential neighborhood in Enschede, Netherlands, killing…",
       "summary": "A fireworks storage depot explodes in a residential neighborhood in Enschede, Netherlands, killing 23 people and injuring 950 others.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Ramp_enschede.jpg/330px-Ramp_enschede.jpg",
+      "image_credit": {
+        "author": "The original uploader was Bartflikweert at Dutch Wikipedia..",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Ramp_enschede.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Enschede_fireworks_disaster",
       "is_featured": false,
       "providers": [
@@ -224,7 +314,8 @@
       "category": "events",
       "title": "India carries out two nuclear weapon tests at Pokhran, following the three conducted on May 11.…",
       "summary": "India carries out two nuclear weapon tests at Pokhran, following the three conducted on May 11. The United States and Japan impose economic sanctions on India.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/2/2a/ShaktiBomb.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Pokhran-II",
       "is_featured": false,
       "providers": [
@@ -240,6 +331,12 @@
       "title": "Race riots break out in Jakarta, Indonesia, where shops owned by Indonesians of Chinese descent…",
       "summary": "Race riots break out in Jakarta, Indonesia, where shops owned by Indonesians of Chinese descent are looted and women raped.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Jakarta_riot_14_May_1998.jpg/330px-Jakarta_riot_14_May_1998.jpg",
+      "image_credit": {
+        "author": "Office of the Vice President The Republic of Indonesia",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jakarta_riot_14_May_1998.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/May_1998_Indonesia_riots",
       "is_featured": false,
       "providers": [
@@ -255,6 +352,12 @@
       "title": "Alison Hargreaves became the first woman to reach the summit of Mount Everest without the aid of…",
       "summary": "Alison Hargreaves, a 33-year-old British mother, becomes the first woman to ascend Everest without oxygen or the help of sherpas.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Tom_Frost_-_Climbers_on_Kangtega_-_1986.jpg/330px-Tom_Frost_-_Climbers_on_Kangtega_-_1986.jpg",
+      "image_credit": {
+        "author": "Tom Frost",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Tom_Frost_-_Climbers_on_Kangtega_-_1986.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Alison_Hargreaves",
       "is_featured": false,
       "providers": [
@@ -269,7 +372,8 @@
       "category": "deaths",
       "title": "Hao Wang",
       "summary": "Hao Wang, Chinese-American logician, philosopher, and mathematician (born 1921)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/2/20/Hao_Wang_pic.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Hao_Wang_(academic)",
       "is_featured": false,
       "providers": [
@@ -285,6 +389,12 @@
       "title": "John Swainson",
       "summary": "John Swainson, Canadian-American jurist and politician, 42nd Governor of Michigan (born 1925)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/John_Swainson_%281961_portrait%29.png/330px-John_Swainson_%281961_portrait%29.png",
+      "image_credit": {
+        "author": "Michigan State Government",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Swainson_(1961_portrait).png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Swainson",
       "is_featured": false,
       "providers": [
@@ -300,6 +410,12 @@
       "title": "Li Hongzhi introduced the Falun Gong movement at a public lecture in Changchun, China",
       "summary": "Li Hongzhi gives the first public lecture on Falun Gong in Changchun, People's Republic of China.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Portrait_photo_of_Li_Hongzhi.png/330px-Portrait_photo_of_Li_Hongzhi.png",
+      "image_credit": {
+        "author": "Falun Dafa Information Center",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Portrait_photo_of_Li_Hongzhi.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Li_Hongzhi",
       "is_featured": false,
       "providers": [
@@ -315,6 +431,12 @@
       "title": "Alexander Rybak",
       "summary": "Alexander Rybak, Belarusian-Norwegian singer-songwriter, violinist, and actor",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Alexander_Rybak_%284%29_20180510_EuroVisionary_%28cropped%29_%28cropped%29.jpg/330px-Alexander_Rybak_%284%29_20180510_EuroVisionary_%28cropped%29_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Wouter van Vliet, EuroVisionary",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Alexander_Rybak_(4)_20180510_EuroVisionary_(cropped)_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Alexander_Rybak",
       "is_featured": false,
       "providers": [
@@ -330,6 +452,12 @@
       "title": "Police bomb MOVE headquarters in Philadelphia, killing six adults and five children, and…",
       "summary": "Police bomb MOVE headquarters in Philadelphia, killing six adults and five children, and destroying the homes of 250 city residents.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Smoke_rises_above_homes_after_MOVE_bombing.jpg/330px-Smoke_rises_above_homes_after_MOVE_bombing.jpg",
+      "image_credit": {
+        "author": "Al Schell",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Smoke_rises_above_homes_after_MOVE_bombing.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/1985_MOVE_bombing",
       "is_featured": false,
       "providers": [
@@ -345,6 +473,12 @@
       "title": "Mehmet Ali Ağca attempts to assassinate Pope John Paul II in St. Peter's Square in Rome. The Pope…",
       "summary": "Mehmet Ali Ağca attempts to assassinate Pope John Paul II in St. Peter's Square in Rome. The Pope is rushed to the Agostino Gemelli University Polyclinic to undergo emergency surgery and survives.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Mehmet_Ali_A%C4%9Fca_02_%28cropped%29.png/330px-Mehmet_Ali_A%C4%9Fca_02_%28cropped%29.png",
+      "image_credit": {
+        "author": "evrensel",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Mehmet_Ali_A%C4%9Fca_02_(cropped).png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Mehmet_Ali_A%C4%9Fca",
       "is_featured": false,
       "providers": [
@@ -360,6 +494,12 @@
       "title": "A fire occurs in the Sennichi Department Store in Osaka, Japan. Blocked exits and non-functional…",
       "summary": "A fire occurs in the Sennichi Department Store in Osaka, Japan. Blocked exits and non-functional elevators result in 118 fatalities (many victims leaping to their deaths).",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A8%E0%B8%9E%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B9%84%E0%B8%9F%E0%B9%84%E0%B8%AB%E0%B8%A1%E0%B9%89%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B8%A3%E0%B8%9E%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%8B%E0%B8%99%E0%B8%99%E0%B8%B4%E0%B8%88%E0%B8%B4.jpg/330px-thumbnail.jpg",
+      "image_credit": {
+        "author": "พิมพ์ไทย",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A8%E0%B8%9E%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B9%84%E0%B8%9F%E0%B9%84%E0%B8%AB%E0%B8%A1%E0%B9%89%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B8%A3%E0%B8%9E%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%8B%E0%B8%99%E0%B8%99%E0%B8%B4%E0%B8%88%E0%B8%B4.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Sennichi_Department_Store_Building_fire",
       "is_featured": false,
       "providers": [
@@ -375,6 +515,12 @@
       "title": "The Troubles: A car bomb planted by Ulster loyalists exploded outside a crowded pub in Belfast…",
       "summary": "The Troubles: A car bomb planted by Ulster loyalists exploded outside a crowded pub in Belfast, Northern Ireland, beginning two days of gun battles between the British Army, the Provisional Irish Republican Army, and the Ulster Volunteer Force.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Free_Derry_Corner_-_geograph.org.uk_-_1317804.jpg/330px-Free_Derry_Corner_-_geograph.org.uk_-_1317804.jpg",
+      "image_credit": {
+        "author": "louise price",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Free_Derry_Corner_-_geograph.org.uk_-_1317804.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/The_Troubles",
       "is_featured": true,
       "providers": [
@@ -390,6 +536,12 @@
       "title": "In the aftermath of the 1969 Malaysian general election, Sino-Malay sectarian violence erupts in…",
       "summary": "In the aftermath of the 1969 Malaysian general election, Sino-Malay sectarian violence erupts in Kuala Lumpur, Malaysia.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Malaysia_election_results_map_1969.svg/330px-Malaysia_election_results_map_1969.svg.png",
+      "image_credit": {
+        "author": "FelipeRev",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Malaysia_election_results_map_1969.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/1969_Malaysian_general_election",
       "is_featured": false,
       "providers": [
@@ -404,7 +556,8 @@
       "category": "events",
       "title": "Zakir Husain took office as the first elected Muslim President of India",
       "summary": "Dr. Zakir Husain becomes the third President of India. He is the first Muslim President of the Indian Union. He holds this position until August 24, 1969.",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/President_Zakir_Husain_1998_stamp_of_India_%28cropped%29.jpg/330px-President_Zakir_Husain_1998_stamp_of_India_%28cropped%29.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Zakir_Husain",
       "is_featured": true,
       "providers": [
@@ -420,6 +573,12 @@
       "title": "Lari White",
       "summary": "Lari White, American singer-songwriter, producer, and actress (died 2018)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Lari_White.jpg/330px-Lari_White.jpg",
+      "image_credit": {
+        "author": "Dave Hensley",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Lari_White.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Lari_White",
       "is_featured": false,
       "providers": [
@@ -435,6 +594,12 @@
       "title": "Hundreds of University of California, Berkeley students congregate for the first day of protest…",
       "summary": "Hundreds of University of California, Berkeley students congregate for the first day of protest against a visit by the House Committee on Un-American Activities.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/330px-Seal_of_University_of_California%2C_Berkeley.svg.png",
+      "image_credit": {
+        "author": "University of California, Berkeley; This SVG file: User:RaphaelQS",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Seal_of_University_of_California,_Berkeley.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/University_of_California%2C_Berkeley",
       "is_featured": false,
       "providers": [
@@ -450,6 +615,12 @@
       "title": "The Australian adventurer Ben Carlin (pictured) became the only person to circumnavigate the world…",
       "summary": "Ben Carlin becomes the first (and only) person to circumnavigate the world by amphibious vehicle, having travelled over 17,000 kilometres (11,000 mi) by sea and 62,000 kilometres (39,000 mi) by land during a ten-year journey.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BenCarlin01.jpg/330px-BenCarlin01.jpg",
+      "image_credit": {
+        "author": "BenAndElinoreCarlin02.jpg: Unknown photographer derivative work: IgnorantArmies",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:BenCarlin01.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Ben_Carlin",
       "is_featured": true,
       "providers": [
@@ -465,6 +636,12 @@
       "title": "US vice president Richard Nixon's motorcade was attacked by a mob in Caracas, Venezuela",
       "summary": "During a visit to Caracas, Venezuela, the US Vice President Richard Nixon's car is attacked by anti-American demonstrators.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Richard_Nixon_presidential_portrait_%282%29.jpg/330px-Richard_Nixon_presidential_portrait_%282%29.jpg",
+      "image_credit": {
+        "author": "Department of Defense. Department of the Army. Office of the Deputy Chief of Staff for Operations. U.S. Army…",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Richard_Nixon_presidential_portrait_(2).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Richard_Nixon",
       "is_featured": false,
       "providers": [
@@ -480,6 +657,12 @@
       "title": "Mar Roxas",
       "summary": "Mar Roxas, Filipino economist and politician, 24th Secretary of the Interior and Local Government",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Mar_Roxas_portrait_as_the_DILG_Secretary.jpg/330px-Mar_Roxas_portrait_as_the_DILG_Secretary.jpg",
+      "image_credit": {
+        "author": "Department of the Interior and Local Government (DILG)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Mar_Roxas_portrait_as_the_DILG_Secretary.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Mar_Roxas",
       "is_featured": false,
       "providers": [
@@ -495,6 +678,12 @@
       "title": "Michael Fekete",
       "summary": "Michael Fekete, Hungarian-Israeli mathematician and academic (born 1886)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D_-_%D7%A4%D7%A8%D7%95%D7%A4%D7%A1%D7%95%D7%A8_%D7%9E%D7%99%D7%9B%D7%90%D7%9C_%D7%A4%D7%A7%D7%98%D7%94-JNF011651.jpeg/330px-%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D_-_%D7%A4%D7%A8%D7%95%D7%A4%D7%A1%D7%95%D7%A8_%D7%9E%D7%99%D7%9B%D7%90%D7%9C_%D7%A4%D7%A7%D7%98%D7%94-JNF011651.jpeg",
+      "image_credit": {
+        "author": "פוטו ברנהיים",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D_-_%D7%A4%D7%A8%D7%95%D7%A4%D7%A1%D7%95%D7%A8_%D7%9E%D7%99%D7%9B%D7%90%D7%9C_%D7%A4%D7%A7%D7%98%D7%94-JNF011651.jpeg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Michael_Fekete",
       "is_featured": false,
       "providers": [
@@ -510,6 +699,12 @@
       "title": "The anti-National Service Riots, by Chinese middle school students in Singapore, take place",
       "summary": "The anti-National Service Riots, by Chinese middle school students in Singapore, take place.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Students_demonstrating_during_the_National_Service_riots_in_Singapore%2C_1954.jpg/330px-Students_demonstrating_during_the_National_Service_riots_in_Singapore%2C_1954.jpg",
+      "image_credit": {
+        "author": "National Museum of Singapore",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Students_demonstrating_during_the_National_Service_riots_in_Singapore,_1954.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/1954_National_Service_riots",
       "is_featured": false,
       "providers": [
@@ -525,6 +720,12 @@
       "title": "The Rajya Sabha, the upper house of the Parliament of India, holds its first sitting",
       "summary": "The Rajya Sabha, the upper house of the Parliament of India, holds its first sitting.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/2026OctRSPartywise.svg/330px-2026OctRSPartywise.svg.png",
+      "image_credit": {
+        "author": "Komalium :",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:2026OctRSPartywise.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Rajya_Sabha",
       "is_featured": false,
       "providers": [
@@ -540,6 +741,12 @@
       "title": "The 400th anniversary of the founding of the National University of San Marcos is commemorated by…",
       "summary": "The 400th anniversary of the founding of the National University of San Marcos is commemorated by the opening of the first large-capacity stadium in Peru.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/UNMSM_coatofarms_seal.svg/330px-UNMSM_coatofarms_seal.svg.png",
+      "image_credit": {
+        "author": "Universidad Nacional Mayor de San Marcos",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:UNMSM_coatofarms_seal.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/National_University_of_San_Marcos",
       "is_featured": false,
       "providers": [
@@ -555,6 +762,12 @@
       "title": "The inaugural Formula One World Championship race takes place at Silverstone Circuit. The race was…",
       "summary": "The inaugural Formula One World Championship race takes place at Silverstone Circuit. The race was won by Giuseppe Farina, who would go on to become the inaugural champion that year.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Silverstone_Circuit_1949_to_1951.png/330px-Silverstone_Circuit_1949_to_1951.png",
+      "image_credit": {
+        "author": "Tom McKay",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Silverstone_Circuit_1949_to_1951.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/1950_British_Grand_Prix",
       "is_featured": false,
       "providers": [
@@ -570,6 +783,12 @@
       "title": "Aeroflot Flight 17 crashes on approach to Severny Airport in Novosibirsk, killing 25",
       "summary": "Aeroflot Flight 17 crashes on approach to Severny Airport in Novosibirsk, killing 25.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/%D0%90%D1%8D%D1%80%D0%BE%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA-%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9.jpg/330px-%D0%90%D1%8D%D1%80%D0%BE%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA-%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9.jpg",
+      "image_credit": {
+        "author": "FightinG FalcoN",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:%D0%90%D1%8D%D1%80%D0%BE%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA-%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Severny_Airport",
       "is_featured": false,
       "providers": [
@@ -585,6 +804,12 @@
       "title": "Arab–Israeli War: The Kfar Etzion massacre occurs, a day prior to the Israeli Declaration of…",
       "summary": "Arab–Israeli War: The Kfar Etzion massacre occurs, a day prior to the Israeli Declaration of Independence.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Tel_Aviv-Yafo_%28997008136796005171%29.jpg/330px-Tel_Aviv-Yafo_%28997008136796005171%29.jpg",
+      "image_credit": {
+        "author": "Benno Rothenberg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Tel_Aviv-Yafo_(997008136796005171).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War",
       "is_featured": false,
       "providers": [
@@ -600,6 +825,12 @@
       "title": "World War II: Yevgeny Khaldei's photograph Raising a Flag over the Reichstag is published in…",
       "summary": "World War II: Yevgeny Khaldei's photograph Raising a Flag over the Reichstag is published in Ogonyok magazine.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Khaldei_Goering.jpg",
+      "image_credit": {
+        "author": "Robert Capa",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Khaldei_Goering.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Yevgeny_Khaldei",
       "is_featured": false,
       "providers": [
@@ -615,6 +846,12 @@
       "title": "Lasse Berghagen",
       "summary": "Lasse Berghagen, Swedish singer-songwriter, guitarist, and actor (died 2023)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Lasse_Berghagen_in_2014_%281_av_2%29.jpg/330px-Lasse_Berghagen_in_2014_%281_av_2%29.jpg",
+      "image_credit": {
+        "author": "Frankie Fouganthin",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Lasse_Berghagen_in_2014_(1_av_2).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Lasse_Berghagen",
       "is_featured": false,
       "providers": [
@@ -630,6 +867,12 @@
       "title": "World War II: Operations Vulcan and Strike force the surrender of the last Axis troops in Tunisia",
       "summary": "World War II: Operations Vulcan and Strike force the surrender of the last Axis troops in Tunisia.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/The_British_Army_in_Tunisia_1943_NA2321.jpg/330px-The_British_Army_in_Tunisia_1943_NA2321.jpg",
+      "image_credit": {
+        "author": "Loughlin (Sgt), No 2 Army Film & Photographic Unit",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:The_British_Army_in_Tunisia_1943_NA2321.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Operation_Vulcan",
       "is_featured": false,
       "providers": [
@@ -645,6 +888,12 @@
       "title": "Ōnishiki Uichirō",
       "summary": "Ōnishiki Uichirō, Japanese sumo wrestler, the 26th Yokozuna (born 1891)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Onishiki_who_won_10_-_day_wrestling_tournament%2C_Japan_LOC_17256353685.jpg/330px-Onishiki_who_won_10_-_day_wrestling_tournament%2C_Japan_LOC_17256353685.jpg",
+      "image_credit": {
+        "author": "Bain News Service,, publisher.",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Onishiki_who_won_10_-_day_wrestling_tournament,_Japan_LOC_17256353685.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/%C5%8Cnishiki_Uichir%C5%8D",
       "is_featured": false,
       "providers": [
@@ -660,6 +909,12 @@
       "title": "World War II: Germany's conquest of France begins, as the German army crosses the Meuse. Winston…",
       "summary": "World War II: Germany's conquest of France begins, as the German army crosses the Meuse. Winston Churchill makes his \"blood, toil, tears, and sweat\" speech to the House of Commons.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg/330px-Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
+      "image_credit": {
+        "author": "Richard Opitz",
+        "license": "CC BY-SA 3.0 de",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/World_War_II",
       "is_featured": false,
       "providers": [
@@ -674,7 +929,8 @@
       "category": "births",
       "title": "Giuliano Amato",
       "summary": "Giuliano Amato, Italian academic and politician, 48th Prime Minister of Italy",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Giuliano_Amato_22_%28cropped%29.jpg/330px-Giuliano_Amato_22_%28cropped%29.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Giuliano_Amato",
       "is_featured": false,
       "providers": [
@@ -690,6 +946,12 @@
       "title": "Charles Édouard Guillaume",
       "summary": "Charles Édouard Guillaume, Swiss-French physicist and academic, Nobel Prize laureate (born 1861)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Guillaume_1920.jpg",
+      "image_credit": {
+        "author": "A. B. Lagrelius & Westphal, Stockholm. The American Institute of Physics also credits this photo [1] to AB Lagrelius &…",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Guillaume_1920.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Charles-%C3%89douard_Guillaume",
       "is_featured": false,
       "providers": [
@@ -705,6 +967,12 @@
       "title": "Jim Jones",
       "summary": "Jim Jones, American cult leader, founder of the Peoples Temple (died 1978)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Rev._Jim_Jones%2C_1977_%283x4_cropped%29.jpg/330px-Rev._Jim_Jones%2C_1977_%283x4_cropped%29.jpg",
+      "image_credit": {
+        "author": "Nancy Wong",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Rev._Jim_Jones,_1977_(3x4_cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jim_Jones",
       "is_featured": false,
       "providers": [
@@ -720,6 +988,12 @@
       "title": "Fridtjof Nansen",
       "summary": "Fridtjof Nansen, Norwegian scientist, explorer, and academic, Nobel Prize laureate (born 1861)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Fridtjof_Nansen_LOC_03377u-3.jpg/330px-Fridtjof_Nansen_LOC_03377u-3.jpg",
+      "image_credit": {
+        "author": "Henry Van der Weyde",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fridtjof_Nansen_LOC_03377u-3.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Fridtjof_Nansen",
       "is_featured": false,
       "providers": [
@@ -735,6 +1009,12 @@
       "title": "Arthur Scherbius",
       "summary": "Arthur Scherbius, German electrical engineer, invented the Enigma machine (born 1878)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Arthur_Scherbius_1.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Arthur_Scherbius_1.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Arthur_Scherbius",
       "is_featured": false,
       "providers": [
@@ -750,6 +1030,12 @@
       "title": "Enrique Bolaños",
       "summary": "Enrique Bolaños, Nicaraguan politician, President of Nicaragua (died 2021)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Bolanos2002.png/330px-Bolanos2002.png",
+      "image_credit": {
+        "author": "Government of Nicaragua",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bolanos2002.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Enrique_Bola%C3%B1os",
       "is_featured": false,
       "providers": [
@@ -765,6 +1051,12 @@
       "title": "Harry Schwarz",
       "summary": "Harry Schwarz, South African anti-apartheid leader, lawyer, and Ambassador (died 2010)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Harry_Schwarz_white_house_portrait.jpg/330px-Harry_Schwarz_white_house_portrait.jpg",
+      "image_credit": {
+        "author": "White House photographer",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Harry_Schwarz_white_house_portrait.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Harry_Schwarz",
       "is_featured": false,
       "providers": [
@@ -780,6 +1072,12 @@
       "title": "Three children report the first apparition of Our Lady of Fátima in Fátima, Portugal",
       "summary": "Three children report the first apparition of Our Lady of Fátima in Fátima, Portugal.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Fatima_%283_%E2%80%93_cropped%29.jpg/330px-Fatima_%283_%E2%80%93_cropped%29.jpg",
+      "image_credit": {
+        "author": "Bingar1234",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fatima_(3_%E2%80%93_cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Our_Lady_of_F%C3%A1tima",
       "is_featured": false,
       "providers": [
@@ -795,6 +1093,12 @@
       "title": "William R. Tolbert",
       "summary": "William R. Tolbert, Jr., Liberian politician, 20th President of Liberia (died 1980)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/William_R._Tolbert%2C_Jr..JPG/330px-William_R._Tolbert%2C_Jr..JPG",
+      "image_credit": {
+        "author": "Kightlinger, Jack E., Photographer",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:William_R._Tolbert,_Jr..JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/William_Tolbert",
       "is_featured": false,
       "providers": [
@@ -810,6 +1114,12 @@
       "title": "The Royal Flying Corps, the forerunner of the Royal Air Force, is established in the United Kingdom",
       "summary": "The Royal Flying Corps, the forerunner of the Royal Air Force, is established in the United Kingdom.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/RFC_Cap_Badge.jpg/330px-RFC_Cap_Badge.jpg",
+      "image_credit": {
+        "author": "Tpaffett",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:RFC_Cap_Badge.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Royal_Flying_Corps",
       "is_featured": false,
       "providers": [
@@ -825,6 +1135,12 @@
       "title": "Gil Evans",
       "summary": "Gil Evans, Canadian-American pianist, composer, and bandleader (died 1988)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Gil_Evans_%281978%29.jpg",
+      "image_credit": {
+        "author": "Oleo",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gil_Evans_(1978).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Gil_Evans",
       "is_featured": false,
       "providers": [
@@ -840,6 +1156,12 @@
       "title": "The inaugural edition of the Giro d'Italia, a long-distance multiple-stage bicycle race, began in…",
       "summary": "The inaugural edition of the Giro d'Italia, a long-distance multiple-stage bicycle race, began in Milan; the Italian cyclist Luigi Ganna was the eventual winner.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Giro_1909.png/330px-Giro_1909.png",
+      "image_credit": {
+        "author": "Viktorin1988",
+        "license": "CC BY 2.5",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Giro_1909.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/1909_Giro_d'Italia",
       "is_featured": true,
       "providers": [
@@ -854,7 +1176,8 @@
       "category": "births",
       "title": "Fakhruddin Ali Ahmed",
       "summary": "Fakhruddin Ali Ahmed, Indian lawyer and politician, 5th President of India (died 1977)",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/President_Fakhruddin_Ali_Ahmed.jpg/330px-President_Fakhruddin_Ali_Ahmed.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Fakhruddin_Ali_Ahmed",
       "is_featured": false,
       "providers": [
@@ -870,6 +1193,12 @@
       "title": "Apolinario Mabini",
       "summary": "Apolinario Mabini, Filipino lawyer and politician, 1st Prime Minister of the Philippines (born 1864)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Apolinario_Mabini.jpg/330px-Apolinario_Mabini.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Apolinario_Mabini.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Apolinario_Mabini",
       "is_featured": false,
       "providers": [
@@ -885,6 +1214,12 @@
       "title": "Nandor Fodor",
       "summary": "Nandor Fodor, Hungarian-American psychologist, parapsychologist, and author (died 1964)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Nandor_Fodor_parapsychologist.png",
+      "image_credit": {
+        "author": "Nandor Fodor",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Nandor_Fodor_parapsychologist.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Nandor_Fodor",
       "is_featured": false,
       "providers": [
@@ -900,6 +1235,12 @@
       "title": "Ásgeir Ásgeirsson",
       "summary": "Ásgeir Ásgeirsson, Icelandic politician, 2nd President of Iceland (died 1972)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Asgeir_Asgeirsson.jpg/330px-Asgeir_Asgeirsson.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Asgeir_Asgeirsson.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/%C3%81sgeir_%C3%81sgeirsson",
       "is_featured": false,
       "providers": [
@@ -915,6 +1256,12 @@
       "title": "With the passage of the Lei Áurea (\"Golden Law\"), the Empire of Brazil abolishes slavery",
       "summary": "With the passage of the Lei Áurea (\"Golden Law\"), the Empire of Brazil abolishes slavery.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Lei_%C3%81urea_%28Golden_Law%29.tif/lossy-page1-330px-Lei_%C3%81urea_%28Golden_Law%29.tif.jpg",
+      "image_credit": {
+        "author": "Senado Imperial",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Lei_%C3%81urea_(Golden_Law).tif"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Lei_%C3%81urea",
       "is_featured": false,
       "providers": [
@@ -930,6 +1277,12 @@
       "title": "Lorna Hodgkinson",
       "summary": "Lorna Hodgkinson, Australian educator and educational psychologist (died 1951)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Lorna_Hodgkinson_Harvard_University_Archives_UAV350.284.png/330px-Lorna_Hodgkinson_Harvard_University_Archives_UAV350.284.png",
+      "image_credit": {
+        "author": "Creator unknown.",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Lorna_Hodgkinson_Harvard_University_Archives_UAV350.284.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Lorna_Hodgkinson",
       "is_featured": false,
       "providers": [
@@ -945,6 +1298,12 @@
       "title": "Friedrich Gustav Jakob Henle",
       "summary": "Friedrich Gustav Jakob Henle, German physician, pathologist, and anatomist (born 1809)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Jakob_Henle_5.jpg/330px-Jakob_Henle_5.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jakob_Henle_5.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Friedrich_Gustav_Jakob_Henle",
       "is_featured": false,
       "providers": [
@@ -960,6 +1319,12 @@
       "title": "Cyrus McCormick",
       "summary": "Cyrus McCormick, American businessman, co-founded the International Harvester Company (born 1809)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Cyrus_McCormick_engraving.png/330px-Cyrus_McCormick_engraving.png",
+      "image_credit": {
+        "author": "Cyrus_McCormick_engraving.jpg: George Smillie[1] derivative work: — raeky (talk | edits)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Cyrus_McCormick_engraving.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Cyrus_McCormick",
       "is_featured": false,
       "providers": [
@@ -975,6 +1340,12 @@
       "title": "Georgios Papanikolaou",
       "summary": "Georgios Papanikolaou, Greek-American pathologist, invented the pap smear (died 1962)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Gnpapanikolaou.jpg/330px-Gnpapanikolaou.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gnpapanikolaou.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Georgios_Papanikolaou",
       "is_featured": false,
       "providers": [
@@ -990,6 +1361,12 @@
       "title": "Nikolai Brashman",
       "summary": "Nikolai Brashman, Czech-Russian mathematician and academic (born 1796)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D1%80%D0%B0%D1%88%D0%BC%D0%B0%D0%BD.jpg/330px-%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D1%80%D0%B0%D1%88%D0%BC%D0%B0%D0%BD.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%B2%D0%B8%D1%87_%D0%91%D1%80%D0%B0%D1%88%D0%BC%D0%B0%D0%BD.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Nikolai_Brashman",
       "is_featured": false,
       "providers": [
@@ -1005,6 +1382,12 @@
       "title": "Southern slave Robert Smalls steals the steamboat Planter, spirits it through Confederate lines…",
       "summary": "Southern slave Robert Smalls steals the steamboat Planter, spirits it through Confederate lines and hands it to the United States Navy, who quickly commission it as the gunboat USS Planter and appoint Smalls as captain, thus making him the first black man to command a United States ship.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Robert_Smalls%2C_S.C._M.C._Born_in_Beaufort%2C_SC%2C_April_1839_Trim.jpg/330px-Robert_Smalls%2C_S.C._M.C._Born_in_Beaufort%2C_SC%2C_April_1839_Trim.jpg",
+      "image_credit": {
+        "author": "Mathew Brady",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Robert_Smalls,_S.C._M.C._Born_in_Beaufort,_SC,_April_1839_Trim.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Robert_Smalls",
       "is_featured": false,
       "providers": [
@@ -1020,6 +1403,12 @@
       "title": "American Civil War: Queen Victoria of the United Kingdom issues a \"proclamation of neutrality\"…",
       "summary": "American Civil War: Queen Victoria of the United Kingdom issues a \"proclamation of neutrality\" which recognizes the Confederacy as having belligerent rights.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Battle_of_Gettysburg%2C_by_Currier_and_Ives.png/330px-Battle_of_Gettysburg%2C_by_Currier_and_Ives.png",
+      "image_credit": {
+        "author": "Nathaniel Currier and James Merritt Ives",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Gettysburg,_by_Currier_and_Ives.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/American_Civil_War",
       "is_featured": false,
       "providers": [
@@ -1035,6 +1424,12 @@
       "title": "Pakistan's (then a part of British India) first railway line opens, from Karachi to Kotri",
       "summary": "Pakistan's (then a part of British India) first railway line opens, from Karachi to Kotri.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Pakistan_Railways_headquarters_1.jpg/330px-Pakistan_Railways_headquarters_1.jpg",
+      "image_credit": {
+        "author": null,
+        "license": "CC BY-SA 2.5",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Pakistan_Railways_headquarters_1.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Pakistan_Railways",
       "is_featured": false,
       "providers": [
@@ -1050,6 +1445,12 @@
       "title": "The Great Comet of 1861 is discovered by John Tebbutt of Windsor, New South Wales, Australia",
       "summary": "The Great Comet of 1861 is discovered by John Tebbutt of Windsor, New South Wales, Australia.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Great_Comet_1861_%28128495343%29.jpg/330px-Great_Comet_1861_%28128495343%29.jpg",
+      "image_credit": {
+        "author": "Edmund Weiss",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Great_Comet_1861_(128495343).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/C%2F1861_J1_(Tebbutt)",
       "is_featured": false,
       "providers": [
@@ -1065,6 +1466,12 @@
       "title": "Montenegrin forces under Grand Duke Mirko Petrović-Njegoš defeat an Ottoman army under Hussein…",
       "summary": "Montenegrin forces under Grand Duke Mirko Petrović-Njegoš defeat an Ottoman army under Hussein Pasha in the battle of Grahovac. The battle is a significant step towards formal independence and quickly becomes a part of national folklore.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_Montenegro_%281852%E2%80%931860%29.svg/330px-Flag_of_Montenegro_%281852%E2%80%931860%29.svg.png",
+      "image_credit": {
+        "author": "B1mbo",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Montenegro_(1852%E2%80%931860).svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Principality_of_Montenegro",
       "is_featured": false,
       "providers": [
@@ -1080,6 +1487,12 @@
       "title": "Ronald Ross",
       "summary": "Ronald Ross, Indian-English physician and mathematician, Nobel Prize laureate (died 1932)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Ronald_Ross.jpg/330px-Ronald_Ross.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Ronald_Ross.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Ronald_Ross",
       "is_featured": false,
       "providers": [
@@ -1095,6 +1508,12 @@
       "title": "Mexican–American War: The United States declares war on the Federal Republic of Mexico following a…",
       "summary": "Mexican–American War: The United States declares war on the Federal Republic of Mexico following a dispute over the American annexation of the Republic of Texas and a Mexican military incursion.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Nebel_Mexican_War_12_Scott_in_Mexico_City_%28cropped%29.jpg/330px-Nebel_Mexican_War_12_Scott_in_Mexico_City_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Adolphe Jean-Baptiste Bayot / Carl Nebel",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Nebel_Mexican_War_12_Scott_in_Mexico_City_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War",
       "is_featured": false,
       "providers": [
@@ -1109,7 +1528,8 @@
       "category": "births",
       "title": "Major-General Sir Francis Edward Archibald Chamier",
       "summary": "Major-General Sir Francis Edward Archibald Chamier, CB, CIE, IMM** British-Indian officer during the British Raj (died 1923)",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Order_of_bath_star.jpg/330px-Order_of_bath_star.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Order_of_the_Bath",
       "is_featured": false,
       "providers": [
@@ -1125,6 +1545,12 @@
       "title": "Zebulon Baird Vance",
       "summary": "Zebulon Baird Vance, American colonel, lawyer, and politician, 37th Governor of North Carolina (died 1894)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Zebulon_Baird_Vance_-_Brady-Handy.jpg/330px-Zebulon_Baird_Vance_-_Brady-Handy.jpg",
+      "image_credit": {
+        "author": "Mathew Benjamin Brady / Levin Corbin Handy",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Zebulon_Baird_Vance_-_Brady-Handy.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Zebulon_Vance",
       "is_featured": false,
       "providers": [
@@ -1140,6 +1566,12 @@
       "title": "Francis",
       "summary": "Francis, Duke of Cádiz, King Consort of Queen Isabella II of Spain (died 1902)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Francis_King_consort_of_Spain.jpg/330px-Francis_King_consort_of_Spain.jpg",
+      "image_credit": {
+        "author": "Herbert, Madrid",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Francis_King_consort_of_Spain.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Francisco_de_As%C3%ADs%2C_Duke_of_C%C3%A1diz",
       "is_featured": false,
       "providers": [
@@ -1155,6 +1587,12 @@
       "title": "Forces sent by Yusuf Karamanli of Tripoli to retake Derna from the Americans attack the city",
       "summary": "Forces sent by Yusuf Karamanli of Tripoli to retake Derna from the Americans attack the city.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/PortraitVanYusufKaramanli.jpg/330px-PortraitVanYusufKaramanli.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:PortraitVanYusufKaramanli.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Yusuf_Karamanli",
       "is_featured": false,
       "providers": [
@@ -1170,6 +1608,12 @@
       "title": "The British under Charles Cornwallis defeat a Mysorean army under Tipu Sultan in the battle of…",
       "summary": "The British under Charles Cornwallis defeat a Mysorean army under Tipu Sultan in the battle of Arakere.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Charles_Cornwallis%2C_1st_Marquess_Cornwallis.png/330px-Charles_Cornwallis%2C_1st_Marquess_Cornwallis.png",
+      "image_credit": {
+        "author": "Thomas Gainsborough",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Charles_Cornwallis,_1st_Marquess_Cornwallis.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Charles_Cornwallis%2C_1st_Marquess_Cornwallis",
       "is_featured": false,
       "providers": [
@@ -1185,6 +1629,12 @@
       "title": "Negotiated by Russian and French mediators, the Treaty of Teschen was signed by Austria and…",
       "summary": "War of the Bavarian Succession: Russian and French mediators at the Congress of Teschen negotiate an end to the war. In the agreement Austria acquires the Innviertel.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Friedrich_der_Grosse_und_der_Feldscher.jpg/330px-Friedrich_der_Grosse_und_der_Feldscher.jpg",
+      "image_credit": {
+        "author": "James Steakley",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Friedrich_der_Grosse_und_der_Feldscher.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Teschen",
       "is_featured": true,
       "providers": [
@@ -1200,6 +1650,12 @@
       "title": "Lazare Carnot",
       "summary": "Lazare Carnot, French general, mathematician, and politician, French Minister of the Interior (died 1823)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Lazare-Carnot-par-Boilly.jpg/330px-Lazare-Carnot-par-Boilly.jpg",
+      "image_credit": {
+        "author": "Louis-Léopold Boilly",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Lazare-Carnot-par-Boilly.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Lazare_Carnot",
       "is_featured": false,
       "providers": [
@@ -1215,6 +1671,12 @@
       "title": "Charles Watson-Wentworth",
       "summary": "Charles Watson-Wentworth, 2nd Marquess of Rockingham, English politician, Prime Minister of Great Britain (died 1782)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/2nd_Marquess_of_Rockingham.jpg/330px-2nd_Marquess_of_Rockingham.jpg",
+      "image_credit": {
+        "author": "After Joshua Reynolds",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:2nd_Marquess_of_Rockingham.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Charles_Watson-Wentworth%2C_2nd_Marquess_of_Rockingham",
       "is_featured": false,
       "providers": [
@@ -1230,6 +1692,12 @@
       "title": "Maria Theresa",
       "summary": "Maria Theresa, Archduchess, Queen, and Empress; Austrian wife of Francis I, Holy Roman Emperor (died 1780)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Kaiserin_Maria_Theresia_%28HRR%29.jpg/330px-Kaiserin_Maria_Theresia_%28HRR%29.jpg",
+      "image_credit": {
+        "author": "Martin van Meytens",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Kaiserin_Maria_Theresia_(HRR).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Maria_Theresa",
       "is_featured": false,
       "providers": [
@@ -1245,6 +1713,12 @@
       "title": "Alexis Clairaut",
       "summary": "Alexis Clairaut, French mathematician, astronomer, and geophysicist (died 1765)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Alexis_Clairault.jpg/330px-Alexis_Clairault.jpg",
+      "image_credit": {
+        "author": "Louis-Jacques Cathelin / After Charles-Nicolas Cochin",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Alexis_Clairault.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Alexis_Clairaut",
       "is_featured": false,
       "providers": [
@@ -1260,6 +1734,12 @@
       "title": "Count Johann Hartwig Ernst von Bernstorff",
       "summary": "Count Johann Hartwig Ernst von Bernstorff, Danish politician and diplomat (died 1772)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Johan_Hartvig_Ernst_Bernstorff.jpg/330px-Johan_Hartvig_Ernst_Bernstorff.jpg",
+      "image_credit": {
+        "author": "Peder Als",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Johan_Hartvig_Ernst_Bernstorff.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Count_Johann_Hartwig_Ernst_von_Bernstorff",
       "is_featured": false,
       "providers": [
@@ -1275,6 +1755,12 @@
       "title": "Sebastião José de Carvalho e Melo",
       "summary": "Sebastião José de Carvalho e Melo, 1st Marquis of Pombal, Portuguese politician, Prime Minister of Portugal (died 1782)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Retrato_do_Marqu%C3%AAs_de_Pombal_-_escola_portuguesa%2C_s%C3%A9c._XVIII.png/330px-Retrato_do_Marqu%C3%AAs_de_Pombal_-_escola_portuguesa%2C_s%C3%A9c._XVIII.png",
+      "image_credit": {
+        "author": "Unidentified painter",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Retrato_do_Marqu%C3%AAs_de_Pombal_-_escola_portuguesa,_s%C3%A9c._XVIII.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Jos%C3%A9_de_Carvalho_e_Melo%2C_1st_Marquis_of_Pombal",
       "is_featured": false,
       "providers": [
@@ -1290,6 +1776,12 @@
       "title": "A Venetian fleet under Admiral Cort Adeler breaks through a line of galleys and defeats the…",
       "summary": "A Venetian fleet under Admiral Cort Adeler breaks through a line of galleys and defeats the Turkish navy.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Cort_Adeler.jpg/330px-Cort_Adeler.jpg",
+      "image_credit": {
+        "author": "unknown for the image",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Cort_Adeler.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Cort_Adeler",
       "is_featured": false,
       "providers": [
@@ -1305,6 +1797,12 @@
       "title": "Dutch statesman Johan van Oldenbarnevelt is executed in The Hague after being convicted of treason",
       "summary": "Dutch statesman Johan van Oldenbarnevelt is executed in The Hague after being convicted of treason.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Johan_van_Oldenbarnevelt_%281547-1619%29%2C_by_workshop_of_Michiel_Jansz_van_Mierevelt.jpg/330px-Johan_van_Oldenbarnevelt_%281547-1619%29%2C_by_workshop_of_Michiel_Jansz_van_Mierevelt.jpg",
+      "image_credit": {
+        "author": "Workshop of Michiel Jansz. van Mierevelt",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Johan_van_Oldenbarnevelt_(1547-1619),_by_workshop_of_Michiel_Jansz_van_Mierevelt.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Johan_van_Oldenbarnevelt",
       "is_featured": false,
       "providers": [
@@ -1320,6 +1818,12 @@
       "title": "Sword duel between Miyamoto Musashi and Sasaki Kojiro on the shores of Ganryū Island. Kojiro dies…",
       "summary": "Sword duel between Miyamoto Musashi and Sasaki Kojiro on the shores of Ganryū Island. Kojiro dies at the end.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Portrait_of_Miyamoto_Musashi_%28detail%29.webp/330px-Portrait_of_Miyamoto_Musashi_%28detail%29.webp",
+      "image_credit": {
+        "author": "Miyamoto Musashi",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Miyamoto_Musashi_(detail).webp"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Miyamoto_Musashi",
       "is_featured": false,
       "providers": [
@@ -1335,6 +1839,12 @@
       "title": "Mary, Queen of Scots, is defeated at the Battle of Langside, part of the civil war between Queen…",
       "summary": "Mary, Queen of Scots, is defeated at the Battle of Langside, part of the civil war between Queen Mary and the supporters of her son, James VI.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Fran%C3%A7ois_Clouet_-_Mary%2C_Queen_of_Scots_%281542-87%29_-_Google_Art_Project.jpg/330px-Fran%C3%A7ois_Clouet_-_Mary%2C_Queen_of_Scots_%281542-87%29_-_Google_Art_Project.jpg",
+      "image_credit": {
+        "author": "François Clouet",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Clouet_-_Mary,_Queen_of_Scots_(1542-87)_-_Google_Art_Project.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Mary%2C_Queen_of_Scots",
       "is_featured": false,
       "providers": [
@@ -1350,6 +1860,12 @@
       "title": "Amerigo Vespucci, this time under Portuguese flag, sets sail for western lands",
       "summary": "Amerigo Vespucci, this time under Portuguese flag, sets sail for western lands.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Amerigo_Vespucci_%28with_turban%29_-_cropped.jpg/330px-Amerigo_Vespucci_%28with_turban%29_-_cropped.jpg",
+      "image_credit": {
+        "author": "Crispijn van de Passe the Elder",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Amerigo_Vespucci_(with_turban)_-_cropped.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Amerigo_Vespucci",
       "is_featured": false,
       "providers": [
@@ -1365,6 +1881,12 @@
       "title": "Julian of Norwich has visions of Jesus while suffering from a life-threatening illness, visions…",
       "summary": "Julian of Norwich has visions of Jesus while suffering from a life-threatening illness, visions which are later described and interpreted in her book Revelations of Divine Love.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Statue_of_Dame_Julian_crop.jpg/330px-Statue_of_Dame_Julian_crop.jpg",
+      "image_credit": {
+        "author": "User:Poliphilo",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Statue_of_Dame_Julian_crop.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Julian_of_Norwich",
       "is_featured": false,
       "providers": [
@@ -1380,6 +1902,12 @@
       "title": "A Latin Christian fleet defeats a Turkish fleet in the battle of Pallene during the Smyrniote…",
       "summary": "A Latin Christian fleet defeats a Turkish fleet in the battle of Pallene during the Smyrniote crusades.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/San_Giovanni_in_Laterano_2021.jpg/330px-San_Giovanni_in_Laterano_2021.jpg",
+      "image_credit": {
+        "author": "NikonZ7II",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:San_Giovanni_in_Laterano_2021.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Latin_Church",
       "is_featured": false,
       "providers": [
@@ -1395,6 +1923,12 @@
       "title": "Baldwin I of Jerusalem captured Beirut from the Fatimid Caliphate with the help of a Genoese fleet",
       "summary": "Baldwin I of Jerusalem captures the city of Beirut from the Fatimid Caliphate with the help of a Genoese fleet.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Baldwin_1_of_Jerusalem.jpg/330px-Baldwin_1_of_Jerusalem.jpg",
+      "image_credit": {
+        "author": "unknown",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Baldwin_1_of_Jerusalem.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Baldwin_I_of_Jerusalem",
       "is_featured": false,
       "providers": [
@@ -1410,6 +1944,12 @@
       "title": "Election of pope Agapetus I following the death of pope John II earlier that month",
       "summary": "Election of pope Agapetus I following the death of pope John II earlier that month.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Saint_Maixent_l%27%C3%89cole-Abbatiale_Saint_Maixent-Vitraux_du_choeur-20110307%28Agapetus_crop%29.jpg",
+      "image_credit": {
+        "author": "Dvillafruela",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Saint_Maixent_l%27%C3%89cole-Abbatiale_Saint_Maixent-Vitraux_du_choeur-20110307(Agapetus_crop).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Pope_Agapetus_I",
       "is_featured": false,
       "providers": [
@@ -1425,6 +1965,12 @@
       "title": "Abbotsbury Garland Day (Dorset, England)",
       "summary": "Abbotsbury Garland Day (Dorset, England)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Rodden_Row_-_Abbotsbury_-_geograph.org.uk_-_1595855.jpg/330px-Rodden_Row_-_Abbotsbury_-_geograph.org.uk_-_1595855.jpg",
+      "image_credit": {
+        "author": "Gillian Moy",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Rodden_Row_-_Abbotsbury_-_geograph.org.uk_-_1595855.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Abbotsbury",
       "is_featured": false,
       "providers": [
@@ -1439,6 +1985,12 @@
       "title": "Christian feast day: André-Hubert Fournet",
       "summary": "Christian feast day: Frances Perkins (Episcopal Church (USA))",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Andr%C3%A9-Hubert_Fournet.jpg/330px-Andr%C3%A9-Hubert_Fournet.jpg",
+      "image_credit": {
+        "author": "N.N.",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Andr%C3%A9-Hubert_Fournet.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Andr%C3%A9-Hubert_Fournet",
       "is_featured": false,
       "providers": [
@@ -1453,6 +2005,12 @@
       "title": "Christian feast day: Conchita Barrecheguren (Roman Catholic)",
       "summary": "Christian feast day: Conchita Barrecheguren (Roman Catholic)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Conchita_Barrecheguren.jpg/330px-Conchita_Barrecheguren.jpg",
+      "image_credit": {
+        "author": "FranciscoCSSR",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Conchita_Barrecheguren.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Maria_Concepci%C3%B3n_Barrecheguren_Garc%C3%ADa",
       "is_featured": false,
       "providers": [
@@ -1467,6 +2025,12 @@
       "title": "Christian feast day: Gerard of Villamagna",
       "summary": "Christian feast day: Gerard of Villamagna",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bicci_di_Lorenzo_-_Blessed_Gerard_of_Villamagna_-_WGA2163.jpg/330px-Bicci_di_Lorenzo_-_Blessed_Gerard_of_Villamagna_-_WGA2163.jpg",
+      "image_credit": {
+        "author": "Bicci di Lorenzo",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bicci_di_Lorenzo_-_Blessed_Gerard_of_Villamagna_-_WGA2163.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Gerard_of_Villamagna",
       "is_featured": false,
       "providers": [
@@ -1481,6 +2045,12 @@
       "title": "Christian feast day: Our Lady of Fátima",
       "summary": "Christian feast day: Our Lady of Fátima",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Fatima_%283_%E2%80%93_cropped%29.jpg/330px-Fatima_%283_%E2%80%93_cropped%29.jpg",
+      "image_credit": {
+        "author": "Bingar1234",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fatima_(3_%E2%80%93_cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Our_Lady_of_F%C3%A1tima",
       "is_featured": false,
       "providers": [
@@ -1495,6 +2065,7 @@
       "title": "Rotuma Day (Rotuma)",
       "summary": "Rotuma Day (Rotuma)",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Rotuma_Day",
       "is_featured": false,
       "providers": [

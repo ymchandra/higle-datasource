@@ -1,11 +1,37 @@
 {
   "date": "07-03",
   "display_date": "July 3",
-  "last_updated": "2026-11-23T10:30:13Z",
+  "last_updated": "2026-11-23T15:08:48Z",
   "sources_used": [
     "wikimedia",
     "muffinlabs"
   ],
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0. Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US. Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
+  "sources": [
+    {
+      "id": "wikimedia",
+      "name": "Wikimedia On This Day API",
+      "url": "https://en.wikipedia.org/",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0."
+    },
+    {
+      "id": "muffinlabs",
+      "name": "Muffin Labs History API",
+      "url": "https://history.muffinlabs.com/",
+      "license": "CC BY-SA 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
+      "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
+    }
+  ],
+  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+  "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
   "items": [
     {
       "id": "07-03-2025-231a5910",
@@ -15,6 +41,12 @@
       "title": "David Mabuza",
       "summary": "David Mabuza, South African politician, 8th Deputy President of South Africa (born 1960)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/David_D_Mabuza%2C_18_ago._2022_%28cropped%29.jpg/330px-David_D_Mabuza%2C_18_ago._2022_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Government Communication and Information System",
+        "license": "CC BY 2.5",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:David_D_Mabuza,_18_ago._2022_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/David_Mabuza",
       "is_featured": false,
       "providers": [
@@ -29,7 +61,8 @@
       "category": "deaths",
       "title": "Lolit Solis",
       "summary": "Lolit Solis, Filipino talent manager, columnist and talk show host (born 1947)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Lolit_Solis.jpeg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Lolit_Solis",
       "is_featured": false,
       "providers": [
@@ -45,6 +78,12 @@
       "title": "In the U.S. state of Arizona, the Boundary Fire (pictured) burned out after 32 days, burning…",
       "summary": "In the U.S. state of Arizona, the Boundary Fire (pictured) burned out after 32 days, burning 17,788 acres (7,199 ha) of the Coconino and Kaibab National Forests.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Boundary_Fire_2017_%2834583638403%29.jpg/330px-Boundary_Fire_2017_%2834583638403%29.jpg",
+      "image_credit": {
+        "author": "Brandon R. Oberhardt / U.S. Forest Service, Southwestern Region, Kaibab National Forest",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Boundary_Fire_2017_(34583638403).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Boundary_Fire_(2017)",
       "is_featured": false,
       "providers": [
@@ -59,6 +98,12 @@
       "title": "Zalman Schachter-Shalomi",
       "summary": "Zalman Schachter-Shalomi, Ukrainian-American rabbi and author (born 1924)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Zalman_Schachter-Shalomi.jpg/330px-Zalman_Schachter-Shalomi.jpg",
+      "image_credit": {
+        "author": "Joan Halifax (Santa Fe, New Mexico). Cropped by Spinoziano",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Zalman_Schachter-Shalomi.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Zalman_Schachter-Shalomi",
       "is_featured": false,
       "providers": [
@@ -74,6 +119,12 @@
       "title": "President of Egypt Mohamed Morsi is removed from office by the military after four days of…",
       "summary": "President of Egypt Mohamed Morsi is removed from office by the military after four days of protests all over the country calling for his resignation, to which he did not respond. The president of the Supreme Constitutional Court of Egypt, Adly Mansour, is declared acting president until further elections are held.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Seal_of_the_Egyptian_Presidency.png/330px-Seal_of_the_Egyptian_Presidency.png",
+      "image_credit": {
+        "author": "Presidency of the Arab Republic of Egypt",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Seal_of_the_Egyptian_Presidency.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/President_of_Egypt",
       "is_featured": false,
       "providers": [
@@ -89,6 +140,12 @@
       "title": "Radu Vasile",
       "summary": "Radu Vasile, Romanian historian and politician, 57th Prime Minister of Romania (born 1942)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Radu_Vasile%282%29.tif/lossless-page1-330px-Radu_Vasile%282%29.tif.png",
+      "image_credit": {
+        "author": "Zeleacodreanu",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Radu_Vasile(2).tif"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Radu_Vasile",
       "is_featured": false,
       "providers": [
@@ -103,7 +160,8 @@
       "category": "deaths",
       "title": "Abu Daoud",
       "summary": "Abu Daoud, Palestinian terrorist, planned the Munich massacre (born 1937)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/4/4e/Abu_Daoud_pic.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Abu_Daoud",
       "is_featured": false,
       "providers": [
@@ -119,6 +177,7 @@
       "title": "The Valencia Metro derailment kills 41 people",
       "summary": "The Valencia Metro derailment kills 41 people.",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Valencia_Metro_derailment",
       "is_featured": false,
       "providers": [
@@ -134,6 +193,12 @@
       "title": "Joseph Goguen",
       "summary": "Joseph Goguen, American computer scientist, developed the OBJ programming language (born 1941)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/JosephGoguen.png/330px-JosephGoguen.png",
+      "image_credit": {
+        "author": "Tillmo",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:JosephGoguen.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Joseph_Goguen",
       "is_featured": false,
       "providers": [
@@ -149,6 +214,12 @@
       "title": "Alberto Lattuada",
       "summary": "Alberto Lattuada, Italian actor, director, and screenwriter (born 1914)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Alberto_Lattuada.jpg/330px-Alberto_Lattuada.jpg",
+      "image_credit": {
+        "author": "Indeciso42 at the Italian Wikipedia project.",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Alberto_Lattuada.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Alberto_Lattuada",
       "is_featured": false,
       "providers": [
@@ -164,6 +235,12 @@
       "title": "Gaylord Nelson",
       "summary": "Gaylord Nelson, American lawyer and politician, 35th Governor of Wisconsin (born 1916)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Gaylord_Nelson.jpg/330px-Gaylord_Nelson.jpg",
+      "image_credit": {
+        "author": "CQ Roll Call & The U.S. Congress",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gaylord_Nelson.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Gaylord_Nelson",
       "is_featured": false,
       "providers": [
@@ -179,6 +256,12 @@
       "title": "Mark Sandman",
       "summary": "Mark Sandman, American singer-songwriter, guitarist, and producer (born 1952)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mark_Sandman_Mississippi_Nights_1997.04.09.jpg/330px-Mark_Sandman_Mississippi_Nights_1997.04.09.jpg",
+      "image_credit": {
+        "author": "Grayson Lang / Grayson at en.wikipedia",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Mark_Sandman_Mississippi_Nights_1997.04.09.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Mark_Sandman",
       "is_featured": false,
       "providers": [
@@ -193,7 +276,8 @@
       "category": "deaths",
       "title": "Danielle Bunten Berry",
       "summary": "Danielle Bunten Berry, American game designer and programmer (born 1949)",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f4/DaniBuntenBerryGameDesigner.PNG/330px-DaniBuntenBerryGameDesigner.PNG",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Danielle_Bunten_Berry",
       "is_featured": false,
       "providers": [
@@ -209,6 +293,12 @@
       "title": "British Prime Minister John Major announced the Stone of Scone would be returned to Scotland",
       "summary": "British Prime Minister John Major announced the Stone of Scone would be returned to Scotland.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/John_Major_1993_%283%29.jpg/330px-John_Major_1993_%283%29.jpg",
+      "image_credit": {
+        "author": "Series: Photographs Relating to the Clinton Administration, 1/20/1993 - 1/20/2001 Collection: Photographs of the White…",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Major_1993_(3).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Major",
       "is_featured": false,
       "providers": [
@@ -224,6 +314,12 @@
       "title": "The Fatih Sultan Mehmet Bridge in Istanbul, Turkey is completed, providing the second connection…",
       "summary": "The Fatih Sultan Mehmet Bridge in Istanbul, Turkey is completed, providing the second connection between the continents of Europe and Asia over the Bosphorus.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Fatih_sultan_mehmet_k%C3%B6pr%C3%BCs%C3%BC_%28cropped%29.jpg/330px-Fatih_sultan_mehmet_k%C3%B6pr%C3%BCs%C3%BC_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Mehrdad85",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fatih_sultan_mehmet_k%C3%B6pr%C3%BCs%C3%BC_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Fatih_Sultan_Mehmet_Bridge",
       "is_featured": false,
       "providers": [
@@ -239,6 +335,12 @@
       "title": "The US Navy warship Vincennes shot down Iran Air Flight 655 over the Persian Gulf, killing all 290…",
       "summary": "United States Navy warship USS Vincennes shoots down Iran Air Flight 655 over the Persian Gulf, killing all 290 people aboard.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Emblem_of_the_United_States_Navy.svg/330px-Emblem_of_the_United_States_Navy.svg.png",
+      "image_credit": {
+        "author": "United States Navy",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_United_States_Navy.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/United_States_Navy",
       "is_featured": false,
       "providers": [
@@ -254,6 +356,12 @@
       "title": "U.S. President Jimmy Carter signs the first directive for secret aid to the opponents of the…",
       "summary": "U.S. President Jimmy Carter signs the first directive for secret aid to the opponents of the pro-Soviet regime in Kabul.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg/330px-Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg",
+      "image_credit": {
+        "author": "Department of Defense. Department of the Navy. Naval Photographic Center",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jimmy_Carter_Official_Portrait2_(3x4_cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jimmy_Carter",
       "is_featured": false,
       "providers": [
@@ -269,6 +377,12 @@
       "title": "US president Jimmy Carter signed a presidential finding, authorizing covert operations to aid the…",
       "summary": "US president Jimmy Carter signed a presidential finding, authorizing covert operations to aid the mujahideen against the Soviet-backed Democratic Republic of Afghanistan.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg/330px-Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg",
+      "image_credit": {
+        "author": "Department of Defense. Department of the Navy. Naval Photographic Center",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jimmy_Carter_Official_Portrait2_(3x4_cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jimmy_Carter",
       "is_featured": false,
       "providers": [
@@ -283,6 +397,12 @@
       "title": "British singer David Bowie retired his stage persona Ziggy Stardust in a surprise announcement on…",
       "summary": "David Bowie retires his stage persona Ziggy Stardust with the surprise announcement that it is \"the last show that we'll ever do\" on the last day of the Ziggy Stardust Tour.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg/330px-David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg",
+      "image_credit": {
+        "author": "Adam Bielawski",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/David_Bowie",
       "is_featured": true,
       "providers": [
@@ -298,6 +418,12 @@
       "title": "Alvin Gajadhur",
       "summary": "Alvin Gajadhur, Polish politician, statesman, chemical engineer, and educator",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Alvin_Gajadhur%2C_G%C5%82%C3%B3wny_Inspektor_Transportu_Drogowego.jpg/330px-Alvin_Gajadhur%2C_G%C5%82%C3%B3wny_Inspektor_Transportu_Drogowego.jpg",
+      "image_credit": {
+        "author": "Główny Inspektorat Transportu Drogowego",
+        "license": "CC BY 3.0 pl",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Alvin_Gajadhur,_G%C5%82%C3%B3wny_Inspektor_Transportu_Drogowego.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Alvin_Gajadhur",
       "is_featured": false,
       "providers": [
@@ -313,6 +439,12 @@
       "title": "Julian Assange",
       "summary": "Julian Assange, Australian journalist, publisher, and activist, founded WikiLeaks",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Julian_Assange_at_2025_Cannes_The_Six_Billion_Dollar_Man_Photocall_3_%28cropped%29.jpg/330px-Julian_Assange_at_2025_Cannes_The_Six_Billion_Dollar_Man_Photocall_3_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Kacy Bao",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Julian_Assange_at_2025_Cannes_The_Six_Billion_Dollar_Man_Photocall_3_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Julian_Assange",
       "is_featured": false,
       "providers": [
@@ -328,6 +460,12 @@
       "title": "Dan-Air Flight 1903 crashed into the slopes of the Montseny Massif in Catalonia, Spain, killing…",
       "summary": "Dan-Air Flight 1903 crashes into the Les Agudes mountain in the Montseny Massif near the village of Arbúcies in Catalonia, Spain, killing all 112 people aboard.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Dan-Air_London_De_Havilland_DH_106_Comet_series_4_G-APDN_at_Manchester_Airport%2C_25_June_1970.jpg/330px-Dan-Air_London_De_Havilland_DH_106_Comet_series_4_G-APDN_at_Manchester_Airport%2C_25_June_1970.jpg",
+      "image_credit": {
+        "author": "Rick Skoroszewski",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Dan-Air_London_De_Havilland_DH_106_Comet_series_4_G-APDN_at_Manchester_Airport,_25_June_1970.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Dan-Air_Flight_1903",
       "is_featured": true,
       "providers": [
@@ -343,6 +481,12 @@
       "title": "The Troubles: The British Army began the Falls Curfew in Belfast, Northern Ireland, which resulted…",
       "summary": "The Troubles: The British Army began the Falls Curfew in Belfast, Northern Ireland, which resulted in greater Irish republican resistance.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Free_Derry_Corner_-_geograph.org.uk_-_1317804.jpg/330px-Free_Derry_Corner_-_geograph.org.uk_-_1317804.jpg",
+      "image_credit": {
+        "author": "louise price",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Free_Derry_Corner_-_geograph.org.uk_-_1317804.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/The_Troubles",
       "is_featured": true,
       "providers": [
@@ -358,6 +502,12 @@
       "title": "Ramush Haradinaj",
       "summary": "Ramush Haradinaj, Kosovo-Albanian soldier and politician, 4th Prime Minister of Kosovo",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Ramush_Haradinaj_2025.jpg/330px-Ramush_Haradinaj_2025.jpg",
+      "image_credit": {
+        "author": "European Commission",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Ramush_Haradinaj_2025.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Ramush_Haradinaj",
       "is_featured": false,
       "providers": [
@@ -373,6 +523,12 @@
       "title": "The Aden Emergency: The Battle of the Crater in which the British Argyll and Sutherland…",
       "summary": "The Aden Emergency: The Battle of the Crater in which the British Argyll and Sutherland Highlanders retake the Crater district following the Arab Police mutiny.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/British_soldiers_in_gas_masks%2C_Aden_emergency.jpg/330px-British_soldiers_in_gas_masks%2C_Aden_emergency.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:British_soldiers_in_gas_masks,_Aden_emergency.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Aden_Emergency",
       "is_featured": false,
       "providers": [
@@ -388,6 +544,12 @@
       "title": "Charles Bathurst",
       "summary": "Charles Bathurst, 1st Viscount Bledisloe, English politician, 4th Governor-General of New Zealand (born 1867)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Viscount_Bledisloe.jpg/330px-Viscount_Bledisloe.jpg",
+      "image_credit": {
+        "author": "Bassano Ltd",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Viscount_Bledisloe.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Charles_Bathurst%2C_1st_Viscount_Bledisloe",
       "is_featured": false,
       "providers": [
@@ -403,6 +565,12 @@
       "title": "Reginald Marsh",
       "summary": "Reginald Marsh, French-American painter, illustrator, and academic (born 1898)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Archives_of_American_Art_-_Louis_Bouche%2C_Reginald_Marsh-_and_William_Zorach_-_2481.jpg/330px-Archives_of_American_Art_-_Louis_Bouche%2C_Reginald_Marsh-_and_William_Zorach_-_2481.jpg",
+      "image_credit": {
+        "author": "Jerry Saltsberg",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Archives_of_American_Art_-_Louis_Bouche,_Reginald_Marsh-_and_William_Zorach_-_2481.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Reginald_Marsh_(artist)",
       "is_featured": false,
       "providers": [
@@ -418,6 +586,12 @@
       "title": "The Constitution of Puerto Rico is approved by the United States Congress",
       "summary": "The Constitution of Puerto Rico is approved by the United States Congress.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Constitucion_PR.JPG/330px-Constitucion_PR.JPG",
+      "image_credit": {
+        "author": "Thief12 (Carlo Giovannetti)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Constitucion_PR.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Constitution_of_Puerto_Rico",
       "is_featured": false,
       "providers": [
@@ -433,6 +607,12 @@
       "title": "The SS United States sets sail on her maiden voyage to Southampton. During the voyage, the ship…",
       "summary": "The SS United States sets sail on her maiden voyage to Southampton. During the voyage, the ship takes the Blue Riband away from the RMS Queen Mary.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/StateLibQld_1_169487_United_States_%28ship%29.jpg/330px-StateLibQld_1_169487_United_States_%28ship%29.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:StateLibQld_1_169487_United_States_(ship).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/SS_United_States",
       "is_featured": false,
       "providers": [
@@ -448,6 +628,12 @@
       "title": "Amit Kumar",
       "summary": "Amit Kumar, Indian film playback singer, actor, director, music director and musician",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Amit_Kumar_attending_Durga_Puja_in_2021.jpg",
+      "image_credit": {
+        "author": "Bollywood Hungama",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Amit_Kumar_attending_Durga_Puja_in_2021.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Amit_Kumar",
       "is_featured": false,
       "providers": [
@@ -463,6 +649,12 @@
       "title": "Jean-Claude Duvalier",
       "summary": "Jean-Claude Duvalier, Haitian politician, 41st President of Haiti (died 2014)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Baby_Doc_%28centr%C3%A9e%29.jpg/330px-Baby_Doc_%28centr%C3%A9e%29.jpg",
+      "image_credit": {
+        "author": "Marcello Casal Jr/ABr",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Baby_Doc_(centr%C3%A9e).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jean-Claude_Duvalier",
       "is_featured": false,
       "providers": [
@@ -477,7 +669,8 @@
       "category": "births",
       "title": "Leszek Miller",
       "summary": "Leszek Miller, Polish political scientist and politician, 10th Prime Minister of Poland",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Official_portrait_of_Leszek_Miller_3.jpg/330px-Official_portrait_of_Leszek_Miller_3.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Leszek_Miller",
       "is_featured": false,
       "providers": [
@@ -493,6 +686,12 @@
       "title": "Michael Martin",
       "summary": "Michael Martin, Baron Martin of Springburn, Scottish politician, Speaker of the House of Commons (died 2018)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Michael_Martin.jpg/330px-Michael_Martin.jpg",
+      "image_credit": {
+        "author": "Alandunlop1980pk",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Michael_Martin.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Michael_Martin%2C_Baron_Martin_of_Springburn",
       "is_featured": false,
       "providers": [
@@ -508,6 +707,12 @@
       "title": "World War II: The Minsk Offensive clears German troops from the city",
       "summary": "World War II: The Minsk Offensive clears German troops from the city.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Operation_bagration_minsk_pocket_1944_june_29-july_03.png/330px-Operation_bagration_minsk_pocket_1944_june_29-july_03.png",
+      "image_credit": {
+        "author": "Kl833x9",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Operation_bagration_minsk_pocket_1944_june_29-july_03.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Minsk_offensive",
       "is_featured": false,
       "providers": [
@@ -523,6 +728,12 @@
       "title": "Judith Durham",
       "summary": "Judith Durham, Australian folk-pop singer-songwriter and musician (died 2022)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Judith_Durham_Allan_Warren.jpg/330px-Judith_Durham_Allan_Warren.jpg",
+      "image_credit": {
+        "author": "Allan warren",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Judith_Durham_Allan_Warren.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Judith_Durham",
       "is_featured": false,
       "providers": [
@@ -537,7 +748,8 @@
       "category": "births",
       "title": "Liamine Zéroual",
       "summary": "Liamine Zéroual, Algerian politician, 6th President of Algeria (died 2026)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/e/ef/Liamine_Z%C3%A9roual.png",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Liamine_Z%C3%A9roual",
       "is_featured": false,
       "providers": [
@@ -553,6 +765,12 @@
       "title": "Friedrich Akel",
       "summary": "Friedrich Akel, Estonian physician and politician, Head of State of Estonia (born 1871)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Friedrich_Akel_%281-E-2929%29.jpg/330px-Friedrich_Akel_%281-E-2929%29.jpg",
+      "image_credit": {
+        "author": "Unknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Friedrich_Akel_(1-E-2929).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Friedrich_Akel",
       "is_featured": false,
       "providers": [
@@ -568,6 +786,12 @@
       "title": "Second World War: The Royal Navy attacked the French fleet at Mers El Kébir (pictured), fearing…",
       "summary": "Second World War: The Royal Navy attacked the French fleet at Mers El Kébir (pictured), fearing that the ships would fall into Axis hands after the French–German armistice.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg/330px-Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
+      "image_credit": {
+        "author": "Richard Opitz",
+        "license": "CC BY-SA 3.0 de",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/World_War_II",
       "is_featured": false,
       "providers": [
@@ -582,6 +806,12 @@
       "title": "World War II: The Royal Navy attacks the French naval squadron in Algeria, to ensure that it will…",
       "summary": "World War II: The Royal Navy attacks the French naval squadron in Algeria, to ensure that it will not fall under German control. Of the four French battleships present, one is sunk, two are damaged, and one escapes back to France.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg/330px-Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
+      "image_credit": {
+        "author": "Richard Opitz",
+        "license": "CC BY-SA 3.0 de",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/World_War_II",
       "is_featured": false,
       "providers": [
@@ -596,7 +826,8 @@
       "category": "births",
       "title": "Jerzy Buzek",
       "summary": "Jerzy Buzek, Polish engineer and politician, 9th Prime Minister of Poland",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Official_portrait_of_Jerzy_Buzek.jpg/330px-Official_portrait_of_Jerzy_Buzek.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Jerzy_Buzek",
       "is_featured": false,
       "providers": [
@@ -612,6 +843,12 @@
       "title": "Lamar Alexander",
       "summary": "Lamar Alexander, American lawyer and politician, 5th United States Secretary of Education",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Lamar_Alexander_official_photo.jpg/330px-Lamar_Alexander_official_photo.jpg",
+      "image_credit": {
+        "author": "U.S. Senate Photographic Studio-Renee Bouchard",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Lamar_Alexander_official_photo.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Lamar_Alexander",
       "is_featured": false,
       "providers": [
@@ -627,6 +864,12 @@
       "title": "László Kovács",
       "summary": "László Kovács, Hungarian politician and diplomat, Hungarian Minister of Foreign Affairs",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kov%C3%A1csL%C3%A1szl%C3%B32014.JPG/330px-Kov%C3%A1csL%C3%A1szl%C3%B32014.JPG",
+      "image_credit": {
+        "author": "Tibor Végh",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Kov%C3%A1csL%C3%A1szl%C3%B32014.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Kov%C3%A1cs_(politician)",
       "is_featured": false,
       "providers": [
@@ -642,6 +885,12 @@
       "title": "On the 75th anniversary of the end of the Battle of Gettysburg, U.S. President Franklin D.…",
       "summary": "On the 75th anniversary of the end of the Battle of Gettysburg, U.S. President Franklin D. Roosevelt dedicated the Eternal Light Peace Memorial.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Gettysburg_ELPMemorial.jpg/330px-Gettysburg_ELPMemorial.jpg",
+      "image_credit": {
+        "author": "Memorial:architect Paul Philippe Cret (1876-1945), sculptor Lee Oscar Lawrie (1877-1963).[1] Photo: User:Accurizer",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gettysburg_ELPMemorial.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/1938_Gettysburg_reunion",
       "is_featured": true,
       "providers": [
@@ -657,6 +906,12 @@
       "title": "World speed record for a steam locomotive is set in England, by the Mallard, which reaches a speed…",
       "summary": "World speed record for a steam locomotive is set in England, by the Mallard, which reaches a speed of 125.88 miles per hour (202.58 km/h).",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Number_4468_Mallard_in_York.jpg/330px-Number_4468_Mallard_in_York.jpg",
+      "image_credit": {
+        "author": "PTG Dudva",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Number_4468_Mallard_in_York.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Steam_locomotive",
       "is_featured": false,
       "providers": [
@@ -671,7 +926,8 @@
       "category": "deaths",
       "title": "Jacob Schick",
       "summary": "Jacob Schick, American-Canadian captain and businessman, invented the electric razor (born 1877)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Jacob_Schick.gif",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Jacob_Schick",
       "is_featured": false,
       "providers": [
@@ -687,6 +943,12 @@
       "title": "Anthony Lester",
       "summary": "Anthony Lester, Baron Lester of Herne Hill, English lawyer and politician (died 2020)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Official_portrait_of_Lord_Lester_of_Herne_Hill_crop_2.jpg/330px-Official_portrait_of_Lord_Lester_of_Herne_Hill_crop_2.jpg",
+      "image_credit": {
+        "author": "Chris McAndrew",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Lord_Lester_of_Herne_Hill_crop_2.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Anthony_Lester%2C_Baron_Lester_of_Herne_Hill",
       "is_featured": false,
       "providers": [
@@ -702,6 +964,12 @@
       "title": "Harrison Schmitt",
       "summary": "Harrison Schmitt, American geologist, astronaut, and politician. Twelfth man to walk on the moon.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Harrison_Schmitt_%284x5_cropped%29.jpg/330px-Harrison_Schmitt_%284x5_cropped%29.jpg",
+      "image_credit": {
+        "author": "NASA",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Harrison_Schmitt_(4x5_cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Harrison_Schmitt",
       "is_featured": false,
       "providers": [
@@ -717,6 +985,12 @@
       "title": "André Citroën",
       "summary": "André Citroën, French engineer and businessman, founded the Citroën Company (born 1878)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/AndreCitroen.jpg/330px-AndreCitroen.jpg",
+      "image_credit": {
+        "author": "Bain News Service",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:AndreCitroen.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Andr%C3%A9_Citro%C3%ABn",
       "is_featured": false,
       "providers": [
@@ -732,6 +1006,12 @@
       "title": "Hipólito Yrigoyen",
       "summary": "Hipólito Yrigoyen, Argentinian educator and politician, 19th President of Argentina (born 1852)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Hipolito_Yrigoyen_-_NAC.jpg/330px-Hipolito_Yrigoyen_-_NAC.jpg",
+      "image_credit": {
+        "author": "Unknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Hipolito_Yrigoyen_-_NAC.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Hip%C3%B3lito_Yrigoyen",
       "is_featured": false,
       "providers": [
@@ -747,6 +1027,12 @@
       "title": "Laurence Street",
       "summary": "Laurence Street, Australian jurist and former Chief Justice of the Supreme Court of New South Wales (died 2018)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/ChiefJusticeSirLaurenceStreet.png/330px-ChiefJusticeSirLaurenceStreet.png",
+      "image_credit": {
+        "author": "Fairfax Media Archive",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:ChiefJusticeSirLaurenceStreet.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Laurence_Street",
       "is_featured": false,
       "providers": [
@@ -762,6 +1048,12 @@
       "title": "Guillaume Cornelis van Beverloo",
       "summary": "Guillaume Cornelis van Beverloo, Belgian painter and sculptor (died 2010)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Guillaume_Cornelis_%22Corneille%22_van_Beverloo_%281995%29.png",
+      "image_credit": {
+        "author": "Pantalaskas",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Guillaume_Cornelis_%22Corneille%22_van_Beverloo_(1995).png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Corneille_Guillaume_Beverloo",
       "is_featured": false,
       "providers": [
@@ -777,6 +1069,12 @@
       "title": "François Reichenbach",
       "summary": "François Reichenbach, French director, producer, and screenwriter (died 1993)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Fran%C3%A7ois_Reichenbach_par_Claude_Truong-Ngoc.jpeg/330px-Fran%C3%A7ois_Reichenbach_par_Claude_Truong-Ngoc.jpeg",
+      "image_credit": {
+        "author": "Photo Claude TRUONG-NGOC",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Reichenbach_par_Claude_Truong-Ngoc.jpeg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Reichenbach",
       "is_featured": false,
       "providers": [
@@ -792,6 +1090,12 @@
       "title": "João Saldanha",
       "summary": "João Saldanha, Brazilian footballer, manager, and journalist (died 1990)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Jo%C3%A3o_Saldanha_%281973%29.tif/lossy-page1-330px-Jo%C3%A3o_Saldanha_%281973%29.tif.jpg",
+      "image_credit": {
+        "author": "UnknownUnknown",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jo%C3%A3o_Saldanha_(1973).tif"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jo%C3%A3o_Saldanha",
       "is_featured": false,
       "providers": [
@@ -807,6 +1111,12 @@
       "title": "Confederate veterans at the Great Reunion of 1913 reenact Pickett's Charge; upon reaching the…",
       "summary": "Confederate veterans at the Great Reunion of 1913 reenact Pickett's Charge; upon reaching the high-water mark of the Confederacy they are met by the outstretched hands of friendship from Union survivors.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_the_Confederate_States_%281861%E2%80%931863%29.svg/330px-Flag_of_the_Confederate_States_%281861%E2%80%931863%29.svg.png",
+      "image_credit": {
+        "author": "Original: Nicola Marschall (1829–1917) Vector: Ariane Schmidt",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Confederate_States_(1861%E2%80%931863).svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Confederate_States_of_America",
       "is_featured": false,
       "providers": [
@@ -822,6 +1132,12 @@
       "title": "Start of the Young Turk Revolution in the Ottoman Empire, forcing Sultan Abdul Hamid II leads to…",
       "summary": "Start of the Young Turk Revolution in the Ottoman Empire, forcing Sultan Abdul Hamid II leads to restore the Constitution of 1876 and reconvene the parliament.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Declaration_of_the_1908_Revolution_in_Ottoman_Empire.png/330px-Declaration_of_the_1908_Revolution_in_Ottoman_Empire.png",
+      "image_credit": {
+        "author": "Charles Roden Buxton",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_the_1908_Revolution_in_Ottoman_Empire.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Young_Turk_Revolution",
       "is_featured": false,
       "providers": [
@@ -837,6 +1153,12 @@
       "title": "Robert B. Meyner",
       "summary": "Robert B. Meyner, American lawyer and politician, 44th Governor of New Jersey (died 1990)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Robert_B._Meyner_%28NJ%29.jpg/330px-Robert_B._Meyner_%28NJ%29.jpg",
+      "image_credit": {
+        "author": "Office of the Governor of New Jersey",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Robert_B._Meyner_(NJ).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Robert_B._Meyner",
       "is_featured": false,
       "providers": [
@@ -852,6 +1174,12 @@
       "title": "Theodor Herzl",
       "summary": "Theodor Herzl, Austrian journalist, playwright, and father of modern political Zionism (born 1860)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Theodor_Herzl_%283x4_cropped%29.jpg/330px-Theodor_Herzl_%283x4_cropped%29.jpg",
+      "image_credit": {
+        "author": "Carl Pietzner",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Theodor_Herzl_(3x4_cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Theodor_Herzl",
       "is_featured": false,
       "providers": [
@@ -867,6 +1195,12 @@
       "title": "A Spanish squadron, led by Pascual Cervera y Topete, is defeated by an American squadron under…",
       "summary": "A Spanish squadron, led by Pascual Cervera y Topete, is defeated by an American squadron under William T. Sampson in the Battle of Santiago de Cuba.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/N205_Pascual_Cervera.jpg/330px-N205_Pascual_Cervera.jpg",
+      "image_credit": {
+        "author": "Original photographed by Carlos Ladislao Bustos (1877-1931)Cesarbustos",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:N205_Pascual_Cervera.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Pascual_Cervera_y_Topete",
       "is_featured": false,
       "providers": [
@@ -882,6 +1216,12 @@
       "title": "Stefanos Stefanopoulos",
       "summary": "Stefanos Stefanopoulos, Greek politician, Prime Minister of Greece (died 1982)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Stefanos_Stefanopoulos_1965.jpg/330px-Stefanos_Stefanopoulos_1965.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Stefanos_Stefanopoulos_1965.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Stefanos_Stefanopoulos",
       "is_featured": false,
       "providers": [
@@ -897,6 +1237,12 @@
       "title": "Idaho is admitted as the 43rd U.S. state",
       "summary": "Idaho is admitted as the 43rd U.S. state.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Idaho.svg/330px-Flag_of_Idaho.svg.png",
+      "image_credit": {
+        "author": "Paul B. Evans, based on a work by the Adjutant General of Idaho and Emma Edwards Green",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Idaho.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Idaho",
       "is_featured": false,
       "providers": [
@@ -912,6 +1258,12 @@
       "title": "Karl Benz officially unveils the Benz Patent-Motorwagen, the first purpose-built automobile",
       "summary": "Karl Benz officially unveils the Benz Patent-Motorwagen, the first purpose-built automobile.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Carl_Benz_circa_1920.jpg/330px-Carl_Benz_circa_1920.jpg",
+      "image_credit": {
+        "author": "Unknown (same photo credited to various stock photo agencies. The copyright is also claimed by the Mercedes-Benz…",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Carl_Benz_circa_1920.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Carl_Benz",
       "is_featured": false,
       "providers": [
@@ -927,6 +1279,12 @@
       "title": "The New-York Tribune becomes the first newspaper to use a linotype machine, eliminating…",
       "summary": "The New-York Tribune becomes the first newspaper to use a linotype machine, eliminating typesetting by hand.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Nytrib1864.jpg/330px-Nytrib1864.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Nytrib1864.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/New-York_Tribune",
       "is_featured": false,
       "providers": [
@@ -942,6 +1300,12 @@
       "title": "Raymond A. Spruance",
       "summary": "Raymond A. Spruance, American admiral and diplomat, United States Ambassador to the Philippines (died 1969)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Ray_Spruance.jpg/330px-Ray_Spruance.jpg",
+      "image_credit": {
+        "author": "U.S. Navy",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Ray_Spruance.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Raymond_A._Spruance",
       "is_featured": false,
       "providers": [
@@ -957,6 +1321,12 @@
       "title": "Dow Jones & Company publishes its first stock average",
       "summary": "Dow Jones & Company publishes its first stock average.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Dow_Jones_Logo.svg/330px-Dow_Jones_Logo.svg.png",
+      "image_credit": {
+        "author": "Dow Jones & Company",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Dow_Jones_Logo.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Dow_Jones_%26_Company",
       "is_featured": false,
       "providers": [
@@ -972,6 +1342,12 @@
       "title": "Hasan Tahsini",
       "summary": "Hasan Tahsini, Albanian astronomer, mathematician, and philosopher (born 1811)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/11-H-Tahsini.jpg/330px-11-H-Tahsini.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:11-H-Tahsini.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Hasan_Tahsini",
       "is_featured": false,
       "providers": [
@@ -987,6 +1363,12 @@
       "title": "Alfred Korzybski",
       "summary": "Alfred Korzybski, Polish-American mathematician, linguist, and philosopher (died 1950)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Alfred_Korzybski.jpg/330px-Alfred_Korzybski.jpg",
+      "image_credit": {
+        "author": "The original uploader was Kinar at Polish Wikipedia.",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Alfred_Korzybski.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Alfred_Korzybski",
       "is_featured": false,
       "providers": [
@@ -1001,7 +1383,8 @@
       "category": "births",
       "title": "George M. Cohan",
       "summary": "George M. Cohan, American songwriter, actor, singer, and dancer (died 1942)",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/George_M._Cohan%2C_c._1918.jpg/330px-George_M._Cohan%2C_c._1918.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/George_M._Cohan",
       "is_featured": false,
       "providers": [
@@ -1017,6 +1400,12 @@
       "title": "R. B. Bennett",
       "summary": "R. B. Bennett, Canadian lawyer and politician, 11th Prime Minister of Canada (died 1947)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Richard_Bedford_Bennett_%28cropped%29.jpg/330px-Richard_Bedford_Bennett_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Richard_Bedford_Bennett_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/R._B._Bennett",
       "is_featured": false,
       "providers": [
@@ -1032,6 +1421,12 @@
       "title": "Austro-Prussian War is decided at the Battle of Königgrätz, enabling Prussia to exclude Austria…",
       "summary": "Austro-Prussian War is decided at the Battle of Königgrätz, enabling Prussia to exclude Austria from German affairs.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Schlacht-bei-koeniggraetz-von-georg-bleibtreu.jpg/330px-Schlacht-bei-koeniggraetz-von-georg-bleibtreu.jpg",
+      "image_credit": {
+        "author": "Georg Bleibtreu",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Schlacht-bei-koeniggraetz-von-georg-bleibtreu.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Austro-Prussian_War",
       "is_featured": false,
       "providers": [
@@ -1047,6 +1442,12 @@
       "title": "American Civil War: The final day of the Battle of Gettysburg culminates with Pickett's Charge",
       "summary": "American Civil War: The final day of the Battle of Gettysburg culminates with Pickett's Charge.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Battle_of_Gettysburg%2C_by_Currier_and_Ives.png/330px-Battle_of_Gettysburg%2C_by_Currier_and_Ives.png",
+      "image_credit": {
+        "author": "Nathaniel Currier and James Merritt Ives",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Gettysburg,_by_Currier_and_Ives.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/American_Civil_War",
       "is_featured": false,
       "providers": [
@@ -1062,6 +1463,12 @@
       "title": "Congress establishes the United States' 2nd mint in San Francisco",
       "summary": "Congress establishes the United States' 2nd mint in San Francisco.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/NRIS_88000026_Mint_Building_-_Duboce_St_Elevation.jpg/330px-NRIS_88000026_Mint_Building_-_Duboce_St_Elevation.jpg",
+      "image_credit": {
+        "author": "Frevi",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:NRIS_88000026_Mint_Building_-_Duboce_St_Elevation.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/San_Francisco_Mint",
       "is_featured": false,
       "providers": [
@@ -1077,6 +1484,12 @@
       "title": "France invades the Roman Republic and restores the Papal States",
       "summary": "France invades the Roman Republic and restores the Papal States.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_the_Roman_Republic_%2819th_century%29.svg/330px-Flag_of_the_Roman_Republic_%2819th_century%29.svg.png",
+      "image_credit": {
+        "author": "F l a n k e r",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Roman_Republic_(19th_century).svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Roman_Republic_(1849%E2%80%931850)",
       "is_featured": false,
       "providers": [
@@ -1092,6 +1505,12 @@
       "title": "Governor-General Peter von Scholten emancipates all remaining slaves in the Danish West Indies",
       "summary": "Governor-General Peter von Scholten emancipates all remaining slaves in the Danish West Indies.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Peter_von_Scholten_02.jpg/330px-Peter_von_Scholten_02.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Peter_von_Scholten_02.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Peter_von_Scholten",
       "is_featured": false,
       "providers": [
@@ -1107,6 +1526,12 @@
       "title": "Achilles Alferaki",
       "summary": "Achilles Alferaki, Russian composer and politician, Governor of Taganrog (died 1919)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Akhilles-Alferaki.jpg",
+      "image_credit": {
+        "author": null,
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Akhilles-Alferaki.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Achilles_Alferaki",
       "is_featured": false,
       "providers": [
@@ -1121,7 +1546,8 @@
       "category": "events",
       "title": "The first state normal school in the United States, the forerunner to today's Framingham State…",
       "summary": "The first state normal school in the United States, the forerunner to today's Framingham State University, opens in Lexington, Massachusetts with three students.",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/CountyNormal.jpg/330px-CountyNormal.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Normal_school",
       "is_featured": false,
       "providers": [
@@ -1137,6 +1563,12 @@
       "title": "Ahmed Vefik Pasha",
       "summary": "Ahmed Vefik Pasha, Greek-Ottoman statesman, diplomat, playwright, and translator (died 1891)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Ahmet_vefik2.jpg/330px-Ahmet_vefik2.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Ahmet_vefik2.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Ahmed_Vefik_Pasha",
       "is_featured": false,
       "providers": [
@@ -1152,6 +1584,7 @@
       "title": "The Bank for Savings in the City of New-York, the first savings bank in the United States, opens",
       "summary": "The Bank for Savings in the City of New-York, the first savings bank in the United States, opens.",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Bank_for_Savings_in_the_City_of_New-York",
       "is_featured": false,
       "providers": [
@@ -1167,6 +1600,12 @@
       "title": "War of 1812: American forces capture Fort Erie from British troops in Upper Canada",
       "summary": "War of 1812: American forces capture Fort Erie from British troops in Upper Canada.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/War_of_1812_Montage.jpg/330px-War_of_1812_Montage.jpg",
+      "image_credit": {
+        "author": "Clockwise, from top: George Munger, John David Kelly, Anton Otto Fischer, William Emmons, Edward Percy Moran",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:War_of_1812_Montage.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/War_of_1812",
       "is_featured": false,
       "providers": [
@@ -1182,6 +1621,12 @@
       "title": "Antonio de Ulloa",
       "summary": "Antonio de Ulloa, Spanish general, astronomer, and politician, 1st Colonial Governor of Louisiana (born 1716)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Almirante_Antonio_de_Ulloa.jpg/330px-Almirante_Antonio_de_Ulloa.jpg",
+      "image_credit": {
+        "author": "Andrés Cortés y Aguilar",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Almirante_Antonio_de_Ulloa.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Antonio_de_Ulloa",
       "is_featured": false,
       "providers": [
@@ -1197,6 +1642,12 @@
       "title": "Jean-Baptiste L. Romé de l'Isle",
       "summary": "Jean-Baptiste L. Romé de l'Isle, French geologist and mineralogist (born 1736)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Rom%C3%A9_de_L%27Isle01.jpg/330px-Rom%C3%A9_de_L%27Isle01.jpg",
+      "image_credit": {
+        "author": "Jeffdelonge",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Rom%C3%A9_de_L%27Isle01.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jean-Baptiste_L._Rom%C3%A9_de_l'Isle",
       "is_featured": false,
       "providers": [
@@ -1212,6 +1663,12 @@
       "title": "Johann Friedrich Overbeck",
       "summary": "Johann Friedrich Overbeck, German-Italian painter and engraver (died 1869)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Friedrich_Overbeck_011.jpg/330px-Friedrich_Overbeck_011.jpg",
+      "image_credit": {
+        "author": "Johann Friedrich Overbeck",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Friedrich_Overbeck_011.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Johann_Friedrich_Overbeck",
       "is_featured": false,
       "providers": [
@@ -1227,6 +1684,12 @@
       "title": "American Revolutionary War: Loyalists and Iroquois killed over 300 Patriots at the Battle of…",
       "summary": "American Revolutionary War: The Iroquois, allied with Britain, massacre 360 Patriot soldiers during the Battle of Wyoming.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Surrender_of_Lord_Cornwallis.jpg/330px-Surrender_of_Lord_Cornwallis.jpg",
+      "image_credit": {
+        "author": "John Trumbull",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/American_Revolutionary_War",
       "is_featured": false,
       "providers": [
@@ -1242,6 +1705,12 @@
       "title": "American Revolutionary War: George Washington takes command of the Continental Army at Cambridge…",
       "summary": "American Revolutionary War: George Washington takes command of the Continental Army at Cambridge, Massachusetts.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Surrender_of_Lord_Cornwallis.jpg/330px-Surrender_of_Lord_Cornwallis.jpg",
+      "image_credit": {
+        "author": "John Trumbull",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/American_Revolutionary_War",
       "is_featured": false,
       "providers": [
@@ -1257,6 +1726,12 @@
       "title": "Norway's oldest newspaper still in print, Adresseavisen, is founded and the first edition is…",
       "summary": "Norway's oldest newspaper still in print, Adresseavisen, is founded and the first edition is published.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/330px-Flag_of_Norway.svg.png",
+      "image_credit": {
+        "author": "Original: Fredrik Meltzer Vector: Gutten på Hemsen",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Norway",
       "is_featured": false,
       "providers": [
@@ -1272,6 +1747,12 @@
       "title": "Pitcairn Island is discovered by Midshipman Robert Pitcairn on an expeditionary voyage commanded…",
       "summary": "Pitcairn Island is discovered by Midshipman Robert Pitcairn on an expeditionary voyage commanded by Philip Carteret.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Pitcairnsatellite.png/330px-Pitcairnsatellite.png",
+      "image_credit": {
+        "author": "NASA",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Pitcairnsatellite.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Pitcairn_Island",
       "is_featured": false,
       "providers": [
@@ -1287,6 +1768,12 @@
       "title": "French and Indian War: George Washington surrendered Fort Necessity in Pennsylvania, the only…",
       "summary": "French and Indian War: George Washington surrendered Fort Necessity in Pennsylvania, the only military surrender in his career.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/French_and_indian_war_map.svg/330px-French_and_indian_war_map.svg.png",
+      "image_credit": {
+        "author": "Hoodinski",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:French_and_indian_war_map.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/French_and_Indian_War",
       "is_featured": true,
       "providers": [
@@ -1302,6 +1789,12 @@
       "title": "Robert Adam",
       "summary": "Robert Adam, Scottish-English architect, designed Culzean Castle (died 1792)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Robert-adam.jpg/330px-Robert-adam.jpg",
+      "image_credit": {
+        "author": "Attributed to George Willison",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Robert-adam.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Robert_Adam",
       "is_featured": false,
       "providers": [
@@ -1317,6 +1810,12 @@
       "title": "Sir Robert Rich",
       "summary": "Sir Robert Rich, 4th Baronet, English field marshal and politician (died 1768)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/William_Aikman_%281682-1731%29_-_Field_Marshal_Sir_Robert_Rich_%281685%E2%80%931768%29%2C_4th_Bt_-_355567_-_National_Trust.jpg/330px-William_Aikman_%281682-1731%29_-_Field_Marshal_Sir_Robert_Rich_%281685%E2%80%931768%29%2C_4th_Bt_-_355567_-_National_Trust.jpg",
+      "image_credit": {
+        "author": "William Aikman",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:William_Aikman_(1682-1731)_-_Field_Marshal_Sir_Robert_Rich_(1685%E2%80%931768),_4th_Bt_-_355567_-_National_Trust.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Sir_Robert_Rich%2C_4th_Baronet",
       "is_featured": false,
       "providers": [
@@ -1332,6 +1831,12 @@
       "title": "Edward Young",
       "summary": "Edward Young, English poet, dramatist and literary critic (Night-Thoughts) (died 1765)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Joseph_Highmore_%281692-1780%29_-_Edward_Young_%281683%E2%80%931765%29_-_ASC-132_-_All_Souls_College.jpg/330px-Joseph_Highmore_%281692-1780%29_-_Edward_Young_%281683%E2%80%931765%29_-_ASC-132_-_All_Souls_College.jpg",
+      "image_credit": {
+        "author": "Joseph Highmore",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Joseph_Highmore_(1692-1780)_-_Edward_Young_(1683%E2%80%931765)_-_ASC-132_-_All_Souls_College.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Edward_Young",
       "is_featured": false,
       "providers": [
@@ -1347,6 +1852,12 @@
       "title": "Québec City is founded by Samuel de Champlain",
       "summary": "Québec City is founded by Samuel de Champlain.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Quebec_City_in_September_2026.jpg/330px-Quebec_City_in_September_2026.jpg",
+      "image_credit": {
+        "author": "Hayden Soloviev",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Quebec_City_in_September_2026.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Quebec_City",
       "is_featured": false,
       "providers": [
@@ -1362,6 +1873,12 @@
       "title": "Diego de Almagro leaves the recently conquered Inca capital of Cuzco to lead an expedition to Chile",
       "summary": "Diego de Almagro leaves the recently conquered Inca capital of Cuzco to lead an expedition to Chile.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Diego_de_Almagro.JPG/330px-Diego_de_Almagro.JPG",
+      "image_credit": {
+        "author": "Domingo Mesa",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Diego_de_Almagro.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Diego_de_Almagro",
       "is_featured": false,
       "providers": [
@@ -1377,6 +1894,12 @@
       "title": "Jack Cade and his followers enter London unhindered by the government of king Henry VI",
       "summary": "Jack Cade and his followers enter London unhindered by the government of king Henry VI.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/The_History_of_the_Old_Kent_Road_-_7_%282793392566%29.jpg/330px-The_History_of_the_Old_Kent_Road_-_7_%282793392566%29.jpg",
+      "image_credit": {
+        "author": "Paul Simpson[dead link] from London, England",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:The_History_of_the_Old_Kent_Road_-_7_(2793392566).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jack_Cade's_Rebellion",
       "is_featured": false,
       "providers": [
@@ -1392,6 +1915,12 @@
       "title": "William the Conqueror becomes the Duke of Normandy, reigning until 1087",
       "summary": "William the Conqueror becomes the Duke of Normandy, reigning until 1087.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/William_the_Conqueror_%28TFA%29.jpg/330px-William_the_Conqueror_%28TFA%29.jpg",
+      "image_credit": {
+        "author": "Myrabella",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:William_the_Conqueror_(TFA).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/William_the_Conqueror",
       "is_featured": false,
       "providers": [
@@ -1407,6 +1936,12 @@
       "title": "Hugh Capet is crowned King of France, the first of the Capetian dynasty that would rule France…",
       "summary": "Hugh Capet is crowned King of France, the first of the Capetian dynasty that would rule France until the French Revolution in 1792.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/SceauHuguesCapet_%28cropped%29.PNG",
+      "image_credit": {
+        "author": "LeThéodorus",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:SceauHuguesCapet_(cropped).PNG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Hugh_Capet",
       "is_featured": false,
       "providers": [
@@ -1422,6 +1957,12 @@
       "title": "Battle of Adrianople: Constantine I defeats Licinius, who flees to Byzantium",
       "summary": "Battle of Adrianople: Constantine I defeats Licinius, who flees to Byzantium.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Constantine-cameo.jpg",
+      "image_credit": {
+        "author": null,
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Constantine-cameo.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Battle_of_Adrianople_(324)",
       "is_featured": false,
       "providers": [
@@ -1437,6 +1978,12 @@
       "title": "Christian feast day: Anatolius of Constantinople",
       "summary": "Christian feast day: July 3 (Eastern Orthodox liturgics)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Saint_Germanus_of_Man_british_orthodox_style_icon.jpg/330px-Saint_Germanus_of_Man_british_orthodox_style_icon.jpg",
+      "image_credit": {
+        "author": "Jellyfisher24",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Saint_Germanus_of_Man_british_orthodox_style_icon.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Anatolius_of_Constantinople",
       "is_featured": false,
       "providers": [
@@ -1451,6 +1998,7 @@
       "title": "Emancipation Day (United States Virgin Islands)",
       "summary": "Emancipation Day (United States Virgin Islands)",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Emancipation_Day",
       "is_featured": false,
       "providers": [
@@ -1465,6 +2013,12 @@
       "title": "Independence Day, celebrates the liberation of Minsk from Nazi occupation by Soviet troops in 1944…",
       "summary": "Independence Day, celebrates the liberation of Minsk from Nazi occupation by Soviet troops in 1944 (Belarus)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/1997._Stamp_of_Belarus_0232.jpg",
+      "image_credit": {
+        "author": "post of Belarus",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:1997._Stamp_of_Belarus_0232.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Independence_Day_(Belarus)",
       "is_featured": false,
       "providers": [
@@ -1479,6 +2033,7 @@
       "title": "The start of the Dog Days according to the Old Farmer's Almanac but not according to established…",
       "summary": "The start of the Dog Days according to the Old Farmer's Almanac but not according to established meaning in most European cultures",
       "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Dog_days",
       "is_featured": false,
       "providers": [
@@ -1493,6 +2048,12 @@
       "title": "Women's Day (Myanmar)",
       "summary": "Women's Day (Myanmar)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/330px-Flag_of_Myanmar.svg.png",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Myanmar.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Myanmar",
       "is_featured": false,
       "providers": [

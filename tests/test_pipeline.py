@@ -3,6 +3,7 @@ from datetime import date
 
 import pytest
 
+import legal
 import pipeline
 import validate_data
 from conftest import ROOT, load_fixture
@@ -23,7 +24,10 @@ def make_pipeline(tmp_path, monkeypatch):
             raise FetchError(f"no fixture for {url}")
 
         monkeypatch.setattr(pipeline, "get_json", fake_get_json)
-        p = pipeline.build_pipeline(ROOT, data_dir=tmp_path)
+        # dayinhistory is disabled in the registry (no licence); tests opt in explicitly.
+        p = pipeline.build_pipeline(
+            ROOT, data_dir=tmp_path, only_sources=["wikimedia", "dayinhistory", "muffinlabs"], resolve_images=False
+        )
         p.sleep = lambda _: None
         monkeypatch.setattr("time.sleep", lambda _: None)
         return p
@@ -128,12 +132,13 @@ def test_ids_stay_stable_when_title_is_rephrased(make_pipeline, tmp_path):
 def test_manifest(make_pipeline, tmp_path):
     p = make_pipeline(all_ok())
     p.process_day(11, 23)
-    manifest = pipeline.update_manifest(tmp_path)
+    block = legal.manifest_legal_block(p.config)
+    manifest = pipeline.update_manifest(tmp_path, legal_block=block)
     assert manifest["total_days"] == 1 and manifest["schema_version"] == "1.0.0"
     assert manifest["days"]["11-23"]["event_count"] == len(read(tmp_path)["items"])
     assert manifest["total_events"] == manifest["days"]["11-23"]["event_count"]
     written = (tmp_path / "manifest.json").read_text()
-    pipeline.update_manifest(tmp_path)  # idempotent: generated_at does not move without changes
+    pipeline.update_manifest(tmp_path, legal_block=block)  # idempotent: generated_at does not move without changes
     assert (tmp_path / "manifest.json").read_text() == written
     assert validate_data.validate_manifest(tmp_path, [tmp_path / "11-23.json"]) == []
 

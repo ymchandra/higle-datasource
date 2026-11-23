@@ -1,11 +1,37 @@
 {
   "date": "03-25",
   "display_date": "March 25",
-  "last_updated": "2026-11-23T09:56:14Z",
+  "last_updated": "2026-11-23T14:39:14Z",
   "sources_used": [
     "wikimedia",
     "muffinlabs"
   ],
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "spdx": "CC-BY-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0. Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US. Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
+  "sources": [
+    {
+      "id": "wikimedia",
+      "name": "Wikimedia On This Day API",
+      "url": "https://en.wikipedia.org/",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0."
+    },
+    {
+      "id": "muffinlabs",
+      "name": "Muffin Labs History API",
+      "url": "https://history.muffinlabs.com/",
+      "license": "CC BY-SA 3.0 US",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
+      "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
+    }
+  ],
+  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+  "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
   "items": [
     {
       "id": "03-25-2026-a55b1ca4",
@@ -15,6 +41,12 @@
       "title": "Alexander Kluge",
       "summary": "Alexander Kluge, German author, film director and public intellectual (born 1932)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/MJKr01634_Alexander_Kluge_%28NRW-Empfang%2C_Berlinale_2020%29.jpg/330px-MJKr01634_Alexander_Kluge_%28NRW-Empfang%2C_Berlinale_2020%29.jpg",
+      "image_credit": {
+        "author": "Martin Kraft",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:MJKr01634_Alexander_Kluge_(NRW-Empfang,_Berlinale_2020).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Alexander_Kluge",
       "is_featured": false,
       "providers": [
@@ -30,6 +62,12 @@
       "title": "Syrian civil war: Following the completion of the Afrin offensive, the Syrian Democratic Forces…",
       "summary": "Syrian civil war: Following the completion of the Afrin offensive, the Syrian Democratic Forces (SDF) initiate an insurgency against the Turkish occupation of the Afrin District.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Bombed_out_vehicles_Aleppo.jpg/330px-Bombed_out_vehicles_Aleppo.jpg",
+      "image_credit": {
+        "author": "Voice of America News: Scott Bobb reports from Aleppo, Syria",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bombed_out_vehicles_Aleppo.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Syrian_civil_war",
       "is_featured": false,
       "providers": [
@@ -44,7 +82,8 @@
       "category": "deaths",
       "title": "Ralph Wilson",
       "summary": "Ralph Wilson, American businessman, founded the Buffalo Bills (born 1918)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c0/RalphWilson.webp",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Ralph_Wilson",
       "is_featured": false,
       "providers": [
@@ -60,6 +99,12 @@
       "title": "Sonny Ruberto",
       "summary": "Sonny Ruberto, American baseball player, coach, and manager (born 1946)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sonny_Ruberto_1978.JPG/330px-Sonny_Ruberto_1978.JPG",
+      "image_credit": {
+        "author": "St Louis Cardinals / Major League Baseball",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Sonny_Ruberto_1978.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Sonny_Ruberto",
       "is_featured": false,
       "providers": [
@@ -75,6 +120,12 @@
       "title": "John F. Wiley",
       "summary": "John F. Wiley, American lieutenant, football player, and coach (born 1920)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Jack_Wiley_-_1948_Bowman.jpg",
+      "image_credit": {
+        "author": "Bowman",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Jack_Wiley_-_1948_Bowman.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_F._Wiley",
       "is_featured": false,
       "providers": [
@@ -89,7 +140,8 @@
       "category": "deaths",
       "title": "Edd Gould",
       "summary": "Edd Gould, English animator and voice actor, founded Eddsworld (born 1988)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/0/06/Edd_Gould_of_Eddsworld.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Edd_Gould",
       "is_featured": false,
       "providers": [
@@ -105,6 +157,12 @@
       "title": "John Crosfield",
       "summary": "John Crosfield, English businessman, founded Crosfield Electronics (born 1915)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/John_Crosfield_%401950.jpg/330px-John_Crosfield_%401950.jpg",
+      "image_credit": {
+        "author": "Richard crosfield",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Crosfield_@1950.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Crosfield",
       "is_featured": false,
       "providers": [
@@ -120,6 +178,12 @@
       "title": "Andranik Margaryan",
       "summary": "Andranik Margaryan, Armenian engineer and politician, 10th Prime Minister of Armenia (born 1951)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/AndranikMargaryan_%28cropped_2%29.jpg/330px-AndranikMargaryan_%28cropped_2%29.jpg",
+      "image_credit": {
+        "author": "Ashot Arzumanyan",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:AndranikMargaryan_(cropped_2).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Andranik_Margaryan",
       "is_featured": false,
       "providers": [
@@ -135,6 +199,12 @@
       "title": "Capitol Hill massacre: A gunman kills six people before taking his own life at a party in…",
       "summary": "Capitol Hill massacre: A gunman kills six people before taking his own life at a party in Seattle's Capitol Hill neighborhood.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/SeattleShooting1.jpg/330px-SeattleShooting1.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:SeattleShooting1.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Capitol_Hill_massacre",
       "is_featured": false,
       "providers": [
@@ -150,6 +220,12 @@
       "title": "Protesters demanding a new election in Belarus, following the presidential vote days earlier, were…",
       "summary": "Protesters demanding a new election in Belarus, following the rigged 2006 Belarusian presidential election, clash with riot police. Opposition leader Aleksander Kozulin is among several protesters arrested.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Belarus_2006_presidential_election_map.svg/330px-Belarus_2006_presidential_election_map.svg.png",
+      "image_credit": {
+        "author": "Kingofthedead",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Belarus_2006_presidential_election_map.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/2006_Belarusian_presidential_election",
       "is_featured": true,
       "providers": [
@@ -165,6 +241,12 @@
       "title": "Cal Ripken",
       "summary": "Cal Ripken, Sr., American baseball player, coach, and manager (born 1936)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Cal_Ripken_Sr._%28cropped%29.JPG/330px-Cal_Ripken_Sr._%28cropped%29.JPG",
+      "image_credit": {
+        "author": "Baltimore Orioles / MLB",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Cal_Ripken_Sr._(cropped).JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Cal_Ripken_Sr.",
       "is_featured": false,
       "providers": [
@@ -180,6 +262,12 @@
       "title": "The European Union's Veterinarian Committee bans the export of British beef and its by-products as…",
       "summary": "The European Union's Veterinarian Committee bans the export of British beef and its by-products as a result of mad cow disease (Bovine spongiform encephalopathy).",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/330px-Flag_of_Europe.svg.png",
+      "image_credit": {
+        "author": "User:Verdy p, User:-xfi-, User:Paddu, User:Nightstallion, User:Funakoshi, User:Jeltz, User:Dbenbenn, User:Zscout370",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Europe.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/European_Union",
       "is_featured": false,
       "providers": [
@@ -194,7 +282,8 @@
       "category": "events",
       "title": "WikiWikiWeb, the world's first wiki, and part of the Portland Pattern Repository, is made public…",
       "summary": "WikiWikiWeb, the world's first wiki, and part of the Portland Pattern Repository, is made public by Ward Cunningham.",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/1a/WikiWikiWeb_screenshot.png/330px-WikiWikiWeb_screenshot.png",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/WikiWikiWeb",
       "is_featured": false,
       "providers": [
@@ -210,6 +299,12 @@
       "title": "The Candle demonstration in Bratislava is the first mass demonstration of the 1980s against the…",
       "summary": "The Candle demonstration in Bratislava is the first mass demonstration of the 1980s against the communist regime in Czechoslovakia.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Hviezdoslavovo_n%C3%A1mestie_%2810266936594%29.jpg/330px-Hviezdoslavovo_n%C3%A1mestie_%2810266936594%29.jpg",
+      "image_credit": {
+        "author": "Jorge Láscar from Australia",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Hviezdoslavovo_n%C3%A1mestie_(10266936594).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Candle_demonstration_in_Bratislava",
       "is_featured": false,
       "providers": [
@@ -225,6 +320,12 @@
       "title": "Robert Joffrey",
       "summary": "Robert Joffrey, American dancer, choreographer, and director, co-founded the Joffrey Ballet (born 1930)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Robert_Joffrey_1968.jpg/330px-Robert_Joffrey_1968.jpg",
+      "image_credit": {
+        "author": "Curtis McGee (Staff photographer of the newspaper)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Robert_Joffrey_1968.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Robert_Joffrey",
       "is_featured": false,
       "providers": [
@@ -240,6 +341,12 @@
       "title": "Milton H. Erickson",
       "summary": "Milton H. Erickson, American psychiatrist and psychologist (born 1901)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Erickson_college.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Erickson_college.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Milton_H._Erickson",
       "is_featured": false,
       "providers": [
@@ -255,6 +362,12 @@
       "title": "The first fully functional Space Shuttle orbiter, Columbia, is delivered to the John F. Kennedy…",
       "summary": "The first fully functional Space Shuttle orbiter, Columbia, is delivered to the John F. Kennedy Space Center to be prepared for its first launch.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/STS120LaunchHiRes-edit1.jpg/330px-STS120LaunchHiRes-edit1.jpg",
+      "image_credit": {
+        "author": "NASA; edited by jjron (tilt corrected)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:STS120LaunchHiRes-edit1.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Space_Shuttle",
       "is_featured": false,
       "providers": [
@@ -270,6 +383,12 @@
       "title": "Akinoumi Setsuo",
       "summary": "Akinoumi Setsuo, Japanese sumo wrestler, the 37th Yokozuna (born 1914)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Akinoumi.png",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Akinoumi.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Akinoumi_Setsuo",
       "is_featured": false,
       "providers": [
@@ -285,6 +404,12 @@
       "title": "King Faisal of Saudi Arabia was shot and killed by his nephew Faisal bin Musaid",
       "summary": "King Faisal of Saudi Arabia was shot and killed by his nephew Faisal bin Musaid.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/King_Faisal_bin_Abdulaziz_%28cropped%29%28b%29.jpg/330px-King_Faisal_bin_Abdulaziz_%28cropped%29%28b%29.jpg",
+      "image_credit": {
+        "author": "Louis Fabian Bachrach Jr.",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:King_Faisal_bin_Abdulaziz_(cropped)(b).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Faisal_of_Saudi_Arabia",
       "is_featured": false,
       "providers": [
@@ -300,6 +425,12 @@
       "title": "Edward Steichen",
       "summary": "Edward Steichen, Luxembourgian-American photographer, painter, and curator (born 1879)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Edward_Steichen.jpg/330px-Edward_Steichen.jpg",
+      "image_credit": {
+        "author": "F. Holland Day",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Edward_Steichen.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Edward_Steichen",
       "is_featured": false,
       "providers": [
@@ -315,6 +446,12 @@
       "title": "The Army of the Republic of Vietnam abandon an attempt to cut off the Ho Chi Minh trail in Laos",
       "summary": "The Army of the Republic of Vietnam abandon an attempt to cut off the Ho Chi Minh trail in Laos.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Flag_of_the_Army_of_the_Republic_of_Vietnam.svg/330px-Flag_of_the_Army_of_the_Republic_of_Vietnam.svg.png",
+      "image_credit": {
+        "author": "MrPenguin20",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Army_of_the_Republic_of_Vietnam.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Army_of_the_Republic_of_Vietnam",
       "is_featured": false,
       "providers": [
@@ -330,6 +467,12 @@
       "title": "Civil rights activists led by Martin Luther King Jr. successfully complete their four-day 50-mile…",
       "summary": "Civil rights activists led by Martin Luther King Jr. successfully complete their four-day 50-mile (80 km) march from Selma to the capitol in Montgomery, Alabama.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Civil_Rights_March_on_Washington%2C_D.C._%28Leaders_marching_from_the_Washington_Monument_to_the_Lincoln_Memorial%29_-_NARA_-_542010.jpg/330px-Civil_Rights_March_on_Washington%2C_D.C._%28Leaders_marching_from_the_Washington_Monument_to_the_Lincoln_Memorial%29_-_NARA_-_542010.jpg",
+      "image_credit": {
+        "author": "Rowland Scherman",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Civil_Rights_March_on_Washington,_D.C._(Leaders_marching_from_the_Washington_Monument_to_the_Lincoln_Memorial)_-_NARA_-_542010.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Civil_rights_movement",
       "is_featured": false,
       "providers": [
@@ -345,6 +488,12 @@
       "title": "Charles Benjamin Howard",
       "summary": "Charles Benjamin Howard, Canadian businessman and politician (born 1885)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Howard_Tombstone.jpg/330px-Howard_Tombstone.jpg",
+      "image_credit": {
+        "author": "Mamani1990",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Howard_Tombstone.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Charles_Benjamin_Howard",
       "is_featured": false,
       "providers": [
@@ -360,6 +509,12 @@
       "title": "Chain Island is sold by the State of California to Russell Gallaway III, a Sacramento businessman…",
       "summary": "Chain Island is sold by the State of California to Russell Gallaway III, a Sacramento businessman who plans to use it as a \"hunting and fishing retreat\", for $5,258.20 ($58,072 in 2025).",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/NASA_Worldwind%2C_USGS_imagery_map%2C_Chain_Island%2C_California.png/330px-NASA_Worldwind%2C_USGS_imagery_map%2C_Chain_Island%2C_California.png",
+      "image_credit": {
+        "author": "USGS, self",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:NASA_Worldwind,_USGS_imagery_map,_Chain_Island,_California.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Chain_Island",
       "is_featured": false,
       "providers": [
@@ -375,6 +530,12 @@
       "title": "Åsa Torstensson",
       "summary": "Åsa Torstensson, Swedish politician, 3rd Swedish Minister for Infrastructure",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Asatorstensson_swedish_presidency.jpg/330px-Asatorstensson_swedish_presidency.jpg",
+      "image_credit": {
+        "author": "Henrik Ishihara Globaljuggler",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Asatorstensson_swedish_presidency.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/%C3%85sa_Torstensson",
       "is_featured": false,
       "providers": [
@@ -390,6 +551,12 @@
       "title": "The European Economic Community is established with West Germany, France, Italy, Belgium…",
       "summary": "The European Economic Community is established with West Germany, France, Italy, Belgium, Netherlands and Luxembourg as the first members.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/330px-Flag_of_Europe.svg.png",
+      "image_credit": {
+        "author": "User:Verdy p, User:-xfi-, User:Paddu, User:Nightstallion, User:Funakoshi, User:Jeltz, User:Dbenbenn, User:Zscout370",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Europe.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/European_Economic_Community",
       "is_featured": false,
       "providers": [
@@ -405,6 +572,12 @@
       "title": "United States Customs seizes copies of Allen Ginsberg's poem \"Howl\" on obscenity grounds",
       "summary": "United States Customs seizes copies of Allen Ginsberg's poem \"Howl\" on obscenity grounds.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Patch_of_the_U.S._Customs_and_Border_Protection.svg/330px-Patch_of_the_U.S._Customs_and_Border_Protection.svg.png",
+      "image_credit": {
+        "author": "U.S. Department of Homeland Securityvectored by FOX 52",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Patch_of_the_U.S._Customs_and_Border_Protection.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/United_States_Customs_and_Border_Protection",
       "is_featured": false,
       "providers": [
@@ -420,6 +593,12 @@
       "title": "Vesna Pusić",
       "summary": "Vesna Pusić, Croatian sociologist and politician, Deputy Prime Minister of Croatia",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/V_pusic.jpg/330px-V_pusic.jpg",
+      "image_credit": {
+        "author": "Vlada Republike Hrvatske (wwwvladahr), from Croatia",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:V_pusic.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Vesna_Pusi%C4%87",
       "is_featured": false,
       "providers": [
@@ -435,6 +614,12 @@
       "title": "Antanas Mockus",
       "summary": "Antanas Mockus, Colombian mathematician, philosopher, and politician, Mayor of Bogotá",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Antanas_Mockus_%283%29_%28cropped%29.jpg/330px-Antanas_Mockus_%283%29_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Heinrich-Böll-Stiftung",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Antanas_Mockus_(3)_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Antanas_Mockus",
       "is_featured": false,
       "providers": [
@@ -450,6 +635,12 @@
       "title": "Stephen Dorrell",
       "summary": "Stephen Dorrell, English soldier and politician, Secretary of State for Health",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Stephen_dorrell_mp_-nhs_confederation_annual_conferencepercent2c_manchester-11july2011_-_crop.jpg/330px-Stephen_dorrell_mp_-nhs_confederation_annual_conferencepercent2c_manchester-11july2011_-_crop.jpg",
+      "image_credit": {
+        "author": "NHS Confederation",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Stephen_dorrell_mp_-nhs_confederation_annual_conferencepercent2c_manchester-11july2011_-_crop.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Stephen_Dorrell",
       "is_featured": false,
       "providers": [
@@ -465,6 +656,12 @@
       "title": "More than 92,000 kulaks are suddenly deported from the Baltic states to Siberia",
       "summary": "More than 92,000 kulaks are suddenly deported from the Baltic states to Siberia.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Forced_collectivization_USSR.jpg/330px-Forced_collectivization_USSR.jpg",
+      "image_credit": {
+        "author": "Credited to U. Druzhelubov. The date of death is impossible to determine therefore PMA is not known.",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Forced_collectivization_USSR.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Kulak",
       "is_featured": false,
       "providers": [
@@ -480,6 +677,12 @@
       "title": "Meteorologists at Tinker Air Force Base in Oklahoma City, United States, issued the world's first…",
       "summary": "Meteorologists at Tinker Air Force Base in Oklahoma City, United States, issued the world's first tornado forecast after noticing conditions similar to another tornado that had struck five days earlier.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Boeing_E-3B_Sentry_%E2%80%9879-0002_-_OK%E2%80%99_%2829263726146%29.jpg/330px-Boeing_E-3B_Sentry_%E2%80%9879-0002_-_OK%E2%80%99_%2829263726146%29.jpg",
+      "image_credit": {
+        "author": "Alan Wilson from Stilton, Peterborough, Cambs, UK",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Boeing_E-3B_Sentry_%E2%80%9879-0002_-_OK%E2%80%99_(29263726146).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Tinker_Air_Force_Base",
       "is_featured": true,
       "providers": [
@@ -495,6 +698,12 @@
       "title": "Michael Stanley",
       "summary": "Michael Stanley, American singer-songwriter and guitarist (died 2021)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Michael_Stanley_Tower_City_Amphitheater_Cleveland_OH_June_8%2C_2002.jpg/330px-Michael_Stanley_Tower_City_Amphitheater_Cleveland_OH_June_8%2C_2002.jpg",
+      "image_credit": {
+        "author": null,
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Michael_Stanley_Tower_City_Amphitheater_Cleveland_OH_June_8,_2002.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Michael_Stanley",
       "is_featured": false,
       "providers": [
@@ -510,6 +719,12 @@
       "title": "The Kingdom of Yugoslavia joins the Axis powers with the signing of the Tripartite Pact",
       "summary": "The Kingdom of Yugoslavia joins the Axis powers with the signing of the Tripartite Pact.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Flag_of_Yugoslavia_%281918%E2%80%931941%29.svg/330px-Flag_of_Yugoslavia_%281918%E2%80%931941%29.svg.png",
+      "image_credit": {
+        "author": "Fibonacci",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Yugoslavia_(1918%E2%80%931941).svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Kingdom_of_Yugoslavia",
       "is_featured": false,
       "providers": [
@@ -525,6 +740,12 @@
       "title": "Gudmund Hernes",
       "summary": "Gudmund Hernes, Norwegian sociologist and politician, Norwegian Minister of Education and Research",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Gudmund_Hernes2.JPG/330px-Gudmund_Hernes2.JPG",
+      "image_credit": {
+        "author": "Jarle",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gudmund_Hernes2.JPG"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Gudmund_Hernes",
       "is_featured": false,
       "providers": [
@@ -539,7 +760,8 @@
       "category": "births",
       "title": "Toni Cade Bambara",
       "summary": "Toni Cade Bambara, American author, academic, and activist (died 1995)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c2/Toni_Cade_Bambara.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Toni_Cade_Bambara",
       "is_featured": false,
       "providers": [
@@ -555,6 +777,12 @@
       "title": "Gloria Steinem",
       "summary": "Gloria Steinem, American feminist activist, co-founded the Women's Media Center (died 2026)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Gloria_Steinem_1977_%C2%A9Lynn_Gilbert_%28cropped%29.jpg/330px-Gloria_Steinem_1977_%C2%A9Lynn_Gilbert_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Lynn Gilbert",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gloria_Steinem_1977_%C2%A9Lynn_Gilbert_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Gloria_Steinem",
       "is_featured": false,
       "providers": [
@@ -570,6 +798,12 @@
       "title": "The Scottsboro Boys are arrested in Alabama and charged with rape",
       "summary": "The Scottsboro Boys are arrested in Alabama and charged with rape.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Young_Black_Men_Accused_in_the_Scottsboro_Rape_Case_%28cropped%29.jpg/330px-Young_Black_Men_Accused_in_the_Scottsboro_Rape_Case_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Young_Black_Men_Accused_in_the_Scottsboro_Rape_Case_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Scottsboro_Boys",
       "is_featured": false,
       "providers": [
@@ -585,6 +819,12 @@
       "title": "Ganesh Shankar Vidyarthi",
       "summary": "Ganesh Shankar Vidyarthi, Indian journalist and politician (born 1890)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/The_heaven-gone_svargiya_Pandit_Ganesh_Shankar_Vidyarthi.jpg/330px-The_heaven-gone_svargiya_Pandit_Ganesh_Shankar_Vidyarthi.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:The_heaven-gone_svargiya_Pandit_Ganesh_Shankar_Vidyarthi.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Ganesh_Shankar_Vidyarthi",
       "is_featured": false,
       "providers": [
@@ -600,6 +840,12 @@
       "title": "Marie-Alphonsine Danil Ghattas",
       "summary": "Marie-Alphonsine Danil Ghattas, Palestinian Roman Catholic nun; later canonized (born 1843)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Marie-Alphonsine-Danil-Ghattas_%28cropped%29.jpg/330px-Marie-Alphonsine-Danil-Ghattas_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Tamar Hayardeni",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Marie-Alphonsine-Danil-Ghattas_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Marie-Alphonsine_Danil_Ghattas",
       "is_featured": false,
       "providers": [
@@ -614,7 +860,8 @@
       "category": "births",
       "title": "Anthony Quinton",
       "summary": "Anthony Quinton, Baron Quinton, English physician and philosopher (died 2010)",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Anthony_Quinton_1978.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Anthony_Quinton",
       "is_featured": false,
       "providers": [
@@ -630,6 +877,12 @@
       "title": "Flannery O'Connor",
       "summary": "Flannery O'Connor, American short story writer and novelist (died 1964)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Flannery-O%27Connor_1947.jpg",
+      "image_credit": {
+        "author": "Cmacauley",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flannery-O%27Connor_1947.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Flannery_O'Connor",
       "is_featured": false,
       "providers": [
@@ -645,6 +898,12 @@
       "title": "Kishori Sinha",
       "summary": "Kishori Sinha, Indian politician, social activist and advocate (died 2016)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Shrimati_Kishori_Sinha_Ji_MP.jpg/330px-Shrimati_Kishori_Sinha_Ji_MP.jpg",
+      "image_credit": {
+        "author": "Shivayeeimagebot",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Shrimati_Kishori_Sinha_Ji_MP.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Kishori_Sinha",
       "is_featured": false,
       "providers": [
@@ -660,6 +919,12 @@
       "title": "On the anniversary of Greek Independence, Alexandros Papanastasiou proclaims the Second Hellenic…",
       "summary": "On the anniversary of Greek Independence, Alexandros Papanastasiou proclaims the Second Hellenic Republic.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Greek_revolution_collage.jpg/330px-Greek_revolution_collage.jpg",
+      "image_credit": {
+        "author": "SJCAmerican",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Greek_revolution_collage.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence",
       "is_featured": false,
       "providers": [
@@ -675,6 +940,12 @@
       "title": "Eileen Ford",
       "summary": "Eileen Ford, American businesswoman, co-founded Ford Models (died 2014)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Eileen-Ford-1967.jpg/330px-Eileen-Ford-1967.jpg",
+      "image_credit": {
+        "author": "Kari Santala / Lehtikuva",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Eileen-Ford-1967.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Eileen_Ford",
       "is_featured": false,
       "providers": [
@@ -690,6 +961,12 @@
       "title": "The Tetiev pogrom occurs in Ukraine, becoming the prototype of mass murder during the Holocaust",
       "summary": "The Tetiev pogrom occurs in Ukraine, becoming the prototype of mass murder during the Holocaust.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/CossackMamay.jpg/330px-CossackMamay.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:CossackMamay.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Antisemitism_in_Ukraine",
       "is_featured": false,
       "providers": [
@@ -705,6 +982,12 @@
       "title": "The Georgian Orthodox Church restores its autocephaly abolished by Imperial Russia in 1811",
       "summary": "The Georgian Orthodox Church restores its autocephaly abolished by Imperial Russia in 1811.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Coat_of_Arms_of_Georgian_Orthodox_Church.svg/330px-Coat_of_Arms_of_Georgian_Orthodox_Church.svg.png",
+      "image_credit": {
+        "author": "Rastrelli F",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Georgian_Orthodox_Church.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Georgian_Orthodox_Church",
       "is_featured": false,
       "providers": [
@@ -720,6 +1003,12 @@
       "title": "The Greek multi-sport club Aris Thessaloniki is founded in Thessaloniki",
       "summary": "The Greek multi-sport club Aris Thessaloniki is founded in Thessaloniki.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Aris_Salonique_%28ancien_logo%29.svg/330px-Aris_Salonique_%28ancien_logo%29.svg.png",
+      "image_credit": {
+        "author": "Aris Salonique",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Aris_Salonique_(ancien_logo).svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Aris_Thessaloniki",
       "is_featured": false,
       "providers": [
@@ -735,6 +1024,12 @@
       "title": "Norman Borlaug",
       "summary": "Norman Borlaug, American agronomist and humanitarian, Nobel Prize laureate (died 2009)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Norman_Borlaug%2C_2004_%28cropped%29.jpg/330px-Norman_Borlaug%2C_2004_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Ben Zinner, USAID",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Norman_Borlaug,_2004_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Norman_Borlaug",
       "is_featured": false,
       "providers": [
@@ -750,6 +1045,12 @@
       "title": "Frédéric Mistral",
       "summary": "Frédéric Mistral, French lexicographer and poet, 1904 Nobel Prize laureate (born 1830)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Frederic_Mistral_portrait_photo.jpg/330px-Frederic_Mistral_portrait_photo.jpg",
+      "image_credit": {
+        "author": "Tucker Collection",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Frederic_Mistral_portrait_photo.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Mistral",
       "is_featured": false,
       "providers": [
@@ -765,6 +1066,12 @@
       "title": "Andrey Yushchinsky is murdered in Kiev, leading to the Beilis affair",
       "summary": "Andrey Yushchinsky is murdered in Kiev, leading to the Beilis affair.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg/330px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg",
+      "image_credit": {
+        "author": "Larmarphoto",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8,_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Kyiv",
       "is_featured": false,
       "providers": [
@@ -780,6 +1087,12 @@
       "title": "The Triangle Shirtwaist Factory fire in New York City killed 146 sweatshop workers, many of whom…",
       "summary": "The Triangle Shirtwaist Factory fire in New York City killed 146 sweatshop workers, many of whom could not escape because the doors to the stairwells and exits had been locked.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg/330px-Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire",
       "is_featured": true,
       "providers": [
@@ -795,6 +1108,12 @@
       "title": "Benzion Netanyahu",
       "summary": "Benzion Netanyahu, Polish-Israeli historian and academic (died 2012)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Benzion_Netanyahu_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "נועם ערמון - Bamahane photographer",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Benzion_Netanyahu_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Benzion_Netanyahu",
       "is_featured": false,
       "providers": [
@@ -810,6 +1129,12 @@
       "title": "David Lean",
       "summary": "David Lean, English director, producer, and screenwriter (died 1991)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Aankomst_filmster_Ann_Todd_en_haar_echtgenoot_filmregisseur_David_Lean_op_Schiph%2C_Bestanddeelnr_905-4605_%282%29.jpg/330px-Aankomst_filmster_Ann_Todd_en_haar_echtgenoot_filmregisseur_David_Lean_op_Schiph%2C_Bestanddeelnr_905-4605_%282%29.jpg",
+      "image_credit": {
+        "author": "Harry Pot / Anefo",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Aankomst_filmster_Ann_Todd_en_haar_echtgenoot_filmregisseur_David_Lean_op_Schiph,_Bestanddeelnr_905-4605_(2).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/David_Lean",
       "is_featured": false,
       "providers": [
@@ -824,7 +1149,8 @@
       "category": "events",
       "title": "The Greek football club P.A.E. G.S. Diagoras is founded in the city of Rhodes",
       "summary": "The Greek football club P.A.E. G.S. Diagoras is founded in the city of Rhodes.",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Diagoras_FC_official_logo.png",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/P.A.E._G.S._Diagoras",
       "is_featured": false,
       "providers": [
@@ -840,6 +1166,12 @@
       "title": "Nahum Norbert Glatzer",
       "summary": "Nahum Norbert Glatzer, Ukrainian-American theologian and scholar (died 1990)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Nahum_Glatzer.jpg/330px-Nahum_Glatzer.jpg",
+      "image_credit": {
+        "author": "ERoten",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Nahum_Glatzer.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Nahum_Norbert_Glatzer",
       "is_featured": false,
       "providers": [
@@ -855,6 +1187,12 @@
       "title": "Coxey's Army, the first significant American protest march, departs Massillon, Ohio for…",
       "summary": "Coxey's Army, the first significant American protest march, departs Massillon, Ohio for Washington, D.C.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Coxey_commonweal_army_brightwood_leaving.jpg/330px-Coxey_commonweal_army_brightwood_leaving.jpg",
+      "image_credit": {
+        "author": "Frank Leslie's magazine",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Coxey_commonweal_army_brightwood_leaving.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Coxey's_Army",
       "is_featured": false,
       "providers": [
@@ -869,7 +1207,8 @@
       "category": "births",
       "title": "Jimmy Seed",
       "summary": "Jimmy Seed, English international footballer and manager (died 1966)",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/e/ea/Jimmy_Seed.jpeg/330px-Jimmy_Seed.jpeg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Jimmy_Seed",
       "is_featured": false,
       "providers": [
@@ -885,6 +1224,12 @@
       "title": "Last issue of the Bulletin de la Fédération jurassienne, the first or one of the first anarchist…",
       "summary": "Last issue of the Bulletin de la Fédération jurassienne, the first or one of the first anarchist newspapers.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/First_Bulletin_de_la_FJ.png/330px-First_Bulletin_de_la_FJ.png",
+      "image_credit": {
+        "author": "James Guillaume",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:First_Bulletin_de_la_FJ.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Bulletin_de_la_F%C3%A9d%C3%A9ration_jurassienne",
       "is_featured": false,
       "providers": [
@@ -900,6 +1245,12 @@
       "title": "František Janda-Suk",
       "summary": "František Janda-Suk, Czech discus thrower and shot putter (died 1955)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Franti%C5%A1ek_Janda-Suk.jpg/330px-Franti%C5%A1ek_Janda-Suk.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Franti%C5%A1ek_Janda-Suk.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Franti%C5%A1ek_Janda-Suk",
       "is_featured": false,
       "providers": [
@@ -915,6 +1266,12 @@
       "title": "Horatio Nelson Jackson",
       "summary": "Horatio Nelson Jackson, American race car driver and physician (died 1955)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Horatio_Nelson_Jackson.png/330px-Horatio_Nelson_Jackson.png",
+      "image_credit": {
+        "author": "Horatio Nelson jackson",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Horatio_Nelson_Jackson.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Horatio_Nelson_Jackson",
       "is_featured": false,
       "providers": [
@@ -930,6 +1287,12 @@
       "title": "Arturo Toscanini",
       "summary": "Arturo Toscanini, Italian-American cellist and conductor (died 1957)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Arturo_Toscanini_c1930.jpg/330px-Arturo_Toscanini_c1930.jpg",
+      "image_credit": {
+        "author": "Unknown (Mondadori Publishers)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Arturo_Toscanini_c1930.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Arturo_Toscanini",
       "is_featured": false,
       "providers": [
@@ -945,6 +1308,12 @@
       "title": "Gutzon Borglum",
       "summary": "Gutzon Borglum, American sculptor, designed Mount Rushmore (died 1941)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Gutzon_Borglum_1919.jpg/330px-Gutzon_Borglum_1919.jpg",
+      "image_credit": {
+        "author": "Unidentified photographer",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gutzon_Borglum_1919.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Gutzon_Borglum",
       "is_featured": false,
       "providers": [
@@ -960,6 +1329,12 @@
       "title": "American Civil War: In Virginia during the Siege of Petersburg, Confederate forces temporarily…",
       "summary": "American Civil War: In Virginia during the Siege of Petersburg, Confederate forces temporarily capture Fort Stedman from the Union before being repulsed.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Battle_of_Gettysburg%2C_by_Currier_and_Ives.png/330px-Battle_of_Gettysburg%2C_by_Currier_and_Ives.png",
+      "image_credit": {
+        "author": "Nathaniel Currier and James Merritt Ives",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Gettysburg,_by_Currier_and_Ives.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/American_Civil_War",
       "is_featured": false,
       "providers": [
@@ -975,6 +1350,12 @@
       "title": "William Colgate",
       "summary": "William Colgate, English-American businessman and philanthropist, founded Colgate-Palmolive (born 1783)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/William_Colgate.jpeg/330px-William_Colgate.jpeg",
+      "image_credit": {
+        "author": "William Wallace Everts (1814-1890)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:William_Colgate.jpeg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/William_Colgate",
       "is_featured": false,
       "providers": [
@@ -990,6 +1371,12 @@
       "title": "Nicolai Wergeland",
       "summary": "Nicolai Wergeland, Norwegian priest, writer and politician (born 1780)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Nicolai_Wergeland.jpg",
+      "image_credit": {
+        "author": "Christian Olsen",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Nicolai_Wergeland.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Nicolai_Wergeland",
       "is_featured": false,
       "providers": [
@@ -1005,6 +1392,12 @@
       "title": "New Zealand Legislative Council pass the first Militia Act constituting the New Zealand Army",
       "summary": "New Zealand Legislative Council pass the first Militia Act constituting the New Zealand Army.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Crest_of_the_New_Zealand_Army.jpg/330px-Crest_of_the_New_Zealand_Army.jpg",
+      "image_credit": {
+        "author": "NZ Crown",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Crest_of_the_New_Zealand_Army.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/New_Zealand_Army",
       "is_featured": false,
       "providers": [
@@ -1020,6 +1413,12 @@
       "title": "Greek War of Independence: Traditional date of the start of the Greek War of Independence. The war…",
       "summary": "Greek War of Independence: Traditional date of the start of the Greek War of Independence. The war had actually begun on 23 February 1821 (Julian calendar).",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Greek_revolution_collage.jpg/330px-Greek_revolution_collage.jpg",
+      "image_credit": {
+        "author": "SJCAmerican",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Greek_revolution_collage.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence",
       "is_featured": false,
       "providers": [
@@ -1035,6 +1434,12 @@
       "title": "Percy Bysshe Shelley is expelled from the University of Oxford for publishing the pamphlet The…",
       "summary": "Percy Bysshe Shelley is expelled from the University of Oxford for publishing the pamphlet The Necessity of Atheism.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Percy_Bysshe_Shelley_by_Alfred_Clint.jpg/330px-Percy_Bysshe_Shelley_by_Alfred_Clint.jpg",
+      "image_credit": {
+        "author": "After Amelia Curran",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Percy_Bysshe_Shelley_by_Alfred_Clint.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Percy_Bysshe_Shelley",
       "is_featured": false,
       "providers": [
@@ -1050,6 +1455,12 @@
       "title": "The Swansea and Mumbles Railway, then known as the Oystermouth Railway, becomes the first…",
       "summary": "The Swansea and Mumbles Railway, then known as the Oystermouth Railway, becomes the first passenger-carrying railway in the world.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Horsetrain_1870.jpg/330px-Horsetrain_1870.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Horsetrain_1870.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Swansea_and_Mumbles_Railway",
       "is_featured": false,
       "providers": [
@@ -1065,6 +1476,12 @@
       "title": "The Treaty of Amiens is signed as a \"Definitive Treaty of Peace\" between France and the United…",
       "summary": "The Treaty of Amiens is signed as a \"Definitive Treaty of Peace\" between France and the United Kingdom.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/La_Paix_d%27Amiens_de_Jules-Claude_Ziegler_%281853%29.jpg/330px-La_Paix_d%27Amiens_de_Jules-Claude_Ziegler_%281853%29.jpg",
+      "image_credit": {
+        "author": "Jules-Claude Ziegler",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:La_Paix_d%27Amiens_de_Jules-Claude_Ziegler_(1853).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Treaty_of_Amiens",
       "is_featured": false,
       "providers": [
@@ -1080,6 +1497,12 @@
       "title": "Ernst Heinrich Karl von Dechen",
       "summary": "Ernst Heinrich Karl von Dechen, German geologist and academic (died 1889)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ernst_heinrich_von_dechen.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Ernst_heinrich_von_dechen.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Ernst_Heinrich_Karl_von_Dechen",
       "is_featured": false,
       "providers": [
@@ -1095,6 +1518,12 @@
       "title": "American Revolutionary War: American Patriot forces in Georgia conducted a raid on Tybee Island…",
       "summary": "American Revolutionary War: American Patriot forces in Georgia conducted a raid on Tybee Island, with the primary goal of capturing runaway slaves seeking refuge with the British.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Surrender_of_Lord_Cornwallis.jpg/330px-Surrender_of_Lord_Cornwallis.jpg",
+      "image_credit": {
+        "author": "John Trumbull",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/American_Revolutionary_War",
       "is_featured": true,
       "providers": [
@@ -1110,6 +1539,12 @@
       "title": "Daskalogiannis leads the people of Sfakia in the first Greek uprising against the Ottoman rule",
       "summary": "Daskalogiannis leads the people of Sfakia in the first Greek uprising against the Ottoman rule",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Daskalogiannis.jpg/330px-Daskalogiannis.jpg",
+      "image_credit": {
+        "author": "AWI",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Daskalogiannis.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Daskalogiannis",
       "is_featured": false,
       "providers": [
@@ -1125,6 +1560,12 @@
       "title": "John Barry",
       "summary": "John Barry, Irish-American naval officer and father of the American navy (died 1803)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Commodore_John_Barry.jpg/330px-Commodore_John_Barry.jpg",
+      "image_credit": {
+        "author": "V. Zveg",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Commodore_John_Barry.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Barry_(naval_officer)",
       "is_featured": false,
       "providers": [
@@ -1140,6 +1581,12 @@
       "title": "Nicholas Hawksmoor",
       "summary": "Nicholas Hawksmoor, English architect, designed Easton Neston and Christ Church (born 1661)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nicholas-Hawksmoor.jpg/330px-Nicholas-Hawksmoor.jpg",
+      "image_credit": {
+        "author": "Henry Cheere",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Nicholas-Hawksmoor.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Nicholas_Hawksmoor",
       "is_featured": false,
       "providers": [
@@ -1155,6 +1602,12 @@
       "title": "Jacobite risings: A French fleet anchored near Fife Ness as part of a planned French invasion of…",
       "summary": "Jacobite risings: A French fleet anchored near Fife Ness as part of a planned French invasion of Britain.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Prince_James_Francis_Edward_Stuart_by_Alexis_Simon_Belle.jpg/330px-Prince_James_Francis_Edward_Stuart_by_Alexis_Simon_Belle.jpg",
+      "image_credit": {
+        "author": "Alexis Simon Belle",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Prince_James_Francis_Edward_Stuart_by_Alexis_Simon_Belle.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Jacobitism",
       "is_featured": false,
       "providers": [
@@ -1170,6 +1623,12 @@
       "title": "Dutch astronomer Christiaan Huygens discovered Titan, the largest natural satellite of Saturn",
       "summary": "Dutch astronomer Christiaan Huygens discovered Titan, the largest natural satellite of Saturn.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Caspar_Netscher_-_Christiaan_Huygens%2C_the_astronomer%2C_1671.jpg/330px-Caspar_Netscher_-_Christiaan_Huygens%2C_the_astronomer%2C_1671.jpg",
+      "image_credit": {
+        "author": "Caspar Netscher",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Caspar_Netscher_-_Christiaan_Huygens,_the_astronomer,_1671.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Christiaan_Huygens",
       "is_featured": false,
       "providers": [
@@ -1185,6 +1644,12 @@
       "title": "Sir Walter Raleigh is granted a patent to colonize Virginia",
       "summary": "Sir Walter Raleigh is granted a patent to colonize Virginia.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg/330px-Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg",
+      "image_credit": {
+        "author": "anonymous",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Walter_Raleigh",
       "is_featured": false,
       "providers": [
@@ -1200,6 +1665,12 @@
       "title": "Hernán Cortés, entering province of Tabasco, defeats Tabascan Indians",
       "summary": "Hernán Cortés, entering province of Tabasco, defeats Tabascan Indians.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg/330px-Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg",
+      "image_credit": {
+        "author": "Unknown artistUnknown artist",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s",
       "is_featured": false,
       "providers": [
@@ -1215,6 +1686,12 @@
       "title": "Íñigo López de Mendoza",
       "summary": "Íñigo López de Mendoza, 1st Marquis of Santillana, Spanish poet and politician (born 1398)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Marques_de_Santillana_%28copia_de_Maureta%29.jpg/330px-Marques_de_Santillana_%28copia_de_Maureta%29.jpg",
+      "image_credit": {
+        "author": "Gabriel Maureta Aracil",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Marques_de_Santillana_(copia_de_Maureta).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/%C3%8D%C3%B1igo_L%C3%B3pez_de_Mendoza%2C_1st_Marquis_of_Santillana",
       "is_featured": false,
       "providers": [
@@ -1230,6 +1707,12 @@
       "title": "The Yongle Emperor of the Ming dynasty launched the first of his military campaigns against the…",
       "summary": "The Yongle Emperor of the Ming dynasty launched the first of his military campaigns against the Mongols, resulting in the fall of the Mongol khan Bunyashiri.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Portrait_assis_de_l%27empereur_Ming_Chengzu.jpg/330px-Portrait_assis_de_l%27empereur_Ming_Chengzu.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Portrait_assis_de_l%27empereur_Ming_Chengzu.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Yongle_Emperor",
       "is_featured": true,
       "providers": [
@@ -1245,6 +1728,12 @@
       "title": "The Council of Pisa convenes, in an attempt to heal the Western Schism",
       "summary": "The Council of Pisa convenes, in an attempt to heal the Western Schism.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Western_schism_1378-1417.svg/330px-Western_schism_1378-1417.svg.png",
+      "image_credit": {
+        "author": "Grand_schisme_1378-1417.png: @lankazame derivative work: Mipmapped (talk)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Western_schism_1378-1417.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Council_of_Pisa",
       "is_featured": false,
       "providers": [
@@ -1260,6 +1749,12 @@
       "title": "John Beaufort",
       "summary": "John Beaufort, 1st Duke of Somerset, English military leader (died 1444)",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Effigy_John_Beaufort_1st_Duke_of_Somerset.png",
+      "image_credit": {
+        "author": "James William Edmund Doyle",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Effigy_John_Beaufort_1st_Duke_of_Somerset.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/John_Beaufort%2C_1st_Duke_of_Somerset",
       "is_featured": false,
       "providers": [
@@ -1275,6 +1770,12 @@
       "title": "Catherine of Siena",
       "summary": "Catherine of Siena, Italian philosopher, theologian, and saint (died 1380)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Giovanni_Battista_Tiepolo_096.jpg/330px-Giovanni_Battista_Tiepolo_096.jpg",
+      "image_credit": {
+        "author": "Giovanni Battista Tiepolo",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Tiepolo_096.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Catherine_of_Siena",
       "is_featured": false,
       "providers": [
@@ -1290,6 +1791,12 @@
       "title": "Coronation of Robert of Courtenay as Emperor of the Latin Empire",
       "summary": "Coronation of Robert of Courtenay as Emperor of the Latin Empire.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Robertus_-Courtenay.jpg/330px-Robertus_-Courtenay.jpg",
+      "image_credit": {
+        "author": "Published by Guillaume Rouille(1518?-1589)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Robertus_-Courtenay.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Robert_of_Courtenay",
       "is_featured": false,
       "providers": [
@@ -1305,6 +1812,12 @@
       "title": "Romanos Lekapenos seizes the Boukoleon Palace in Constantinople and becomes regent of the…",
       "summary": "Romanos Lekapenos seizes the Boukoleon Palace in Constantinople and becomes regent of the Byzantine emperor Constantine VII.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Seal_of_Romanos_I_Lekapenos.png/330px-Seal_of_Romanos_I_Lekapenos.png",
+      "image_credit": {
+        "author": "Dumbarton Oaks",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Seal_of_Romanos_I_Lekapenos.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Romanos_I_Lekapenos",
       "is_featured": false,
       "providers": [
@@ -1320,6 +1833,12 @@
       "title": "Theodosius III resigns the throne to the Byzantine Empire to enter a monastery, allowing Leo III…",
       "summary": "Theodosius III resigns the throne to the Byzantine Empire to enter a monastery, allowing Leo III to take the throne and begin the Isaurian dynasty.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Coin_of_Theodosius_III.png/330px-Coin_of_Theodosius_III.png",
+      "image_credit": {
+        "author": "CNG Coins",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Coin_of_Theodosius_III.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Theodosius_III",
       "is_featured": false,
       "providers": [
@@ -1335,6 +1854,12 @@
       "title": "Italian city Venice is founded with the dedication of the first church, that of San Giacomo di…",
       "summary": "Italian city Venice is founded with the dedication of the first church, that of San Giacomo di Rialto on the islet of Rialto.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/330px-Venezia_aerial_view.jpg",
+      "image_credit": {
+        "author": "kallerna",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Venezia_aerial_view.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Venice",
       "is_featured": false,
       "providers": [
@@ -1350,6 +1875,12 @@
       "title": "The Southern Yan capital of Guanggu falls to the Jin dynasty general Liu Yu, ending the Southern…",
       "summary": "The Southern Yan capital of Guanggu falls to the Jin dynasty general Liu Yu, ending the Southern Yan dynasty.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Sixteen_Kingdoms_400_AD_%282%29.jpg/330px-Sixteen_Kingdoms_400_AD_%282%29.jpg",
+      "image_credit": {
+        "author": "SY",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Sixteen_Kingdoms_400_AD_(2).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Southern_Yan",
       "is_featured": false,
       "providers": [
@@ -1365,6 +1896,12 @@
       "title": "Anniversary of the Arengo and the Feast of the Militants (San Marino)",
       "summary": "Anniversary of the Arengo and the Feast of the Militants (San Marino)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Flag_of_San_Marino.svg/330px-Flag_of_San_Marino.svg.png",
+      "image_credit": {
+        "author": "Zscout370",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_San_Marino.svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/San_Marino",
       "is_featured": false,
       "providers": [
@@ -1379,6 +1916,12 @@
       "title": "Christian Saints' days Blessed Marie-Alphonsine Danil Ghattas",
       "summary": "Christian Saints' days Blessed Marie-Alphonsine Danil Ghattas",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Paus_Johannes_Paulus_I_%28Bestanddeelnr_929-9074%29_%28cropped%29.jpg/330px-Paus_Johannes_Paulus_I_%28Bestanddeelnr_929-9074%29_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Anefo",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Paus_Johannes_Paulus_I_(Bestanddeelnr_929-9074)_(cropped).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Beatification",
       "is_featured": false,
       "providers": [
@@ -1392,7 +1935,8 @@
       "category": "holidays",
       "title": "Christian Saints' days Omelyan Kovch (Ukrainian Greek Catholic Church)",
       "summary": "Christian Saints' days Omelyan Kovch (Ukrainian Greek Catholic Church)",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/e/e4/Omelyan_Kovch.tif/lossy-page1-120px-Omelyan_Kovch.tif.jpg",
+      "image_url": null,
+      "image_credit": null,
       "source_url": "https://en.wikipedia.org/wiki/Omelyan_Kovch",
       "is_featured": false,
       "providers": [
@@ -1407,6 +1951,12 @@
       "title": "Christian feast days: Feast of the Annunciation",
       "summary": "Christian feast days: March 25 (Eastern Orthodox liturgics)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Paolo_de_Matteis_-_The_Annunciation.jpg/330px-Paolo_de_Matteis_-_The_Annunciation.jpg",
+      "image_credit": {
+        "author": "Paolo de Matteis",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Paolo_de_Matteis_-_The_Annunciation.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Feast_of_the_Annunciation",
       "is_featured": false,
       "providers": [
@@ -1421,6 +1971,12 @@
       "title": "Commemoration Day for the Victims of Communist Genocide (Latvia)",
       "summary": "Commemoration Day for the Victims of Communist Genocide (Latvia)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Komunistisk%C4%81_genoc%C4%ABda_upuru_piemi%C5%86as_dienai_velt%C4%ABt%C4%81_ziedu_nolik%C5%A1anas_ceremonija_pie_Br%C4%ABv%C4%ABbas_pieminek%C4%BCa_%2841892779215%29.jpg/330px-Komunistisk%C4%81_genoc%C4%ABda_upuru_piemi%C5%86as_dienai_velt%C4%ABt%C4%81_ziedu_nolik%C5%A1anas_ceremonija_pie_Br%C4%ABv%C4%ABbas_pieminek%C4%BCa_%2841892779215%29.jpg",
+      "image_credit": {
+        "author": "Saeima",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Komunistisk%C4%81_genoc%C4%ABda_upuru_piemi%C5%86as_dienai_velt%C4%ABt%C4%81_ziedu_nolik%C5%A1anas_ceremonija_pie_Br%C4%ABv%C4%ABbas_pieminek%C4%BCa_(41892779215).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Commemoration_Day_for_the_Victims_of_Communist_Genocide",
       "is_featured": false,
       "providers": [
@@ -1435,6 +1991,12 @@
       "title": "Independence Day, celebrates the start of Greek War of Independence from the Ottoman Empire, in…",
       "summary": "Independence Day, celebrates the start of Greek War of Independence from the Ottoman Empire, in 1821. (Greece)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%CE%95%CF%80%CE%B5%CF%84%CE%B5%CE%B9%CE%B1%CE%BA%CF%8C_%284463231938%29.jpg/330px-%CE%95%CF%80%CE%B5%CF%84%CE%B5%CE%B9%CE%B1%CE%BA%CF%8C_%284463231938%29.jpg",
+      "image_credit": {
+        "author": "Klearchos Kapoutsis from Santorini, Greece",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:%CE%95%CF%80%CE%B5%CF%84%CE%B5%CE%B9%CE%B1%CE%BA%CF%8C_(4463231938).jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Celebration_of_the_Greek_Revolution",
       "is_featured": false,
       "providers": [
@@ -1449,6 +2011,12 @@
       "title": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade…",
       "summary": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade (international)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/United_Nations_slavery_memorial.png/330px-United_Nations_slavery_memorial.png",
+      "image_credit": {
+        "author": "DinoSoupCanada",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:United_Nations_slavery_memorial.png"
+      },
       "source_url": "https://en.wikipedia.org/wiki/International_Day_of_Remembrance_of_the_Victims_of_Slavery_and_the_Transatlantic_Slave_Trade",
       "is_featured": false,
       "providers": [
@@ -1463,6 +2031,12 @@
       "title": "International Day of the Unborn Child (international)",
       "summary": "International Day of the Unborn Child (international)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Pro-life_monument_between_Mosta_and_Naxxar_Malta%2C_Monument_for_the_unborn_child.jpeg/330px-Pro-life_monument_between_Mosta_and_Naxxar_Malta%2C_Monument_for_the_unborn_child.jpeg",
+      "image_credit": {
+        "author": "Continentaleurope",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Pro-life_monument_between_Mosta_and_Naxxar_Malta,_Monument_for_the_unborn_child.jpeg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/International_Day_of_the_Unborn_Child",
       "is_featured": false,
       "providers": [
@@ -1477,6 +2051,12 @@
       "title": "Maryland Day (Maryland, United States)",
       "summary": "New Year's Day (Lady Day) in England, Wales, Ireland, and some of the future United States and Canada from 1155 through 1751, until the Calendar (New Style) Act 1750 moved it to 1 January and adopted the Gregorian calendar. (The year 1751 began on 25 March; the year 1752 began on 1 January.) It was also New Years Day in Scotland until (and including) 25 March 1599; 1600 in Scotland began in 1 January – see Calendar (New Style) Act 1750#Scotland.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Seal_of_Maryland_%28reverse%29.svg/330px-Seal_of_Maryland_%28reverse%29.svg.png",
+      "image_credit": {
+        "author": "U.S. government",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Seal_of_Maryland_(reverse).svg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Maryland_Day",
       "is_featured": false,
       "providers": [
@@ -1491,6 +2071,12 @@
       "title": "Vårfrudagen or Våffeldagen, \"Waffle Day\" (Sweden, Norway & Denmark)",
       "summary": "Vårfrudagen or Våffeldagen, \"Waffle Day\" (Sweden, Norway & Denmark)",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/V%C3%A5ffla_gr%C3%A4ddklick.jpg/330px-V%C3%A5ffla_gr%C3%A4ddklick.jpg",
+      "image_credit": {
+        "author": "Urbansuperstar",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:V%C3%A5ffla_gr%C3%A4ddklick.jpg"
+      },
       "source_url": "https://en.wikipedia.org/wiki/Waffle_Day",
       "is_featured": false,
       "providers": [

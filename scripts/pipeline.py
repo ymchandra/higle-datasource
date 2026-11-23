@@ -4,6 +4,7 @@
 Usage:
     python scripts/pipeline.py --mode rolling [--date MM-DD]
     python scripts/pipeline.py --mode full [--start-month 1] [--end-month 12] [--force]
+    python scripts/pipeline.py --mode annotate   # re-apply licence blocks + image policy to existing files
 """
 
 from __future__ import annotations
@@ -14,6 +15,7 @@ import json
 import logging
 import sys
 import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
@@ -24,8 +26,10 @@ from dateutil import parser as date_parser
 from jsonschema import Draft202012Validator, ValidationError
 
 import deduplicator
+import legal
 from adapters import BaseAdapter, load_adapter
 from http_client import FetchError, RateLimitedError, get_json
+from image_licenses import ImageLicenseResolver, apply_image_policy
 
 log = logging.getLogger("pipeline")
 
@@ -79,8 +83,11 @@ class Pipeline:
     user_agent: str
     output: dict[str, Any]
     schema_validator: Draft202012Validator
+    config: dict[str, Any] = field(default_factory=dict)
+    image_resolver: ImageLicenseResolver | None = None
     sleep: Any = time.sleep
     results: dict[str, str] = field(default_factory=dict)
+    image_stats: Counter = field(default_factory=Counter)
     wrote_any: bool = False
     skip_existing: bool = False
 
@@ -138,13 +145,56 @@ class Pipeline:
         )
         if previous:
             deduplicator.stabilize_ids(items, previous.get("items", []), out.get("similarity_threshold", 75))
-        return {
+        self.finalize_items(month, day, items, (previous or {}).get("items", []))
+        return self.assemble(month, day, [s.id for s in self.sources if s.id in by_source], items)
+
+    def finalize_items(
+        self, month: int, day: int, items: list[dict[str, Any]], previous_items: list[dict[str, Any]]
+    ) -> Counter:
+        """Licence-check images and make sure every item links to an originating article."""
+        fallback = legal.day_article_url(month, day)
+        for item in items:
+            item["source_url"] = item.get("source_url") or fallback
+        stats = apply_image_policy(items, self.image_resolver, previous_items)
+        self.image_stats.update(stats)
+        return stats
+
+    def assemble(
+        self, month: int, day: int, sources_used: list[str], items: list[dict[str, Any]]
+    ) -> dict[str, Any]:
+        document: dict[str, Any] = {
             "date": f"{month:02d}-{day:02d}",
             "display_date": f"{calendar.month_name[month]} {day}",
             "last_updated": utc_now(),
-            "sources_used": [s.id for s in self.sources if s.id in by_source],
-            "items": [{k: item[k] for k in EVENT_KEYS} for item in items],
+            "sources_used": sources_used,
         }
+        if self.config.get("legal"):
+            document.update(legal.day_legal_block(self.config, sources_used))
+        document["items"] = [{k: item.get(k) for k in EVENT_KEYS} for item in items]
+        return document
+
+    def annotate_day(self, month: int, day: int, *, force: bool = False) -> str:
+        """Re-apply licence/attribution blocks and the image policy to an existing file without refetching."""
+        key = f"{month:02d}-{day:02d}"
+        previous = self._read_existing(self.data_dir / f"{key}.json")
+        if not previous or not previous.get("items"):
+            return self._done(key, "annotate-skipped-no-file")
+        if previous.get("license") and not force:
+            return self._done(key, "already-annotated")
+        items = [dict(item) for item in previous["items"]]
+        stats = self.finalize_items(month, day, items, previous["items"])
+        if stats["unresolved"]:
+            log.warning("%s: %d image licences could not be looked up; leaving file untouched", key, stats["unresolved"])
+            return self._done(key, "annotate-unresolved-kept-existing")
+        document = self.assemble(month, day, previous.get("sources_used", []), items)
+        try:
+            self.schema_validator.validate(document)
+        except ValidationError as exc:
+            log.error("%s: annotated document is invalid, not writing: %s", key, exc.message[:200])
+            return self._done(key, "invalid-not-written")
+        write_json(self.data_dir / f"{key}.json", document)
+        self.wrote_any = True
+        return self._done(key, "annotated")
 
     def process_day(self, month: int, day: int, *, force: bool = False) -> str:
         key = f"{month:02d}-{day:02d}"
@@ -200,7 +250,7 @@ class Pipeline:
 
 EVENT_KEYS = (
     "id", "year", "year_display", "category", "title", "summary",
-    "image_url", "source_url", "is_featured", "providers",
+    "image_url", "image_credit", "source_url", "is_featured", "providers",
 )
 
 
@@ -209,7 +259,9 @@ def _comparable(doc: dict) -> dict:
 
 
 # ---- manifest -----------------------------------------------------------
-def update_manifest(data_dir: Path, *, force_touch: bool = False) -> dict[str, Any]:
+def update_manifest(
+    data_dir: Path, *, force_touch: bool = False, legal_block: dict[str, Any] | None = None
+) -> dict[str, Any]:
     """Rebuild data/manifest.json from the day files. generated_at only moves when content changes."""
     days: dict[str, dict[str, Any]] = {}
     for path in sorted(data_dir.glob("[0-1][0-9]-[0-3][0-9].json")):
@@ -231,6 +283,7 @@ def update_manifest(data_dir: Path, *, force_touch: bool = False) -> dict[str, A
         "generated_at": (old or {}).get("generated_at", utc_now()),
         "total_days": len(days),
         "total_events": sum(d["event_count"] for d in days.values()),
+        **(legal_block or {}),
         "days": days,
     }
     if old is None or force_touch or _comparable_manifest(old) != _comparable_manifest(manifest):
@@ -245,12 +298,17 @@ def _comparable_manifest(m: dict) -> dict:
 
 # ---- setup & CLI --------------------------------------------------------
 def build_pipeline(
-    root: Path = ROOT, data_dir: Path | None = None, only_sources: list[str] | None = None
+    root: Path = ROOT,
+    data_dir: Path | None = None,
+    only_sources: list[str] | None = None,
+    resolve_images: bool = True,
 ) -> Pipeline:
     config = load_json(root / "sources" / "sources.json")
     runtimes = []
     for source in sorted(config["sources"], key=lambda s: s["priority"]):
-        if not source.get("enabled", True) or (only_sources and source["id"] not in only_sources):
+        # An explicit --sources list may opt in to a source that is disabled in the registry.
+        wanted = source["id"] in only_sources if only_sources else source.get("enabled", True)
+        if not wanted:
             continue
         schema = load_json(root / source["schema_path"])
         runtimes.append(SourceRuntime(source, load_adapter(source), Draft202012Validator(schema)))
@@ -261,6 +319,8 @@ def build_pipeline(
         user_agent=config["user_agent"],
         output=config.get("output", {}),
         schema_validator=Draft202012Validator(higle_schema),
+        config=config,
+        image_resolver=ImageLicenseResolver(user_agent=config["user_agent"]) if resolve_images else None,
     )
 
 
@@ -289,7 +349,7 @@ def full_days(start_month: int = 1, end_month: int = 12) -> list[tuple[int, int]
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--mode", choices=["rolling", "full"], default="rolling")
+    ap.add_argument("--mode", choices=["rolling", "full", "annotate"], default="rolling")
     ap.add_argument("--date", help="rolling mode: centre date MM-DD (default: today UTC)")
     ap.add_argument("--start-month", type=int, default=1)
     ap.add_argument("--end-month", type=int, default=12)
@@ -315,22 +375,30 @@ def main(argv: list[str] | None = None) -> int:
     else:
         days = full_days(args.start_month, args.end_month)
         pipeline.skip_existing = not args.force
-        log.info("full backfill of %d days (force=%s)", len(days), args.force)
+        log.info("%s of %d days (force=%s)", "full backfill" if args.mode == "full" else "annotation", len(days), args.force)
 
     for month, day in days:
-        pipeline.process_day(month, day, force=args.force)
-    update_manifest(pipeline.data_dir)
+        if args.mode == "annotate":
+            pipeline.annotate_day(month, day, force=args.force)
+        else:
+            pipeline.process_day(month, day, force=args.force)
+    update_manifest(
+        pipeline.data_dir,
+        legal_block=legal.manifest_legal_block(pipeline.config) if pipeline.config.get("legal") else None,
+    )
 
     summary: dict[str, list[str]] = {}
     for key, status in pipeline.results.items():
         summary.setdefault(status, []).append(key)
     for status, keys in sorted(summary.items()):
         log.info("summary %-22s %3d %s", status, len(keys), ", ".join(keys) if len(keys) <= 20 else "")
+    if pipeline.image_stats:
+        log.info("images: %s", ", ".join(f"{k}={v}" for k, v in sorted(pipeline.image_stats.items())))
     for source in pipeline.sources:
         if source.disabled_reason:
             log.warning("source %s was disabled during the run: %s", source.id, source.disabled_reason)
 
-    healthy = {"written", "unchanged", "skipped-existing", "degraded-kept-existing"}
+    healthy = {"written", "unchanged", "skipped-existing", "degraded-kept-existing", "annotated", "already-annotated"}
     return 0 if any(s in healthy for s in pipeline.results.values()) else 1
 
 
