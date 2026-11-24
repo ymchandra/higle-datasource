@@ -38,8 +38,8 @@ def test_wikimedia_adapter():
     validator("wikimedia").validate(payload)
     items = load_adapter(source("wikimedia")).transform(payload, 11, 23)
 
-    # 1 selected + 2 events with a year + birth + death + holiday; the year-less event is dropped.
-    assert len(items) == 6
+    # 1 selected + 5 events with a year + birth + death + holiday; the year-less event is dropped.
+    assert len(items) == 9
     selected = items[0]
     assert selected["is_featured"] and selected["category"] == "events"
     assert selected["image_url"].endswith("330px-doctor_who.jpg")  # utm tracking query stripped

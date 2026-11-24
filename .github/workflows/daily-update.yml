@@ -51,6 +51,9 @@ jobs:
       - name: Fetch, merge, deduplicate and validate the 3 days
         run: python scripts/pipeline.py --mode rolling --date "${{ steps.dates.outputs.center }}"
 
+      - name: Populate did_you_know for the same 3 days (Wikipedia feed, heuristic fallback)
+        run: python scripts/pipeline.py --mode dyk --date "${{ steps.dates.outputs.center }}"
+
       - name: Validate data against schema/higle/higle-day.schema.json
         run: python scripts/validate_data.py
 

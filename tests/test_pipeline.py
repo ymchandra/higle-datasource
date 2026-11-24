@@ -174,3 +174,14 @@ def test_validate_data_rejects_bad_files(tmp_path, make_pipeline):
     (tmp_path / "11-23.json").write_text("<html>")
     assert validate_data.validate_file(tmp_path / "11-23.json", p.schema_validator)
     assert validate_data.main(["--data-dir", str(tmp_path)]) == 1
+
+
+def test_process_day_emits_did_you_know(make_pipeline, tmp_path):
+    p = make_pipeline(all_ok())
+    p.today = date(2020, 1, 1)
+    assert p.process_day(11, 23) == "written"
+    doc = json.loads((tmp_path / "11-23.json").read_text())
+    assert 3 <= len(doc["did_you_know"]) <= 5
+    assert validate_data.validate_file(tmp_path / "11-23.json", p.schema_validator) == []
+    manifest = pipeline.update_manifest(tmp_path, legal_block=legal.manifest_legal_block(p.config))
+    assert manifest["days"]["11-23"]["did_you_know_count"] == len(doc["did_you_know"])

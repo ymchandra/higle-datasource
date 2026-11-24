@@ -56,6 +56,26 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
       "terms_url": "https://history.muffinlabs.com/#license",
       "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
+    },
+    {
+      "id": "wikimedia_dyk",
+      "name": "Wikimedia Featured Feed (Did you know)",
+      "kind": "did_you_know",
+      "enabled": true,
+      "priority": 4,
+      "adapter": "wikimedia_dyk_adapter",
+      "base_url": "https://api.wikimedia.org/feed/v1/wikipedia/en/featured/{YYYY}/{MM}/{DD}",
+      "page_summary_url": "https://en.wikipedia.org/api/rest_v1/page/summary/{title}",
+      "schema_path": "schema/wikimedia_dyk/response.schema.json",
+      "rate_limit_delay_sec": 1.0,
+      "provides_images": true,
+      "provides_featured": false,
+      "notes": "Only today/upcoming dates have a dyk array (absent for past dates), so it is fetched only within output.did_you_know.fetch_window_days of today (UTC); other days use the heuristic extractor in scripts/fun_fact_extractor.py.",
+      "license": "CC BY-SA 4.0",
+      "homepage_url": "https://en.wikipedia.org/wiki/Wikipedia:Did_you_know",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+      "attribution": "'Did you know' hooks from English Wikipedia (https://en.wikipedia.org/wiki/Wikipedia:Did_you_know) by Wikipedia contributors, retrieved via the Wikimedia featured feed; licensed under CC BY-SA 4.0."
     }
   ],
   "output": {
@@ -70,7 +90,12 @@
     "min_featured": 3,
     "max_featured": 5,
     "max_title_length": 140,
-    "similarity_threshold": 75
+    "similarity_threshold": 75,
+    "did_you_know": {
+      "min_items": 3,
+      "max_items": 5,
+      "fetch_window_days": 2
+    }
   },
   "legal": {
     "disclaimer": "Best-effort compliance information, not legal advice.",
@@ -81,7 +106,7 @@
     },
     "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
     "attribution_suffix": "Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
-    "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+    "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. did_you_know facts are either Wikipedia \"Did you know\" hooks (text only, reformatted) or one-sentence rewordings of existing entries (prefixed with the date, possibly shortened). Image links are unmodified Wikimedia URLs.",
     "image_policy": "Only images hosted on upload.wikimedia.org or thumb.wikimedia.org under /wikipedia/commons/ whose Wikimedia Commons licence is Public domain, CC0, CC BY or CC BY-SA are kept; everything else is dropped. Author, licence and the Commons file page are recorded in image_credit."
   }
 }

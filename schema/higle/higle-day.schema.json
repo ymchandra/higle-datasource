@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/ymchandra/higle-datasource/schema/higle/higle-day.schema.json",
   "title": "Higle Day",
-  "description": "One calendar day of 'On This Day' history events, as consumed by the Higle Flutter app. license/attribution/sources/modifications/notice_url and items[].image_credit are optional legal metadata; the app only needs date, display_date, last_updated and items.",
+  "description": "One calendar day of 'On This Day' history events, as consumed by the Higle Flutter app. license/attribution/sources/modifications/notice_url and items[].image_credit are optional legal metadata; did_you_know is an optional (but always emitted) list of 3-5 fun facts. The app only needs date, display_date, last_updated and items.",
   "type": "object",
   "required": ["date", "display_date", "last_updated", "sources_used", "items"],
   "additionalProperties": false,
@@ -50,12 +50,64 @@
     },
     "modifications": { "type": "string" },
     "notice_url": { "type": "string", "pattern": "^https://" },
+    "did_you_know": {
+      "description": "Fun facts for the day (3-5 emitted). Optional at schema level so older files stay valid.",
+      "type": "array",
+      "maxItems": 5,
+      "items": { "$ref": "#/$defs/fun_fact" }
+    },
     "items": {
       "type": "array",
       "items": { "$ref": "#/$defs/event" }
     }
   },
   "$defs": {
+    "image_credit": {
+      "description": "Author/licence of image_url (null when there is no image). image_url is only set for Wikimedia Commons files under Public domain, CC0, CC BY or CC BY-SA.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["license", "file_page_url"],
+          "additionalProperties": false,
+          "properties": {
+            "author": { "type": ["string", "null"], "maxLength": 120 },
+            "license": { "type": "string", "minLength": 1 },
+            "license_url": { "type": ["string", "null"], "pattern": "^https?://" },
+            "file_page_url": { "type": "string", "pattern": "^https://" }
+          }
+        }
+      ]
+    },
+    "fun_fact": {
+      "type": "object",
+      "required": ["id", "fact", "tag", "image_url", "source_url"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "dyk-{MM}-{DD}-{sha1(normalized fact)[:8]}",
+          "type": "string",
+          "pattern": "^dyk-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])-[0-9a-f]{8}$"
+        },
+        "fact": {
+          "description": "Plain-text trivia hook (no HTML), 40-240 characters. Wikipedia hooks read '...that X?'; derived facts read 'On November 24, 1971: ...'.",
+          "type": "string",
+          "minLength": 40,
+          "maxLength": 240,
+          "pattern": "^[^<>]+$"
+        },
+        "tag": { "type": "string", "minLength": 1, "maxLength": 30 },
+        "image_url": { "type": ["string", "null"], "pattern": "^https://" },
+        "image_credit": { "$ref": "#/$defs/image_credit" },
+        "source_url": { "type": ["string", "null"], "pattern": "^https?://" },
+        "providers": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
     "event": {
       "type": "object",
       "required": [
@@ -85,23 +137,7 @@
           "type": ["string", "null"],
           "pattern": "^https://"
         },
-        "image_credit": {
-          "description": "Author/licence of image_url (null when there is no image). image_url is only set for Wikimedia Commons files under Public domain, CC0, CC BY or CC BY-SA.",
-          "oneOf": [
-            { "type": "null" },
-            {
-              "type": "object",
-              "required": ["license", "file_page_url"],
-              "additionalProperties": false,
-              "properties": {
-                "author": { "type": ["string", "null"], "maxLength": 120 },
-                "license": { "type": "string", "minLength": 1 },
-                "license_url": { "type": ["string", "null"], "pattern": "^https?://" },
-                "file_page_url": { "type": "string", "pattern": "^https://" }
-              }
-            }
-          ]
-        },
+        "image_credit": { "$ref": "#/$defs/image_credit" },
         "source_url": {
           "type": ["string", "null"],
           "pattern": "^https?://"

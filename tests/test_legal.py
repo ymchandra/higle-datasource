@@ -130,7 +130,7 @@ def test_apply_image_policy_without_resolver_keeps_no_unknown_images():
 def test_registry_disables_dayinhistory_and_documents_licences():
     config = json.loads((ROOT / "sources" / "sources.json").read_text())
     enabled = {s["id"] for s in config["sources"] if s["enabled"]}
-    assert enabled == {"wikimedia", "muffinlabs"}
+    assert enabled == {"wikimedia", "muffinlabs", "wikimedia_dyk"}
     for source in config["sources"]:
         assert source["license"] and source["terms_url"] and "attribution" in source
     assert config["legal"]["dataset_license"]["spdx"] == "CC-BY-SA-4.0"
@@ -144,7 +144,7 @@ def test_day_legal_block_only_credits_used_sources():
     both = legal.day_legal_block(config, ["wikimedia", "muffinlabs"])
     assert "Muffin Labs" in both["attribution"] and "Not endorsed by the Wikimedia Foundation" in both["attribution"]
     manifest = legal.manifest_legal_block(config)
-    assert [s["id"] for s in manifest["sources"]] == ["wikimedia", "muffinlabs"] and manifest["image_policy"]
+    assert [s["id"] for s in manifest["sources"]] == ["wikimedia", "muffinlabs", "wikimedia_dyk"] and manifest["image_policy"]
     assert legal.day_article_url(2, 29) == "https://en.wikipedia.org/wiki/February_29"
 
 
@@ -159,6 +159,11 @@ def legacy_day(tmp_path):
     doc = {
         "date": "11-23", "display_date": "November 23", "last_updated": "2025-11-23T00:00:00Z",
         "sources_used": ["wikimedia"],
+        "did_you_know": [
+            {"id": f"dyk-11-23-0000000{i}", "fact": f"On November 23, 19{i}0: something quite surprising happened in history.",
+             "tag": "History Trivia", "image_url": None, "source_url": None}
+            for i in range(3)
+        ],
         "items": [
             {"id": f"11-23-19{i}0-0000000{i}", "year": 1900 + i * 10, "year_display": str(1900 + i * 10), "category": "events",
              "title": f"Event {i}", "summary": f"Event {i}", "image_url": url, "source_url": None,

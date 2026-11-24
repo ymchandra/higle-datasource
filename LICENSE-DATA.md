@@ -38,7 +38,9 @@ The same text (plus per-source credits) is embedded in every day file under `att
 
 Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters
 with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted.
-Summaries keep the source wording. Image links are unmodified Wikimedia URLs.
+Summaries keep the source wording. `did_you_know` facts are Wikipedia "Did you know" hooks (plain text, leading
+"..." normalised) or short adaptations of the day's events and holidays (prefixed with the date, trimmed to 240
+characters). Image links are unmodified Wikimedia URLs.
 
 ## Images are **not** covered by this licence
 

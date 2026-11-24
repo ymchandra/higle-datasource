@@ -19,6 +19,7 @@ from image_licenses import commons_title
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = ROOT / "schema" / "higle" / "higle-day.schema.json"
 LEAP_YEAR = 2024
+MIN_FACTS = 3
 
 
 def expected_keys() -> list[str]:
@@ -27,6 +28,25 @@ def expected_keys() -> list[str]:
         for m in range(1, 13)
         for d in range(1, calendar.monthrange(LEAP_YEAR, m)[1] + 1)
     ]
+
+
+def validate_facts(doc: dict) -> list[str]:
+    errors = []
+    facts = doc.get("did_you_know")
+    if facts is None:
+        return ["missing did_you_know (run: python scripts/pipeline.py --mode dyk)"]
+    if len(facts) < MIN_FACTS:
+        errors.append(f"did_you_know has {len(facts)} facts, expected {MIN_FACTS}-5")
+    if len({f["id"] for f in facts}) != len(facts):
+        errors.append("duplicate did_you_know ids")
+    for fact in facts:
+        if not fact["id"].startswith(f"dyk-{doc['date']}-"):
+            errors.append(f"{fact['id']}: id does not match date {doc['date']}")
+        if fact["image_url"] and (commons_title(fact["image_url"]) is None or not fact.get("image_credit")):
+            errors.append(f"{fact['id']}: image_url must be a Commons file with image_credit")
+        if not fact["image_url"] and fact.get("image_credit"):
+            errors.append(f"{fact['id']}: image_credit without image_url")
+    return errors
 
 
 def validate_file(path: Path, validator: Draft202012Validator) -> list[str]:
@@ -55,6 +75,7 @@ def validate_file(path: Path, validator: Draft202012Validator) -> list[str]:
     ids = [item["id"] for item in doc["items"]]
     if len(ids) != len(set(ids)):
         errors.append("duplicate item ids")
+    errors.extend(validate_facts(doc))
     if not doc["items"]:
         errors.append("items is empty")
     elif len(doc["items"]) >= 3 and sum(i["is_featured"] for i in doc["items"]) < 3:

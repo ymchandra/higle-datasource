@@ -22,6 +22,15 @@ The dataset in `data/` is licensed **CC BY-SA 4.0** (see [LICENSE-DATA.md](LICEN
 * Wikimedia Commons image metadata (author, licence) is read through the Commons API
   (<https://commons.wikimedia.org/w/api.php>).
 
+### Wikimedia featured feed - "Did you know" (Wikipedia content)
+
+* Source id: `wikimedia_dyk` - <https://api.wikimedia.org/feed/v1/wikipedia/en/featured/{YYYY}/{MM}/{DD}>
+* Content: the `dyk` hooks of English Wikipedia's main page, © Wikipedia contributors.
+* Licence, terms, User-Agent and rate-limit rules: as for the Wikimedia On This Day API above (CC BY-SA 4.0).
+* Required attribution: credit Wikipedia, link the article via the fact's `source_url`, indicate changes.
+* The page-summary API (<https://en.wikipedia.org/api/rest_v1/page/summary/{title}>) is used to find the thumbnail of
+  the hook's article; the image rules in "Images" below apply.
+
 ### Muffin Labs History API
 
 * Source id: `muffinlabs` - <https://history.muffinlabs.com/date/{M}/{D}>
@@ -59,7 +68,9 @@ The dataset in `data/` is licensed **CC BY-SA 4.0** (see [LICENSE-DATA.md](LICEN
 Selected and filtered; HTML removed; years parsed (negative = BCE); headline titles shortened (about 100
 characters, ellipsis; summaries keep the source wording); events merged and de-duplicated across sources (fuzzy matching);
 ranked, "featured" flagged, capped (max 100 per day with category quotas) and sorted; `id`s generated
-deterministically; `source_url` falls back to the Wikipedia date article when absent.
+deterministically; `did_you_know` facts are either Wikipedia "Did you know" hooks (cleaned to plain text, leading
+"..." normalised) or short adaptations of events/holidays (reworded into `On <date>, <year>: <summary>.`, trimmed to
+240 characters, tagged by keyword rules); `source_url` falls back to the Wikipedia date article when absent.
 
 ## Trademarks and endorsement
 
