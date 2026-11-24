@@ -7,6 +7,7 @@ from typing import Any, Iterable
 
 from rapidfuzz import fuzz
 
+import fun_fact_extractor
 from adapters.base_adapter import CATEGORIES, make_id
 
 DEFAULT_THRESHOLD = 75
@@ -189,3 +190,56 @@ def process(
     selected = sort_items(select_items(merged, max_items, quotas), sort_order)
     assign_ids(selected, month, day)
     return selected
+
+
+def _fact_matches(fact: str, texts: Iterable[str], threshold: float) -> bool:
+    normalized = normalize_text(fact)
+    return any(_similar(normalized, normalize_text(text), threshold) for text in texts)
+
+
+def build_did_you_know(
+    items: list[dict[str, Any]],
+    month: int,
+    day: int,
+    *,
+    feed_facts: list[dict[str, Any]] | None = None,
+    retained_facts: list[dict[str, Any]] | None = None,
+    min_items: int = 3,
+    max_items: int = 5,
+    threshold: float = DEFAULT_THRESHOLD,
+) -> list[dict[str, Any]]:
+    """The day's ``did_you_know`` list (3-5 facts, deterministic).
+
+    Tier 1: Wikipedia "Did you know" hooks from the feed (``feed_facts``; ``retained_facts`` from the previous
+    file when the feed has nothing for this date any more). Tier 2: when that gives fewer than ``min_items``,
+    fill up to ``max_items`` with curious, non-featured entries from ``items`` (see fun_fact_extractor).
+    Facts that duplicate each other or a featured item are dropped; ids are ``dyk-MM-DD-sha1[:8]``.
+    """
+    featured = [f"{i['title']} {i['summary']}" for i in items if i["is_featured"]]
+    chosen: list[dict[str, Any]] = []
+
+    def accept(fact: dict[str, Any]) -> bool:
+        text = fact["fact"]
+        if not fun_fact_extractor.valid_fact(text):
+            return False
+        if _fact_matches(text, [c["fact"] for c in chosen], threshold):
+            return False
+        return not _fact_matches(text, featured, threshold)
+
+    for fact in (feed_facts or []) or (retained_facts or []):
+        if len(chosen) < max_items and accept(fact):
+            chosen.append(dict(fact))
+    if len(chosen) < min_items:
+        for candidate in fun_fact_extractor.diversified_order(fun_fact_extractor.candidates(items, month, day)):
+            if len(chosen) >= max_items:
+                break
+            if accept(candidate):
+                chosen.append(dict(candidate))
+    for fact in chosen:
+        fact["id"] = fun_fact_extractor.fact_id(month, day, fact["fact"])
+    return _unique_ids(chosen)
+
+
+def _unique_ids(facts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    seen: set[str] = set()
+    return [f for f in facts if not (f["id"] in seen or seen.add(f["id"]))]

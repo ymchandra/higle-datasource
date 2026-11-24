@@ -28,6 +28,17 @@ Use a release tag (`@v1.0.0`) for immutable URLs.
   "display_date": "November 23",
   "last_updated": "2025-11-23T00:05:12Z",
   "sources_used": ["wikimedia", "muffinlabs"],
+  "did_you_know": [                    // 3-5 fun facts per day (optional in the schema, always emitted)
+    {
+      "id": "dyk-11-23-a1b2c3d4",      // dyk-{MM}-{DD}-{sha1(normalized fact)[:8]}, stable while the text is
+      "fact": "On November 23, 1992: The first smartphone, the IBM Simon, is introduced at COMDEX.", // plain text, 40-240 chars
+      "tag": "Inventions",             // topic badge: Science, Space, Nature, Sports, Culture, Oddities, Mystery & Crime, Inventions, History Trivia
+      "image_url": "https://…",        // Commons image or null (apps must hide it when image_credit is missing)
+      "source_url": "https://…",       // originating Wikipedia article or null
+      "image_credit": { /* same shape as items[].image_credit; only present with image_url */ },
+      "providers": ["wikimedia", "muffinlabs"]  // optional: which sources the fact came from
+    }
+  ],
   "items": [
     {
       "id": "11-23-1963-2835d641",     // {MM}-{DD}-{year}-{sha1(normalized title)[:8]}, stable across updates
@@ -48,8 +59,30 @@ Use a release tag (`@v1.0.0`) for immutable URLs.
 Items are sorted by year (newest first by default; `output.sort_order` in `sources/sources.json`), holidays last,
 and capped at 100 per day (`output.max_items_per_day`, with per-category quotas).
 
+#### `did_you_know` (fun facts)
+
+Two tiers fill it (`scripts/fun_fact_extractor.py`, wired through `deduplicator.build_did_you_know`):
+
+1. **Wikipedia "Did you know…" hooks** from the Wikimedia featured feed
+   (`https://api.wikimedia.org/feed/v1/wikipedia/en/featured/{YYYY}/{MM}/{DD}`, source `wikimedia_dyk`), formatted
+   as `...that X?`. As verified in November 2026 the feed only returns a `dyk` array for **today and upcoming
+   dates** (it is absent for past dates), entries carry only `text`/`html` (no thumbnails; the article comes from
+   the bolded link and a thumbnail is looked up through the Wikipedia page-summary API and licence-checked like
+   every other image), and the hooks are Wikipedia main-page items rather than "this day in history" facts. So it
+   is requested only within +-2 days of the run date (`output.did_you_know.fetch_window_days`) and hooks are kept
+   in the file afterwards (provider `wikimedia_dyk`).
+2. **Deterministic heuristic fallback** whenever the hooks give fewer than 3: non-featured events/holidays of the
+   day are scored on curiosity keywords (*first, invented, accidental, record, banned, discovered, unusual…*), grim
+   topics are down-ranked, at most two per tag are taken first, and the text is formatted as
+   `On November 23, 1992: <summary>.` with an inferred `tag`. Same input gives the same output, so daily diffs stay
+   minimal. Facts never duplicate each other or a featured item (same fuzzy match as the deduplicator).
+
+Facts of the second kind reuse the `image_url`, `image_credit` and `source_url` of the item they come from. A fact
+image is always a Commons file with `image_credit`, otherwise `null`. The 3-5 count, id format, text length and
+image rules are enforced by the schema and `scripts/validate_data.py`.
+
 `data/manifest.json` holds `schema_version`, `version`, `generated_at`, `total_days` (366 when complete),
-`total_events` and per-day `last_updated` / `event_count`.
+`total_events` and per-day `last_updated` / `event_count` / `did_you_know_count`.
 
 ### Offline bundle
 
@@ -66,6 +99,7 @@ when events are merged.
 | --- | --- | --- |
 | `wikimedia` | `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/{MM}/{DD}` | events, births, deaths, holidays, featured ("selected") entries, images. Needs the descriptive User-Agent. |
 | `dayinhistory` | `https://api.dayinhistory.dev/v1/events/{month_name}/{D}/` | Paginated; month is the lowercase English name. **The anonymous tier is limited to 10 requests/hour per IP**, so only the events endpoint is fetched by default (`extra_endpoints` can add `births`/`deaths`) and the source is switched off for the rest of a run after the first HTTP 429. Full backfills therefore get little or no data from this source; the daily workflow (3 requests per run) usually fits. |
+| `wikimedia_dyk` | `https://api.wikimedia.org/feed/v1/wikipedia/en/featured/{YYYY}/{MM}/{DD}` | `kind: "did_you_know"`: only its `dyk` array is used (see "did_you_know" above). Never needed for a day to be written; when unavailable the heuristic fallback is used. |
 | `muffinlabs` | `https://history.muffinlabs.com/date/{M}/{D}` | events, births, deaths. Its "holidays" rows are mis-parsed upstream and are ignored. |
 
 URL placeholders: `{MM}`/`{DD}` zero-padded, `{M}`/`{D}` not padded, `{month_name}` lowercase month name.
@@ -99,6 +133,7 @@ pip install -r requirements-dev.txt
 python scripts/pipeline.py --mode rolling                 # yesterday, today, tomorrow (UTC)
 python scripts/pipeline.py --mode rolling --date 11-23    # around a given date
 python scripts/pipeline.py --mode full --start-month 1 --end-month 12 [--force]
+python scripts/pipeline.py --mode dyk [--date 11-23] [--force]   # (re)populate did_you_know in existing files, offline unless within +-2 days of today
 python scripts/validate_data.py [--require-all]
 python scripts/check_config.py                            # sources.json + schema syntax
 python -m pytest
@@ -108,8 +143,8 @@ python -m pytest
 
 | workflow | trigger | purpose |
 | --- | --- | --- |
-| `daily-update.yml` | cron `0 0,12 * * *`, manual (optional `date` MM-DD) | Refresh yesterday/today/tomorrow (UTC), validate, commit `chore(data): update daily history events [skip ci]` and push. |
-| `full-backfill.yml` | manual (`start_month`, `end_month`, `force_overwrite`) | Populate all 366 days, validate, commit once. Run it on setup or after adding a source. |
+| `daily-update.yml` | cron `0 0,12 * * *`, manual (optional `date` MM-DD) | Refresh yesterday/today/tomorrow (UTC) incl. `did_you_know` (`--mode dyk`), validate, commit `chore(data): update daily history events [skip ci]` and push. |
+| `full-backfill.yml` | manual (`start_month`, `end_month`, `force_overwrite`) | Populate all 366 days and their `did_you_know` facts, validate, commit once. Run it on setup or after adding a source. |
 | `validate-pr.yml` | PRs/pushes touching `schema/**`, `sources/**`, `scripts/**`, … | JSON/schema syntax checks, unit tests with mock fixtures, data validation. |
 | `release-bundle.yml` | tag `v*` | Builds and attaches `higle-offline-bundle.zip` to a GitHub release. |
 
@@ -168,6 +203,8 @@ In the Higle app's About / Credits screen (and wherever the data is redistribute
 > (https://creativecommons.org/licenses/by-sa/4.0/). Adapted and compiled by the Higle datasource project; changes
 > were made. Not endorsed by the Wikimedia Foundation. Images are from Wikimedia Commons and keep their own licences.
 
+* "Did you know" facts (`did_you_know[]`) are Wikipedia-derived text under the same licence: show the same credit,
+  link `source_url` ("Read on Wikipedia"), and apply the image rules above to their `image_url` / `image_credit`.
 * Make the credit text link to the licence and to Wikipedia; offer a "Read full source" link from `source_url`.
 * For every shown image, display `image_credit` (author if present, licence name linked to `license_url`, and a link
   to `file_page_url`) near the image or in an image-credits screen; do not show images without `image_credit`.

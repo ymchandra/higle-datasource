@@ -1,7 +1,7 @@
 {
   "date": "01-23",
   "display_date": "January 23",
-  "last_updated": "2026-11-23T14:33:14Z",
+  "last_updated": "2026-11-24T11:20:15Z",
   "sources_used": [
     "wikimedia",
     "muffinlabs"
@@ -30,8 +30,94 @@
       "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
     }
   ],
-  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. did_you_know facts are either Wikipedia \"Did you know\" hooks (text only, reformatted) or one-sentence rewordings of existing entries (prefixed with the date, possibly shortened). Image links are unmodified Wikimedia URLs.",
   "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
+  "did_you_know": [
+    {
+      "id": "dyk-01-23-457f45ba",
+      "fact": "On January 23, 2018: A 7.9 Mw earthquake occurs in the Gulf of Alaska. It is tied as the sixth-largest earthquake ever recorded in the United States, but there are no reports of significant damage or fatalities.",
+      "tag": "Nature",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/2018_Alaska_earthquake_intensity.jpg/330px-2018_Alaska_earthquake_intensity.jpg",
+      "image_credit": {
+        "author": "USGS",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:2018_Alaska_earthquake_intensity.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/2018_Gulf_of_Alaska_earthquake",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-23-6d804b02",
+      "fact": "On January 23, 1986: The Rock and Roll Hall of Fame inducts its first members: Little Richard, Chuck Berry, James Brown, Ray Charles, Sam Cooke, Fats Domino, The Everly Brothers, Buddy Holly, Jerry Lee Lewis and Elvis Presley.",
+      "tag": "History Trivia",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Rock_and_Roll_Hall_of_Fame_-_Joy_of_Museums_1.jpg/330px-Rock_and_Roll_Hall_of_Fame_-_Joy_of_Museums_1.jpg",
+      "image_credit": {
+        "author": "GordonMakryllos",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Rock_and_Roll_Hall_of_Fame_-_Joy_of_Museums_1.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Rock_and_Roll_Hall_of_Fame",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-23-bbe294f6",
+      "fact": "On January 23, 1960: The bathyscaphe USS Trieste breaks a depth record by descending to 10,911 metres (35,797 ft) in the Pacific Ocean.",
+      "tag": "Oddities",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Bathyscaphe_Trieste_with_USS_Lewis_%28DE-535%29_over_the_Marianas_Trench%2C_23_January_1960_%28NH_96797%29.jpg/330px-Bathyscaphe_Trieste_with_USS_Lewis_%28DE-535%29_over_the_Marianas_Trench%2C_23_January_1960_%28NH_96797%29.jpg",
+      "image_credit": {
+        "author": "U.S. Navy photo NH 96797",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bathyscaphe_Trieste_with_USS_Lewis_(DE-535)_over_the_Marianas_Trench,_23_January_1960_(NH_96797).jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Bathyscaphe",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-23-3444cfa4",
+      "fact": "On January 23, 1922: The first successful treatment with insulin is given to 14-year-old diabetic Leonard Thompson.",
+      "tag": "History Trivia",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Inzul%C3%ADn.jpg/330px-Inzul%C3%ADn.jpg",
+      "image_credit": {
+        "author": "Mr Hyde at Czech Wikipedia (Original text: moje foto)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Inzul%C3%ADn.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Insulin_(medication)",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-23-4f63097b",
+      "fact": "January 23 is observed as Netaji Subhas Chandra Bose's Jayanti (Assam, Orissa, Tripura, and West Bengal, India).",
+      "tag": "Culture",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Subhas_Chandra_Bose_NRB.jpg/330px-Subhas_Chandra_Bose_NRB.jpg",
+      "image_credit": {
+        "author": "Unknown (Netaji Research Bureau, Calcutta)",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Subhas_Chandra_Bose_NRB.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Netaji_Jayanti",
+      "providers": [
+        "wikimedia"
+      ]
+    }
+  ],
   "items": [
     {
       "id": "01-23-2024-be81ebb0",

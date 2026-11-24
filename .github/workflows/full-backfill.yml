@@ -51,7 +51,17 @@ jobs:
           if [ "$FORCE" = "true" ]; then args+=(--force); fi
           python scripts/pipeline.py "${args[@]}"
 
-      - name: Validate every generated file
+      - name: Populate did_you_know for the same days (Wikipedia feed within +-2 days of today, heuristic otherwise)
+        env:
+          START_MONTH: ${{ inputs.start_month }}
+          END_MONTH: ${{ inputs.end_month }}
+          FORCE: ${{ inputs.force_overwrite }}
+        run: |
+          args=(--mode dyk --start-month "$START_MONTH" --end-month "$END_MONTH")
+          if [ "$FORCE" = "true" ]; then args+=(--force); fi
+          python scripts/pipeline.py "${args[@]}"
+
+      - name: Validate every generated file against schema/higle/higle-day.schema.json
         run: python scripts/validate_data.py
 
       - name: Commit and push in a single commit

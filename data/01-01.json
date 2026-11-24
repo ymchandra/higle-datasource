@@ -1,7 +1,7 @@
 {
   "date": "01-01",
   "display_date": "January 1",
-  "last_updated": "2026-11-23T14:31:04Z",
+  "last_updated": "2026-11-24T11:20:15Z",
   "sources_used": [
     "wikimedia",
     "muffinlabs"
@@ -30,8 +30,95 @@
       "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
     }
   ],
-  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. did_you_know facts are either Wikipedia \"Did you know\" hooks (text only, reformatted) or one-sentence rewordings of existing entries (prefixed with the date, possibly shortened). Image links are unmodified Wikimedia URLs.",
   "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
+  "did_you_know": [
+    {
+      "id": "dyk-01-01-72b64e3a",
+      "fact": "On January 1, 1847: The world's first \"Mercy\" Hospital is founded in Pittsburgh, United States, by a group of Sisters of Mercy from Ireland; the name will go on to grace over 30 major hospitals throughout the world.",
+      "tag": "Oddities",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/UPMCMercy2014a.jpg/330px-UPMCMercy2014a.jpg",
+      "image_credit": {
+        "author": "Crazypaco",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:UPMCMercy2014a.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/UPMC_Mercy",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-01-11c64afe",
+      "fact": "On January 1, 1982: Peruvian Javier Pérez de Cuéllar becomes the first Latin American to hold the title of Secretary-General of the United Nations.",
+      "tag": "History Trivia",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Javier_P%C3%A9rez_de_Cu%C3%A9llar_%281982%29.jpg/330px-Javier_P%C3%A9rez_de_Cu%C3%A9llar_%281982%29.jpg",
+      "image_credit": {
+        "author": "Rob Bogaerts for Anefo",
+        "license": "CC BY-SA 3.0 nl",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Javier_P%C3%A9rez_de_Cu%C3%A9llar_(1982).jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Javier_P%C3%A9rez_de_Cu%C3%A9llar",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-01-429521fe",
+      "fact": "On January 1, 1947: The Canadian Citizenship Act 1946 comes into effect, converting British subjects into Canadian citizens. Prime Minister William Lyon Mackenzie King becomes the first Canadian citizen.",
+      "tag": "History Trivia",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Centre_Block_-_Parliament_Hill.jpg/330px-Centre_Block_-_Parliament_Hill.jpg",
+      "image_credit": {
+        "author": "Saffron Blaze",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Centre_Block_-_Parliament_Hill.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Canadian_Citizenship_Act%2C_1946",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-01-7ef2e011",
+      "fact": "On January 1, 1902: The first American college football bowl game, the Rose Bowl between Michigan and Stanford, is held in Pasadena, California.",
+      "tag": "Sports",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Q1_OSU_Fiesta_Bowl_2019.jpg/330px-Q1_OSU_Fiesta_Bowl_2019.jpg",
+      "image_credit": {
+        "author": "Blervis",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Q1_OSU_Fiesta_Bowl_2019.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Bowl_game",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-01-70471d1b",
+      "fact": "On January 1, 1739: Bouvet Island in the South Atlantic Ocean, the most remote island in the world, was discovered by French explorer Jean-Baptiste Charles Bouvet de Lozier.",
+      "tag": "Science",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Bouvet_Island_on_the_globe_%28Antarctica_centered%29.svg/330px-Bouvet_Island_on_the_globe_%28Antarctica_centered%29.svg.png",
+      "image_credit": {
+        "author": "TUBS",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Bouvet_Island_on_the_globe_(Antarctica_centered).svg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Bouvet_Island",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    }
+  ],
   "items": [
     {
       "id": "01-01-2024-89e0c220",

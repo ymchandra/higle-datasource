@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ymchandra/higle-datasource/schema/wikimedia_dyk/response.schema.json",
+  "title": "Wikimedia featured feed response (dyk part)",
+  "description": "Only the optional `dyk` array is used. The feed omits it for past dates; entries carry `text`/`html` (`pages` is not returned today but is tolerated).",
+  "type": "object",
+  "anyOf": [
+    { "required": ["dyk"] },
+    { "required": ["tfa"] },
+    { "required": ["onthisday"] },
+    { "required": ["mostread"] },
+    { "required": ["image"] },
+    { "required": ["news"] }
+  ],
+  "properties": {
+    "dyk": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "anyOf": [{ "required": ["text"] }, { "required": ["html"] }],
+        "properties": {
+          "text": { "type": "string" },
+          "html": { "type": "string" },
+          "pages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "thumbnail": { "type": "object", "properties": { "source": { "type": "string" } } },
+                "content_urls": {
+                  "type": "object",
+                  "properties": {
+                    "desktop": { "type": "object", "properties": { "page": { "type": "string" } } }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
