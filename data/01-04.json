@@ -1,7 +1,7 @@
 {
   "date": "01-04",
   "display_date": "January 4",
-  "last_updated": "2026-11-23T14:31:15Z",
+  "last_updated": "2026-11-24T11:20:15Z",
   "sources_used": [
     "wikimedia",
     "muffinlabs"
@@ -30,8 +30,95 @@
       "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
     }
   ],
-  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. Image links are unmodified Wikimedia URLs.",
+  "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. did_you_know facts are either Wikipedia \"Did you know\" hooks (text only, reformatted) or one-sentence rewordings of existing entries (prefixed with the date, possibly shortened). Image links are unmodified Wikimedia URLs.",
   "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
+  "did_you_know": [
+    {
+      "id": "dyk-01-04-5f828f00",
+      "fact": "On January 4, 2007: The 110th United States Congress convenes, electing Nancy Pelosi as the first female Speaker of the House in U.S. history.",
+      "tag": "History Trivia",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Aerial_view%2C_United_States_Capitol_building%2C_Washington%2C_D.C_LCCN2010630477.jpg/330px-Aerial_view%2C_United_States_Capitol_building%2C_Washington%2C_D.C_LCCN2010630477.jpg",
+      "image_credit": {
+        "author": "Carol M. Highsmith",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_view,_United_States_Capitol_building,_Washington,_D.C_LCCN2010630477.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/110th_United_States_Congress",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-04-048bbef0",
+      "fact": "On January 4, 1972: Rose Heilbron becomes the first female judge to sit at the Old Bailey in London, UK.",
+      "tag": "History Trivia",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rose_Making-QC.jpg",
+      "image_credit": {
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Rose_Making-QC.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Rose_Heilbron",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-04-f16fc64c",
+      "fact": "On January 4, 1959: Luna 1 becomes the first spacecraft to reach the vicinity of the Moon.",
+      "tag": "Space",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/RIAN_archive_510848_Interplanetary_station_Luna_1_-_blacked.jpg/330px-RIAN_archive_510848_Interplanetary_station_Luna_1_-_blacked.jpg",
+      "image_credit": {
+        "author": "RIAN_archive_510848_Interplanetary_station_Luna_1.jpg: Alexander Mokletsov / Александр Моклецов derivative work…",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:RIAN_archive_510848_Interplanetary_station_Luna_1_-_blacked.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Luna_1",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-04-6b4f2f4b",
+      "fact": "On January 4, 1958: Sputnik 1, the first artificial Earth satellite, launched by the Soviet Union in 1957, falls to Earth from orbit.",
+      "tag": "Space",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg/330px-%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg",
+      "image_credit": {
+        "author": "Andrey Butko",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Sputnik_1",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    },
+    {
+      "id": "dyk-01-04-ae0fbe29",
+      "fact": "On January 4, 1854: The McDonald Islands are discovered by Captain William McDonald aboard the Samarang.",
+      "tag": "Science",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Heard_Island_%28cropped%29.jpg/330px-Heard_Island_%28cropped%29.jpg",
+      "image_credit": {
+        "author": "Tristannew (original) Derivative: SHB2000 (cropped)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Heard_Island_(cropped).jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Heard_Island_and_McDonald_Islands",
+      "providers": [
+        "wikimedia",
+        "muffinlabs"
+      ]
+    }
+  ],
   "items": [
     {
       "id": "01-04-2019-cdafca0e",
