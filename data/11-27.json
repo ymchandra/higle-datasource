@@ -1,17 +1,18 @@
 {
   "date": "11-27",
   "display_date": "November 27",
-  "last_updated": "2026-11-24T11:20:41Z",
+  "last_updated": "2026-11-26T06:40:35Z",
   "sources_used": [
     "wikimedia",
-    "muffinlabs"
+    "muffinlabs",
+    "wikimedia_dyk"
   ],
   "license": {
     "name": "CC BY-SA 4.0",
     "spdx": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
-  "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0. Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US. Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
+  "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0. Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US. 'Did you know' hooks from English Wikipedia (https://en.wikipedia.org/wiki/Wikipedia:Did_you_know) by Wikipedia contributors, retrieved via the Wikimedia featured feed; licensed under CC BY-SA 4.0. Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
   "sources": [
     {
       "id": "wikimedia",
@@ -28,87 +29,85 @@
       "license": "CC BY-SA 3.0 US",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
       "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
+    },
+    {
+      "id": "wikimedia_dyk",
+      "name": "Wikimedia Featured Feed (Did you know)",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia:Did_you_know",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "'Did you know' hooks from English Wikipedia (https://en.wikipedia.org/wiki/Wikipedia:Did_you_know) by Wikipedia contributors, retrieved via the Wikimedia featured feed; licensed under CC BY-SA 4.0."
     }
   ],
   "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. did_you_know facts are either Wikipedia \"Did you know\" hooks (text only, reformatted) or one-sentence rewordings of existing entries (prefixed with the date, possibly shortened). Image links are unmodified Wikimedia URLs.",
   "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
   "did_you_know": [
     {
-      "id": "dyk-11-27-aa3d7e51",
-      "fact": "On November 27, 2001: A hydrogen atmosphere is discovered on the extrasolar planet Osiris by the Hubble Space Telescope, the first atmosphere detected on an extrasolar planet.",
-      "tag": "Space",
-      "image_url": null,
-      "source_url": "https://en.wikipedia.org/wiki/Hydrogen",
-      "providers": [
-        "wikimedia",
-        "muffinlabs"
-      ]
-    },
-    {
-      "id": "dyk-11-27-f4c24442",
-      "fact": "On November 27, 1809: The Berners Street hoax is perpetrated by Theodore Hook in the City of Westminster, London.",
-      "tag": "Mystery & Crime",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Berners_Street_Hoax.jpg/330px-Berners_Street_Hoax.jpg",
-      "image_credit": {
-        "author": "William Heath",
-        "license": "Public domain",
-        "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Berners_Street_Hoax.jpg"
-      },
-      "source_url": "https://en.wikipedia.org/wiki/Berners_Street_hoax",
-      "providers": [
-        "wikimedia",
-        "muffinlabs"
-      ]
-    },
-    {
-      "id": "dyk-11-27-5b691f16",
-      "fact": "On November 27, 1985: Space Shuttle program: Atlantis launches on STS-61-B, with Rodolfo Neri Vela becoming the first Mexican astronaut.",
-      "tag": "Space",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Shuttle_Patch.svg/330px-Shuttle_Patch.svg.png",
-      "image_credit": {
-        "author": "Original: NASA Vector: Murraybuckley",
-        "license": "Public domain",
-        "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Shuttle_Patch.svg"
-      },
-      "source_url": "https://en.wikipedia.org/wiki/Space_Shuttle_program",
-      "providers": [
-        "wikimedia",
-        "muffinlabs"
-      ]
-    },
-    {
-      "id": "dyk-11-27-1aa1123c",
-      "fact": "On November 27, 1917: P. E. Svinhufvud becomes the chairman of his first senate, technically the first Prime Minister of Finland.",
+      "id": "dyk-11-27-7b6c77b8",
+      "fact": "...that roast turkey probably became associated with Thanksgiving only around 1800?",
       "tag": "History Trivia",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Pehr_Evind_Svinhufvud_%28cropped%29.jpg/330px-Pehr_Evind_Svinhufvud_%28cropped%29.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Roasted_Turkey.jpg/330px-Roasted_Turkey.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_credit": {
+        "author": "Kimberly Vardeman",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Roasted_Turkey.jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Roast_turkey",
+      "providers": [
+        "wikimedia_dyk"
+      ]
+    },
+    {
+      "id": "dyk-11-27-c9bc4d49",
+      "fact": "...that Florence Choe, while deployed in Afghanistan, recorded DVDs of herself reading books to her young daughter in California?",
+      "tag": "History Trivia",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Florence_Bacong_Choe_military_photograph_2008.jpg/330px-Florence_Bacong_Choe_military_photograph_2008.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "image_credit": {
         "author": "Unknown authorUnknown author",
         "license": "Public domain",
         "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Pehr_Evind_Svinhufvud_(cropped).jpg"
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Florence_Bacong_Choe_military_photograph_2008.jpg"
       },
-      "source_url": "https://en.wikipedia.org/wiki/Pehr_Evind_Svinhufvud",
+      "source_url": "https://en.wikipedia.org/wiki/Florence_Choe",
       "providers": [
-        "wikimedia",
-        "muffinlabs"
+        "wikimedia_dyk"
       ]
     },
     {
-      "id": "dyk-11-27-6db9ca0c",
-      "fact": "November 27 is observed as Maaveerar Day (Tamil Eelam, Sri Lanka).",
-      "tag": "Culture",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Gloriosa_superba_flower_Toti_14_01_2011.JPG/330px-Gloriosa_superba_flower_Toti_14_01_2011.JPG",
-      "image_credit": {
-        "author": "Purves, M.",
-        "license": "CC BY-SA 3.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Gloriosa_superba_flower_Toti_14_01_2011.JPG"
-      },
-      "source_url": "https://en.wikipedia.org/wiki/Maaveerar_Naal",
+      "id": "dyk-11-27-42b290f0",
+      "fact": "...that certain species of African ants farm other insects for direct consumption?",
+      "tag": "Science",
+      "image_url": null,
+      "source_url": "https://en.wikipedia.org/wiki/Non-human_agriculture",
       "providers": [
-        "wikimedia"
+        "wikimedia_dyk"
+      ]
+    },
+    {
+      "id": "dyk-11-27-ef0319f9",
+      "fact": "...that Ellsworth Jaeger, who wrote of woodcraft and Wonder Trails, performed \"A Canadian Woodland Symphony\"?",
+      "tag": "History Trivia",
+      "image_url": null,
+      "source_url": "https://en.wikipedia.org/wiki/Ellsworth_Jaeger",
+      "providers": [
+        "wikimedia_dyk"
+      ]
+    },
+    {
+      "id": "dyk-11-27-452a9d10",
+      "fact": "...that a group of women raised funds to build HSwMS Komet?",
+      "tag": "History Trivia",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Marinmotiv-Eskaderbild_-_Sj%C3%B6historiska_museet_-_O_11788_%28Komet_cropped%29.tif/lossy-page1-330px-Marinmotiv-Eskaderbild_-_Sj%C3%B6historiska_museet_-_O_11788_%28Komet_cropped%29.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_credit": {
+        "author": "Herman af Sillén",
+        "license": "Public domain",
+        "license_url": null,
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Marinmotiv-Eskaderbild_-_Sj%C3%B6historiska_museet_-_O_11788_(Komet_cropped).tif"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/HSwMS_Komet",
+      "providers": [
+        "wikimedia_dyk"
       ]
     }
   ],
