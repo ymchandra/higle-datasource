@@ -1,17 +1,18 @@
 {
   "date": "11-28",
   "display_date": "November 28",
-  "last_updated": "2026-11-24T11:20:41Z",
+  "last_updated": "2026-11-27T06:32:04Z",
   "sources_used": [
     "wikimedia",
-    "muffinlabs"
+    "muffinlabs",
+    "wikimedia_dyk"
   ],
   "license": {
     "name": "CC BY-SA 4.0",
     "spdx": "CC-BY-SA-4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
-  "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0. Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US. Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
+  "attribution": "Text from English Wikipedia (https://en.wikipedia.org) by Wikipedia contributors, retrieved via the Wikimedia On This Day API; licensed under CC BY-SA 4.0. Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US. 'Did you know' hooks from English Wikipedia (https://en.wikipedia.org/wiki/Wikipedia:Did_you_know) by Wikipedia contributors, retrieved via the Wikimedia featured feed; licensed under CC BY-SA 4.0. Compiled and adapted by the Higle datasource project (https://github.com/ymchandra/higle-datasource); changes were made. Not endorsed by the Wikimedia Foundation. Images are linked, not included; each image keeps its own licence (see image_credit).",
   "sources": [
     {
       "id": "wikimedia",
@@ -28,93 +29,73 @@
       "license": "CC BY-SA 3.0 US",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
       "attribution": "Text from Wikipedia contributors via the Muffin Labs history API (https://history.muffinlabs.com); licensed under CC BY-SA 3.0 US."
+    },
+    {
+      "id": "wikimedia_dyk",
+      "name": "Wikimedia Featured Feed (Did you know)",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia:Did_you_know",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "'Did you know' hooks from English Wikipedia (https://en.wikipedia.org/wiki/Wikipedia:Did_you_know) by Wikipedia contributors, retrieved via the Wikimedia featured feed; licensed under CC BY-SA 4.0."
     }
   ],
   "modifications": "Entries were selected, normalised (HTML removed, years parsed, headline titles shortened to about 100 characters with an ellipsis), merged and de-duplicated across sources, ranked, capped per day and category, and sorted. Summaries keep the source wording. did_you_know facts are either Wikipedia \"Did you know\" hooks (text only, reformatted) or one-sentence rewordings of existing entries (prefixed with the date, possibly shortened). Image links are unmodified Wikimedia URLs.",
   "notice_url": "https://github.com/ymchandra/higle-datasource/blob/main/ATTRIBUTION.md",
   "did_you_know": [
     {
-      "id": "dyk-11-28-6e778aeb",
-      "fact": "On November 28, 1967: The first pulsar (PSR B1919+21, in the constellation of Vulpecula) is discovered by two astronomers Jocelyn Bell Burnell and Antony Hewish.",
-      "tag": "Science",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/PIA18848-PSRB1509-58-ChandraXRay-WiseIR-20141023.jpg/330px-PIA18848-PSRB1509-58-ChandraXRay-WiseIR-20141023.jpg",
-      "image_credit": {
-        "author": "NASA/CXC/SAO (X-Ray); NASA/JPL-Caltech (Infrared)",
-        "license": "Public domain",
-        "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:PIA18848-PSRB1509-58-ChandraXRay-WiseIR-20141023.jpg"
-      },
-      "source_url": "https://en.wikipedia.org/wiki/Pulsar",
-      "providers": [
-        "wikimedia",
-        "muffinlabs"
-      ]
-    },
-    {
-      "id": "dyk-11-28-a3983735",
-      "fact": "November 28 is observed as Independence Day, celebrating the independence of Albania from Turkey in 1912, the first Albanian flag raise by Skanderbeg in 1443, and for the new parliamentary constitution in 1998.",
-      "tag": "Culture",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/330px-Flag_of_Albania.svg.png",
-      "image_credit": {
-        "author": "Sadik Kaceli",
-        "license": "Public domain",
-        "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Flag_of_Albania.svg"
-      },
-      "source_url": "https://en.wikipedia.org/wiki/Independence_Day_(Albania)",
-      "providers": [
-        "wikimedia"
-      ]
-    },
-    {
-      "id": "dyk-11-28-dcdc8426",
-      "fact": "On November 28, 1983: Space Shuttle Columbia is launched on STS-9, the first mission to carry the European Space Agency's Spacelab module.",
-      "tag": "Space",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Space_Shuttle_Columbia_lands_following_STS-62_on_18_March_1994._%28cropped%29.jpg/330px-Space_Shuttle_Columbia_lands_following_STS-62_on_18_March_1994._%28cropped%29.jpg",
-      "image_credit": {
-        "author": "NASA",
-        "license": "Public domain",
-        "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Space_Shuttle_Columbia_lands_following_STS-62_on_18_March_1994._(cropped).jpg"
-      },
-      "source_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Columbia",
-      "providers": [
-        "wikimedia",
-        "muffinlabs"
-      ]
-    },
-    {
-      "id": "dyk-11-28-a44b7947",
-      "fact": "On November 28, 1966: Michel Micombero overthrows the monarchy of Burundi and makes himself the first president.",
+      "id": "dyk-11-28-a8e5abe8",
+      "fact": "...that The Red Bottoms Tour performer Adéla promoted her debut EP by appearing nude in a music video?",
       "tag": "History Trivia",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Michel_Micombero_%281966%29.png/330px-Michel_Micombero_%281966%29.png",
-      "image_credit": {
-        "author": "Associated Press",
-        "license": "Public domain",
-        "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Michel_Micombero_(1966).png"
-      },
-      "source_url": "https://en.wikipedia.org/wiki/Michel_Micombero",
+      "image_url": null,
+      "source_url": "https://en.wikipedia.org/wiki/The_Red_Bottoms_Tour",
       "providers": [
-        "wikimedia",
-        "muffinlabs"
+        "wikimedia_dyk"
       ]
     },
     {
-      "id": "dyk-11-28-fbfca5d1",
-      "fact": "On November 28, 1919: Lady Astor is elected as a Member of the Parliament of the United Kingdom. She is the first woman to sit in the House of Commons. (Countess Markievicz, the first to be elected, refused to sit.).",
-      "tag": "History Trivia",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Nancy-Astor-Viscountess-Astor.jpg/330px-Nancy-Astor-Viscountess-Astor.jpg",
-      "image_credit": {
-        "author": "Bassano Ltd",
-        "license": "Public domain",
-        "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Nancy-Astor-Viscountess-Astor.jpg"
-      },
-      "source_url": "https://en.wikipedia.org/wiki/Nancy_Astor%2C_Viscountess_Astor",
+      "id": "dyk-11-28-740ee1c6",
+      "fact": "...that Usman Khawaja included his account of a cricket cheating scandal in Sabr: Finding My Way in Cricket and Life after promising a childhood friend that he would reveal it after retiring?",
+      "tag": "Sports",
+      "image_url": null,
+      "source_url": "https://en.wikipedia.org/wiki/Sabr:_Finding_My_Way_in_Cricket_and_Life",
       "providers": [
-        "wikimedia",
-        "muffinlabs"
+        "wikimedia_dyk"
+      ]
+    },
+    {
+      "id": "dyk-11-28-98da840d",
+      "fact": "...that a Chicago department store was described as being \"venerated like a shrine\"?",
+      "tag": "History Trivia",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Carson%2C_Pirie%2C_Scott_and_Company_Building_%28Sullivan_Center%29%2C_Chicago%2C_Illinois_%289179422705%29.jpg/330px-Carson%2C_Pirie%2C_Scott_and_Company_Building_%28Sullivan_Center%29%2C_Chicago%2C_Illinois_%289179422705%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image_credit": {
+        "author": "Ken Lund from Reno, Nevada, USA",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Carson,_Pirie,_Scott_and_Company_Building_(Sullivan_Center),_Chicago,_Illinois_(9179422705).jpg"
+      },
+      "source_url": "https://en.wikipedia.org/wiki/Sullivan_Center",
+      "providers": [
+        "wikimedia_dyk"
+      ]
+    },
+    {
+      "id": "dyk-11-28-bed87a4f",
+      "fact": "...that Leeds Animation Workshop produced a range of animated short films on themes including nuclear disarmament, domestic abuse and homophobia?",
+      "tag": "History Trivia",
+      "image_url": null,
+      "source_url": "https://en.wikipedia.org/wiki/Leeds_Animation_Workshop",
+      "providers": [
+        "wikimedia_dyk"
+      ]
+    },
+    {
+      "id": "dyk-11-28-2bb33425",
+      "fact": "...that an altercation involving the teenaged Frederick Douglass while at Mount Misery motivated him to escape bondage and become a free man?",
+      "tag": "Mystery & Crime",
+      "image_url": null,
+      "source_url": "https://en.wikipedia.org/wiki/Mount_Misery_(Maryland)",
+      "providers": [
+        "wikimedia_dyk"
       ]
     }
   ],
@@ -197,7 +178,7 @@
         "file_page_url": "https://commons.wikimedia.org/wiki/File:Rescate_de_Polic%C3%ADa_al_vuelo_2933_-_05_(cropped).jpg"
       },
       "source_url": "https://en.wikipedia.org/wiki/LaMia_Flight_2933",
-      "is_featured": false,
+      "is_featured": true,
       "providers": [
         "wikimedia",
         "muffinlabs"
@@ -1758,7 +1739,7 @@
       "year": 1666,
       "year_display": "1666",
       "category": "events",
-      "title": "The Royal Scots Army led by Tam Dalyell of the Binns suppressed an uprising by Covenanter…",
+      "title": "At least 3,000 men of the Royal Scots Army led by Tam Dalyell of the Binns defeat about 900…",
       "summary": "At least 3,000 men of the Royal Scots Army led by Tam Dalyell of the Binns defeat about 900 Covenanter insurgents led by James Wallace of Auchens in the Battle of Rullion Green.",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Coat_of_Arms_of_Scotland_%281660-1689%29.svg/330px-Coat_of_Arms_of_Scotland_%281660-1689%29.svg.png",
       "image_credit": {
@@ -1768,7 +1749,7 @@
         "file_page_url": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Scotland_(1660-1689).svg"
       },
       "source_url": "https://en.wikipedia.org/wiki/Scots_Army",
-      "is_featured": true,
+      "is_featured": false,
       "providers": [
         "wikimedia",
         "muffinlabs"
@@ -1970,12 +1951,12 @@
       "category": "events",
       "title": "Shi Jingtang is enthroned as the first emperor of the Later Jin by Emperor Taizong of Liao…",
       "summary": "Shi Jingtang is enthroned as the first emperor of the Later Jin by Emperor Taizong of Liao, following a revolt against Emperor Fei of Later Tang.",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Shi_Jingtang_%28Jin_Gaozu%29.jpg/330px-Shi_Jingtang_%28Jin_Gaozu%29.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/%E5%BE%8C%E6%99%89%E9%AB%98%E7%A5%96%E7%9F%B3%E6%95%AC%E7%91%AD.jpg/330px-%E5%BE%8C%E6%99%89%E9%AB%98%E7%A5%96%E7%9F%B3%E6%95%AC%E7%91%AD.jpg",
       "image_credit": {
-        "author": "Unknown authorUnknown author",
+        "author": "明代王圻辑，万历刻《三才图会》",
         "license": "Public domain",
         "license_url": null,
-        "file_page_url": "https://commons.wikimedia.org/wiki/File:Shi_Jingtang_(Jin_Gaozu).jpg"
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:%E5%BE%8C%E6%99%89%E9%AB%98%E7%A5%96%E7%9F%B3%E6%95%AC%E7%91%AD.jpg"
       },
       "source_url": "https://en.wikipedia.org/wiki/Shi_Jingtang",
       "is_featured": false,
